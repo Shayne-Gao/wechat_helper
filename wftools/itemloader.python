@@ -1,0 +1,67 @@
+#!/usr/bin/python
+## -*- coding:utf8 -*-
+
+import json
+import urllib
+import MySQLdb
+import types
+
+# 打开数据库连接
+db = MySQLdb.connect("localhost","root","eas140900","warframe" )
+
+# 使用cursor()方法获取操作游标 
+cursor = db.cursor()
+
+def getItemInfoByName(name):
+	with open('item_type.json','r') as fp:
+	        data=json.load(fp)
+	res=[]
+	for d in data:
+	        dname = urllib.unquote(d['item_name'].encode("utf-8"))
+	        if str.lower(name) in str.lower(dname):
+	                res.append(d)
+	fp.close()
+	#return a list
+	return res
+
+def saveItems():
+	with open('item_type.json','r') as fp:
+	        data=json.load(fp)
+	res=[]
+	for d in data:
+	        name = getItem(d,'item_name')
+	        type = getItem(d,'item_type')
+	        category = getItem(d,'category')
+	        rarity = getItem(d,'rarity')
+	        mod_max_rank = getItem(d,'mod_max_rank')
+	        wiki = getItem(d,'item_wiki')
+		insertDB(name,type,category,rarity,mod_max_rank,wiki)
+	fp.close()
+	#return a list
+	return res
+
+def getItem(d,key):
+	s = d.get(key,'')
+	if type(s) is types.IntType:
+		return s
+	s = s.encode("utf-8")
+	return urllib.unquote(s)
+
+
+def insertDB(name,type,category,rarity,mod_max_rank,wiki):
+		# SQL 插入语句
+	sql = """INSERT INTO item(name,type, category,rarity,mod_max_rank,wiki)
+	         	 VALUES ('%s','%s','%s','%s','%s','%s')"""%(name,type,category,rarity,mod_max_rank,wiki)
+	try:
+	   # 执行sql语句
+	   print sql		
+	   cursor.execute(sql)
+	   # 提交到数据库执行
+	   db.commit()
+	except:
+	   # Rollback in case there is any error
+	   db.rollback()
+
+
+
+print saveItems()

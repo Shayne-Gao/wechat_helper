@@ -1,0 +1,2175 @@
+Damage 2.0/Puncture Damage	穿刺伤害
+Sibear	西伯利亚冰锤
+Firewalker	火焰行者
+Infested Tumor	Infested肿瘤
+Resource Drop Chance Booster	资源掉落机率加成
+Crush	粉碎
+Freeze Force	寒冰之力
+Lightning Rod	避雷针
+Prisma Daedalus Shin Guard	棱晶代达罗斯护膝板
+Amprex	安培克斯
+Shattering Justice	破碎正义
+Characteristics	特性
+Melee Weapons	近战武器
+Stinger	毒刺
+Loyal Companion	忠实搭档
+Dragon Nikana	龙之侍刃
+Magnetize	磁吸力场
+Sancti Magistar	圣洁执法者
+Dispel	驱散
+Point Blank	抵近射击
+Arid Seeker	沙漠追踪者
+Arid Butcher	沙漠屠夫
+Bleeding Edge	血色刃缘
+Lex	雷克斯
+MK1-Paris	MK1-帕里斯
+Reload	装填
+Threat Level	威胁等级
+One-Handed Action	单手动作
+Telos Akbolto	终极螺钉双枪
+Meridian Trinity Helmet	经络Trinity头盔
+Shade	阴影
+Orokin Sabotage	堡垒破坏
+Warding Grace	守护恩典
+Platinum	白金
+Death Mark	死亡标记
+Split Chamber	分裂膛室
+Galatine Prime	迦伦提恩Prime
+Lethal Torrent	致命洪流
+Bailiff	执法员
+Referral Program	招募计划
+squad	小队
+Lex Prime	雷克斯Prime
+Dread	恐惧
+Storage Container	储存容器
+Ward Recovery	火绫复苏
+Akbronco	野马双枪
+Spry Sights	迅敏视觉
+Oddities	奇特物件
+Operator	指挥官
+Lieutenant Lech Kril	Lt. Lech Kril
+Razor Munitions	剃刀弹药
+Quanta	量子切割器
+Grate	铁格栅
+Sapping Osprey	基蚀鱼鹰
+Crate	储存箱
+Rip Line	撕裂钩索
+Orokin Void	Orokin虚空
+Freeze	冻结
+Madurai Transmute Core	Madurai转换核心
+Powers	技能
+Sentinel Weapons	守护武器
+Zeplen	齐柏伦飞船
+Justice Blades	正义刀锋
+Sure Shot	准确射手
+Vaporize	汽化
+Effigy	焚烧雕像
+Tetra	特拉
+Lethal Momentum	致命动量
+Cloud Walker	觔斗游云
+Crimson Dervish	赤红狂舞
+Razor Shot	剃刀射击
+Nunchaku	双截棍
+Companions	同伴
+Fang	狼牙
+Fighter Escort	护卫战机
+Djinn	引灵
+Gemini Cross	纵横双子
+AkZani	荒谬双枪
+Hall of Malevolence	恶怨厅
+Whirlwind	旋风
+Dual Cleavers	斩肉双刀
+Dual Toxocyst	毒囊双枪
+Focus	专精
+Silence	静音
+Lecta	勒克塔
+Toxic Ancient	远古剧毒者
+Warframe Augment Mod	战甲强化MOD
+Okina	翁
+Ore Gaze	矿石凝视
+Day of the Dead Weapon Skin Pack	亡灵节武器外观
+Artifact Defense Event	防御
+Anti-Flak Plating	抗爆覆甲
+Reward System	奖励系统
+Prisma Sigil	棱晶纹章
+Gunslinger	神枪手
+Sniper Ammo Mutation	狙击枪弹药转换
+Orbiter	轨道飞行器
+Armor	护甲
+Soma Prime	月神Prime
+Dark Dagger	暗黑匕首
+Lore	背景知识
+Mania	躁狂
+Damage 2.0/Ferrite Armor	铁质装甲
+Vicious Spread	恶性扩散
+Ties That Bind	结为盟友
+Bore	枪膛
+Health Conversion	生命转换
+Psychic Bolts	通灵螺栓
+Vandal	破坏者
+Ducats	杜卡德金币
+Overcharged	能量超载
+Mission Rewards	任务奖励
+Razorwing	剃刀之翼
+Sniper Crewman	狙击手船员
+Limbo Theorem	Limbo定理
+Pickups	可拾取物
+Orokin Language	Orokin语
+Team Bonus Consumables	团队回复用消耗品
+Field Boss	乱入头目
+MK1-Bo	MK1-玻之武杖
+Pursuit	追击
+Unleashed	释放
+Expel Infested	驱逐Infested
+Kubrow Mods	库狛MOD
+Enemy Level Scaling	敌方等级变化规律
+Sundering Weave	分裂编织
+Passives	被动能力
+Perrin Sequence	佩兰数列
+Dive Bomb	俯冲轰炸
+Gear	携带道具
+Gilded Truth	镀金真相
+Endurance Drift	坚忍窜升
+Slip Magazine	串联弹夹
+Mastery	段位
+Tile Sets	地图板块
+Snap Shot	速射
+Kaszas	死亡使徒
+Broken-War	破碎的战争之剑
+Carrier Sentinel	搬运者
+Magazine Warp	弹匣增幅
+Corpus Tech	Corpus技师
+Daily Tribute Rewards	每日献礼奖励
+Peaceful Provocation	和平挑衅
+Desert Skate	沙漠鳐鱼
+Maximization	最大化
+Voltaic Strike	伏打电能
+Captain Vor (Corrupted)	Vor上尉（堕落）
+Tectonic Fracture	构造裂缝
+Akstiletto Prime	史提托双枪Prime
+Concussion Rounds	震荡弹头
+Kohm	寇恩热能枪
+Secura Penta	保障潘塔
+Aviator	飞行员
+Reckoning	惩戒清算
+Redirection (Sentinel)	精算蓄能
+Retrieve	嗅索取物
+Colour Picker Extension	色彩包
+Kulstar	杀星
+Focused Defense	重点防御
+Cephalon	中枢
+Sword Alone	一剑在手
+The Law of Retribution	复仇法则
+Hell's Chamber	地狱弹膛
+Warden	典狱长
+Orokin Moon	Orokin之月
+Maneuvers	操控
+Twilight Apothic	暮光药剂
+Shattering Storm	云暴山碎
+Eleventh Storm	终焉风暴
+Corrupted Crewman	堕落船员
+Mods	MOD
+Hysteria	狂化爆发
+Sentinel Cosmetics	守护外观
+Hollowed Bullets	空尖弹
+Arcane Energize	充沛赋能
+Fired Up	过热射击
+Scoliac	嵴椎节鞭
+Sapping Reach	蚀能磁触
+Terminal Velocity	极限速度
+Vasto	瓦斯托
+Mutalist Alad V Assassinate Key	异融者Alad V刺杀钥匙
+The Tekelu Collection	提奇鲁外观组合包
+Flailing Branch	多流抽击
+Twin Kohmak	双子宼恩霰机枪
+Harkonar Scope	哈库那瞄准镜
+Crit Multiplier	暴击倍率
+Serrated Rounds	锯刃弹头
+Specter	魅影
+Armored Agility	灵活装甲
+Hydraulic Gauge	液压弹药
+Trade	交易
+Syndicate Alert	集团警报
+Talons	鹰爪
+Energy Channel	能量导引
+Fomorian	巨人战舰
+Flame Repellent	火焰防护
+Lato	拉托
+Mutagen Sample	样本突变原
+Banish	放逐
+Regen	重生
+Trading	交易
+Sancti Castanas	圣洁雷爆信标
+Meteor Munitions	流星弹药
+Once Awake	悲剧的开端
+Relentless Assault	残酷打击
+Corrosive Projection	腐蚀投射
+Mutalist Alad V	异融者Alad V
+Orokin Moon/Speed Test	速度考验
+Update 19	更新19
+Regulator	调整者
+Latcher	粘子
+Primed Heated Charge	火焰装填Prime
+Shock Draga	电击疏浚兵
+Default Stance	默认架式
+Elixis Redeemer	救赎者镀铜外观
+Executioners	行刑者
+Ayatan Sculptures	Ayatan雕像
+Update 14	更新14
+Operation Cryotic Front	永冻晶矿前线
+Boiler	痈裂者
+Sweeper Prime	扫除者Prime
+Landing Craft Foundry Segment	登陆艇铸造厂模组
+Detonite Ampule	爆燃安瓿
+Smite Corpus	毁灭Corpus
+Syndicates	集团
+Anemic Agility	残血敏捷
+Primed Chamber	蓄力装填Prime
+Stats	详细信息
+Dark Split-Sword	暗黑分合剑
+Ormolu Skin Bundle	镀金外观组合包
+Plasma Rifle	等离子步枪
+Cleanse Corpus	净化Corpus
+Magistar	执法者
+The Perrin Sequence	佩兰数列
+Hyekka	鬣猫
+Melee	近战
+Arc Trap	电弧陷阱
+Ack & Brunt	认知&冲击
+Shuriken	手里剑
+Primed Reach	剑风Prime
+Dual Skana	空刃双刀
+Obstacle Course	障碍训练场
+Founders	创建者
+Planet	星球
+Arcata	阿卡塔
+Forest-Camo Skin Pack	森林-迷彩外观包
+Laser Rifle	激光步枪
+Stalk	隐秘追踪
+Dreg	无人机
+Silva & Aegis	席瓦之剑&神盾
+Events	活动
+Maneuver	操控
+Battering Maneuver	机动冲撞
+Disarray	热诱弹
+Assault Rifle	突击步枪
+Reload Speed	装填速度
+Metamorphosis	昼夜交替
+System Requirements	配置需求
+Foundry	铸造厂
+Feral Kavat	库娃
+Prisma Dual Cleavers	棱晶斩肉双刀
+Smite Infested	毁灭Infested
+Mind Control	精神控制
+Angstrum	安格斯壮
+Single-Shot	单发
+Genius	天才
+Prism Guard	棱彩护卫
+Salvage	回收金属
+Maximized Power Strength	能力强度最大化
+Prova	普罗沃
+Fragor Prime	重击巨锤Prime
+Infested Sinew	感染肌腱
+Medium Team Shield Restore	中型团队护盾回复
+Anku	夺魂死神
+Shotgun Mods	霰弹枪MOD
+Energy Siphon	能量虹吸
+Malicious Raptor	恶毒猛禽
+High Voltage	高压电流
+Rampart	炮座壁垒
+Nikana Prime	侍刃Prime
+Toxin Injector	毒素注射器
+Damage 2.0/Sinew	感染肌腱
+Grineer Language	Grineer语
+Lobber Crawler	喷吐爬行者
+Decoy	诱饵
+Prime Vault	Prime宝库
+Update 11	更新11
+Sentinel Mods	守护MOD
+Operation Gate Crash	摧毁传送门行动
+Shred Shot	撕碎射击
+Capacitance	电容
+Blade and Whip	剑鞭
+Disruptor Drone	干扰无人机
+MK1-Strun	MK1-斯特朗
+Flechette	箭型弹头
+Maximized Power Range	能力范围最大化
+Status Chance	异常触发机率
+Cryotic	永冻晶矿
+Corrupted Bombard	堕落轰击者
+Ancient Disrupter	远古干扰者
+Dera	德拉
+Update 12	更新12
+Dual Raza	锋月双斧
+Electric Crawler	电击爬行者
+Dakra Prime	达克拉Prime
+Exilus Mods	劣化功能MOD
+Fusion Core	融合核心
+Zhuge	诸葛连弩
+Hemlock Saryn Helmet	Saryn铁杉头盔
+Targeting Receptor	目标感应
+Vex Armor	怨怒护甲
+Lua	月球
+Bolto	螺钉手枪
+Impact	冲击
+Sound Quake	音波冲击
+Speed Holster	快速切换
+Argon Scope	氩晶瞄具
+Prisma Liset Skin	棱晶外观Liset
+Flash Accelerant	闪耀助燃
+Venom Dose	猛毒附加
+Hyekka Master	鬣猫驯兽师
+Arctic Eximus	极寒卓越者
+Simaris Helios Skin	Simaris外观赫利俄斯
+Syndicate	集团
+Rebound	弹跳
+Maim	致残枪弹
+Menticide Nyx Helmet	灭神Nyx头盔
+Rift Torrent	裂隙洪流
+Acrid	阿克里德
+Centaur	半人马
+Braton Vandal	破坏者布莱顿
+Market	商店
+Object (Health)	物件
+Agkuza	驯象钩刃
+Update 18	更新18
+Shrapnel Shot	破片射击
+Prisma Veritux	棱晶真理巨剑
+Sentinel Loadouts	守护配装
+Sinking Talon	沉没之爪
+Finishing Touch	画龙点睛
+Rakta Cernos	绯红西诺斯
+Enemies	敌人
+Twin Vipers	双子蝰蛇
+Thunderbolt	雷火
+Ripkas	锐卡斯
+Hind	雌鹿
+Drover Bursa	驱引金流恐鸟
+Paralysis	瘫痪
+Rime Rounds	白霜弹头
+Control Module	控制模块
+Body Count	杀伤计数
+Rapid Resilience	极速复原
+Blaze	烈焰
+Hikou	飞扬
+Electro Pulse	电光脉冲
+Muzzle Flash	枪口闪焰
+Noise Level	噪音等级
+Guides of the Lotus	Lotus的指引者
+Corrupted Heavy Gunner	堕落重型机枪手
+Archwing Mods	Archwing机体MOD
+Huras Kubrow	匿踪型库狛
+Sniper Rifles	狙击步枪
+Trial	试炼
+Cloak Arrow	隐蔽之箭
+Volatile Runner	爆炸奔跑者
+Expel Corpus	驱逐Corpus
+Corrupted Butcher	堕落屠夫
+Corpus Gas City	Corpus燃气城市
+Grineer Warden	Grineer典狱长
+Crushing Ruin	月落乌啼
+Vulcan Blitz	火神闪击
+Halikar	哈利卡
+Null Star	湮灭流星群
+Update 8	更新8
+Spellbind	迷尘
+Balor Fomorian	巴罗尔巨人战舰
+Event Reward	活动奖励
+Invisibility	隐形
+Embolist	安柏勒斯
+Rakta Dark Dagger	绯红暗黑匕首
+Warframe	战甲
+Mining Machine	采矿车
+Settings	选项
+Fragor	重击巨锤
+Toxic Lash	剧毒鞭苔
+Player vs. Player (PvP)	玩家间对抗
+Armored Acrobatics	杂技装甲
+Mutagen Mass	突变原聚合物
+aim	瞄准
+Drekar Heavy Gunner	龙舰重型机枪手
+Warframe Cosmetics	战甲外观
+Damage 2.0/I. Flesh	感染肉体
+Smite	惩击
+Spring-Loaded Chamber	簧压膛室
+Undying Will	不朽意志
+Follow Through	贯彻始终
+Blazing Steel	炽烈坚刃
+Stug	史特克
+Vectis	守望者
+Finishing	终结
+Stunning Speed	慑人神速
+Detect Vulnerability	弱点侦测
+Rescue	救援
+Archwing Abilities	Archwing技能
+High Noon	正午
+Sand Shadow	沙土幽灵
+Hysteria (Stance)	狂化爆发（架式）
+Seer	预言者
+Desecrate	亵渎
+Artemis Bow	月神狩弓
+Stealth	偷袭
+Telos Boltace	终极螺钉拐刃
+Carrier Prime	搬运者Prime
+Grineer Sealab	Grineer深海研究所
+Repeater Clip	转轮弹匣
+Sandstorm	吞天沙暴
+Fatal Acceleration	致死加速
+Ballistica	布里斯提卡
+desecrate	亵渎
+Push & Pull	探推-挽拉
+Alliance	联盟
+Furor	狂怒
+Dual Stat Mods	双属性MOD
+Infected Clip	污染弹匣
+Primed Bane of Grineer	灭亡Grineer Prime
+Corpus Outpost	Corpus哨站
+MOA Cabinet Spawner	恐鸟储存柜
+Cephalon Capture	夺取中枢
+Power of Three	三幂之力
+Avalanche	雪崩
+Carapace	外壳
+Tesla Link	特斯拉陷阱
+Cipher	破解器
+Karak Wraith	亡魂卡拉克
+Brood Mother	病变虫母
+Bombard	轰击者
+Manticore	蝎尾狮重斧外观
+Weapon	武器
+Rift Walk	裂隙漫游
+missions	任务
+Credit	现金
+Battalyst	武装使
+Chorus Banshee Helmet	合音Banshee头盔
+Grineer Galleon	Grineer巨舰
+Prisma Mech Head Sentinel Mask	棱晶机甲头盔面具
+Loose Chamber	松弛枪膛
+Thumper (Elytron)	轰击
+Melee 2.0	近战
+Mission	任务
+Drekar Ballista	龙舰弩炮
+Lesion	病变
+Acid Shells	酸性弹壳
+Warhead	毁灭弹头
+Junction	接合点
+Afterburn	续燃
+Dojo	道场
+Cleanse Infested	净化Infested
+Primed Mods	Prime版MOD
+Armored Evade	闪避装甲
+Disarm	解除武装
+Entropy	熵数
+Furious Javelin	狂怒标枪
+Confusion	迷惑
+Scarab Swarm	圣甲虫群
+Energy Inversion	能量转化
+Genetic Code Template	基因密码模板
+Shield Disruption	护盾瓦解
+Antitoxin (Mod)	毒抗
+Hybrid	多形态武器
+Steel Fiber	金属纤维
+Piercing Caliber	穿甲口径
+Primed Pressure Point	压迫点Prime
+Staff	杖
+Legendary Mods	传说MOD
+Knockdown	击倒
+Marathon	马拉松
+Rubedo-Lined Barrel	红晶枪管
+weapon	武器
+Arid Trooper	沙漠骑兵
+Slide	滑行时
+Embedded Catalyzer	内置触媒
+Update 17	更新17
+Hellion	恶徒
+Tileset	地图板块
+Diriga	电气浮囊
+Prisma Hecate Syandana	棱晶朔月女神披饰
+Tail Wind	顺风
+Tower	堡垒
+Opticor	奥堤克光子枪
+Draga	疏浚兵
+Tekko	铁钩手甲
+Raksa Kubrow	防护型库狛
+Destreza	技巧之剑
+Snow Globe	冰雪护罩
+Supra	苏普拉
+Latron Wraith	亡魂拉特昂
+Crawler	爬行者
+Damage 2.0/Impact Damage	冲击伤害
+Mobile Defense	移动防御
+Cell	小队
+Petrify	石化凝视
+Team Ammo Restore	团队弹药回复
+Explosive Barrel	炸药桶
+Vile Precision	极恶精准
+Shock	电击
+Corvette	护卫舰
+Dual Rounds	双重弹头
+Night Stalker	暗夜追迹者
+Update 7	更新7
+Critical Delay	关键延迟
+Emplacement Weapons	场景武器
+Team Energy Restore	团队能量回复
+Large Team Energy Restore	大型团队能量回复
+Karak	卡拉克
+Shield Lancer	盾枪兵
+Vasto Prime	瓦斯托Prime
+Sobek	鳄神
+Adept Surge	跃浪好手
+Melee Combo Counter	近战连击数
+Swirling Tiger	旋风虎击
+Sonar	声纳
+Sleep Arrow	沉睡之箭
+Assault Rifle Mods	突击步枪MOD
+Speed	加速
+Neutralize	啃咬压制
+Hyena Pack	鬣狗群
+Maggot	蛆虫
+Tethra's Doom	泰斯拉末日
+Shelter	庇护
+Meso	前纪
+Game Modes	游戏模式
+Charger	疾冲者
+Pistol Pestilence	瘟疫手枪
+Hallowed Ground	神圣领域
+Energy Vampire	能量吸取
+Primed Bane of Corpus	灭亡Corpus Prime
+Color Pack Alpha	颜料包A
+Drac Chroma Helmet	奇克Chroma头盔
+Manic Bombard	狂躁轰击者
+Hive	清巢
+Seeking Force	狂暴追猎
+Tranquil Cleave	秋风落叶
+Punch Through (Mechanic)	穿透
+Counterweight	平衡配重
+Spira Prime	旋刃飞刀Prime
+Sawtooth Clip	锯齿弹链
+Tribute	献灵
+Akbronco Prime	野马双枪Prime
+resources	资源
+Swipe	挥击
+Primed Shotgun Mutation	霰弹枪弹药转换Prime
+Sprint Boost	冲刺提升
+Creeping Terrify	缓动惊骇
+Dex Sybaris	Dex席芭莉丝
+Electric	电击
+Paracyst	附肢寄生者
+Magnum Force	重装火力
+Commander	指挥官
+Concealed Explosives	隐蔽爆破
+Puncture	穿刺
+Rift Plane	裂隙位面
+Kestrel	红隼
+Uncommon	罕见
+Resonating Quake	共鸣地震
+Coolant Leak	冷却液外泄
+Security Camera	监控摄像头
+Spy	间谍
+Titanic Rumbler	巨大石者
+Heat	火焰
+Mire	米尔
+Earth	地球
+Super Jump	超级弹跳
+Curative Undertow	疗愈漩涡
+Blind Rage	盲怒
+Quanta Vandal	破坏者量子切割器
+Glaive	战刃
+Polymer Bundle	聚合物束
+Rahk Fluctus	巨浪拉克外观
+Automatic	全自动
+Howl of the Kubrow	库狛取得任务
+Arcane	秘奥
+Tysis	啐沫者
+Primal Rage	原始暴怒
+Turbulence	疾风湍流
+Boltace	螺钉拐刃
+Beacons	信标
+Shield-Hellion Dargyn	护盾恶徒轻型艇
+MK1-Furis	MK1-盗贼
+Frail Momentum	虚弱动能
+Drahk	爪喀
+Latron Prime	拉特昂Prime
+Jet Stream	急流
+Orokin Catalyst	Orokin催化剂
+Prime Eos Chest Plate	曙光女神胸甲Prime
+Glossary	游戏用语
+Cyngas	合成燃气炮
+Serration	膛线
+Parry	格挡
+Vulkar	金工火神
+Broken War	破碎的战争之剑
+Critical Deceleration	降速爆击
+Frigate	驱逐舰
+Radiant Finish	终结闪光
+Bladed Rounds	尖刃弹头
+Bounce	弹跳平台
+Focus Lens	专精晶体
+Excavation	挖掘
+Sedna	赛德娜
+Malignant Force	致命火力
+Warding Halo	混天火绫
+Energy Lab	能源实验室
+Shotgun Sidearm	副手霰弹枪
+Burst Laser	激光点发
+Lancer	枪兵
+Mine Osprey	地雷鱼鹰
+Roller	滚子
+Cataclysm	灾变
+Stance	架式
+Grineer Forest	Grineer丛林
+Shield	护盾
+Scattered Justice	散射正义
+Gammacor	咖玛腕甲枪
+Grinlok	葛恩火枪
+Greedy Pull	贪婪吸引
+Heavy Trauma	重创
+Reaper	收割者
+Europa	欧罗巴
+Transmutation	转换
+Kuria	库利亚猫神器
+Wildfire	野火
+Scattering Inferno	炼狱轰击
+Peacemaker	和平使者
+Self Destruct	自爆
+Defy	死命顽抗
+The Archwing	Archwing
+Divine Spears	圣火尖枪
+Gleaming Talon	微光利爪
+Rhino Charge	犀牛冲锋
+Serro	电能斩锯
+Ironclad Charge	铁甲冲锋
+Void	虚空
+Arc Coil	电弧线圈
+Rifle Ammo Mutation	步枪弹药转换
+Kronen	皇家拐刃
+Fusion Drone	熔岩无人机
+Tidal Impunity	潮汐涌净
+Pyra Sugatra	珮菈坠饰
+Reflex Draw	反射拔枪
+Arcane Trickery	诡计赋能
+Common	常见
+Tellurium	碲
+Calm & Frenzy	冷静与疯狂
+Daikyu	大久和弓
+Kinetic Siphon Traps	动能吸收陷阱
+Secura Dual Cestra	保障锡斯特双枪
+Prisma Grakata	棱晶葛拉卡达
+Cutting Edge	切割刃缘
+Synoid Simulor	枢议重力奇点拟成枪
+Resources	资源
+Ancient Healer	远古治愈者
+Brakk	布拉克
+Somatic Link	活体连接器
+Jaw Sword	蛇颚刀
+Polarize	护盾极化
+Barrel Diffusion	弹头扩散
+Bastet Valkyr Helmet	芭丝特Valkyr头盔
+Informant Event	Grineer通报者
+Panthera	猎豹
+Eagle Eye	鹰眼
+Defiled Snapdragon	积秽骁龙
+Marelok	玛瑞火枪
+Akstiletto	史提托双枪
+Bo	玻之武杖
+Fever Strike	狂热打击
+The Silver Grove	落银树庭
+Rare	稀有
+Bugs	漏洞
+Arid Fear Event	沙漠恐惧
+Calculated Spring	精准弹跳
+Tentacle Swarm	触角肆虐
+Jordas Golem	Jordas魔像
+Carrier	搬运者
+Enemy Behavior	敌方行为
+Tar-Mutalist MOA	异融焦油恐鸟
+Rush (Archwing)	突袭
+Proto-Glaive Skin	战刃原型外观
+Neutron Star	中子星爆
+Shield Osprey	护盾鱼鹰
+Core Vent	核心通气
+Master Thief	盗贼大师
+Spark	火花
+Flux Nova Helmet	通量Nova头盔
+Spore	毒性孢子
+Strafing Slide	滑行扫射
+Fusion	融合
+Infested Ship	Infested飞船
+Exalted Blade (Stance)	显赫刀剑（架式）
+Reach	剑风
+Spectra	光谱切割器
+Hacking	骇入
+Claws	双爪
+Cleaving Whirlwind	孤刃回天
+Aksomati	轻灵月神双枪
+Ice Wave Impedance	滞痕冰浪
+Misery	苦难
+Iron Skin	钢化皮肤
+Lato Prime	拉托Prime
+Tigris Prime	猛虎Prime
+Magazine Extension	扩容弹夹
+Agile Aim	机动瞄准
+Molecular Prime	分子填充
+Elite Frontier Lancer	精英前线枪兵
+Corpus Trench Run	Corpus战壕追逐
+Targeting Subsystem	定位辅助
+Skins	外观
+Shredder	粉碎器
+Pherliac Pod	费洛髂荚囊
+Bounty Hunter	赏金猎人
+Loose Magazine	松弛弹匣
+Fury	狂暴
+Trade System	交易系统
+Tear Gas	催泪毒雾
+Prisma Jet Sentinel Wings	棱晶喷射机翼
+Blood Rush	急进猛突
+Radial Disarm	解除武装
+Piercing Hit	穿甲伤害
+Movement Speed	移动速度
+Diamond Skin	钻石皮肤
+Sentinels	守护
+Shotgun Savvy	通晓霰弹枪
+Orokin Cell	Orokin电池
+Ballistic Battery	弹道蓄能
+Thief's Wit	盗贼天赋
+Sunlight Jadeleaf	日光玉叶
+Synthesis Scanner	结合扫描器
+Primed Continuity	持久力Prime
+Perpetual Agony	永恒痛苦
+Dual Broncos	野马双枪
+Boltor Prime	螺钉步枪Prime
+Spy 2.0	间谍
+Guardsman	禁卫军
+Solar Rail	星际航道
+Tonbo	蜻蜓薙
+Hydraulic Barrel	液压枪管
+Burston	伯斯顿
+Full Contact	全面接触
+Ankyros	甲龙双拳
+Armored Recovery	复原装甲
+Void Trader	虚空商人
+Arcane Enhancements	赋能
+Common Mods	常见MOD
+Dethcube	死亡魔方
+Hidden Messages	被隐藏的信息
+Terrify	惊骇
+Akbolto	螺钉双枪
+Crewman	船员
+Ammo Drum	弹鼓
+Efficient Transferral	高效传输
+Eclipse	黯然失色
+Fireball Frenzy	狂热火球
+Chaos	混乱
+Maul	捶击
+Primal Fury	原始狂怒
+Iron Jab	神针突刺
+Virulent Scourge	剧毒灾害
+Twin Basolk	双子巴萨克
+Weapons Required as Crafting Ingredients	可用于铸造的武器
+Tainted Clip	感染弹匣
+Charged Shell	充电弹头
+Gleaming Blight	毁坏微光
+Buzz Kill	败兴虐杀
+Viper	蝰蛇
+Sweeping Serration	扫荡锯齿
+Circuits	电路
+Radiation Damage	辐射伤害
+Charged Chamber	蓄力装填
+Crossfire	多方交战
+AkJagara	觉醒双枪
+Vor's Prize	Vor的战利品
+Scorpion Ash Helmet	毒蝎Ash头盔
+Enemy Sense	敌人感应
+Reaper Prime	收割者Prime
+Shield Dargyn	护盾轻型艇
+Kohmak	寇恩霰机枪
+Patagium	翼膜
+Emotes	表情动作
+Focus Energy	聚焦能量
+Energy Shell	能量护罩
+Gauss Mag Helmet	高斯Mag头盔
+Enemy Body Parts	敌人身体部位
+Impenetrable Offense	绝壁强攻
+Sortie	突击
+Kubrow	库狛
+Energy	能量
+Seismic Palm	震撼冲拳
+Grineer Asteroid	Grineer小行星
+Pacify & Provoke	轻抚-激怒
+Transference Room	传识之间
+Uranus	天王星
+Bronco Prime	野马Prime
+the Cicero Crisis	西塞罗危机
+Crash Course	连续冲击
+Reaping Spiral	收割螺旋
+Defiled Reckoning	亵渎清算
+Shield Restore	护盾回复
+Vazarin Mods	Vazarin极性MOD
+Slash Dash	突斩
+Warframe Helmet Blueprint	战甲头盔蓝图
+Exalted Blade	显赫刀剑
+Shock Camo Pack	闪电迷彩包
+Malice	怨恨
+Harkonar	行刑者Harkonar
+Kraken	北海巨妖
+Velocitus	极速电磁步枪
+The Cicero Crisis	西塞罗危机
+Kavasa Prime	喀婆萨Prime
+Spores	毒性孢子
+Lucky Shot	幸运射击
+Sunrise Apothic	日升药剂
+Pulse Volt Helmet	脉冲Volt头盔
+Twin Gremlins	双子小精灵
+Codex Scanner	扫描器
+Key Bindings	按键绑定
+Frostbite	结霜侵蚀
+Rising Storm	风起云涌
+Argon Plating	氩晶装甲
+Damage	伤害
+Strun Wraith	亡魂斯特朗
+Tech	Corpus技师
+Endless Defense Missions	防御
+Napalm	火焰轰击者
+Spare Parts	残余
+Rift Surge	裂隙涌流
+Latron	拉特昂
+Fireball	火球
+Patch History	更新历史
+Warm Coat	保温服
+Scorpion	天蝎
+Systems	系统
+Atterax	阿特拉克斯
+Corrupted Vor	堕落Vor
+Arid Hellion	沙漠恶徒
+Phobos	火卫一
+Molt	蜕皮
+Gemini Nikana Sheath	双子侍刃刀鞘
+Nullifier Crewman	虚能船员
+Jolt	电流震击
+Trooper	骑兵
+Augmented Weapons	强化武器
+Swarm Mutalist MOA	异融胞群恐鸟
+Fanged Fusillade	尖牙连射
+Discharge Strike	卸能打击
+Scavenger Drone	清道夫无人机
+Reflex Guard	反射防御
+Wyrm	蛟龙
+Miter	米特尔
+Orokin Lab	Orokin实验室
+Nukor	努寇微波枪
+Akvasto	双持瓦斯托
+Corpus Language	Corpus语
+Tritium Battery	氚电池
+The Jordas Precept	Jordas枢律
+Cerata	裸鳃刃
+Heated Charge	火焰装填
+Skana Prime	空刃Prime
+Entropy Spike	熵数尖钉
+Duel	决斗
+Reflection	反射
+Toxic Flight	剧毒飞腾
+Landing Craft	登陆艇
+Blazing Chakram	乾坤火圈
+Gorgon	蛇发女妖
+Orokin Turret	Orokin炮塔
+Shock Trooper	电击震荡
+Smite Grineer	毁灭Grineer
+Hallowed Reckoning	神圣清算
+Purging Slash	净化斩
+Specter (Tenno)	魅影（友方）
+Convectrix	导热聚焦枪
+Shatter Shield	破碎护盾
+Whip	鞭
+Fang Prime	狼牙Prime
+Decaying Key	腐朽龙钥
+Eviscerator	开膛者
+Status Effect	异常状态
+Elemental Ward	元素隔离
+Soul Punch	灵魂重击
+Final Harbinger	最终先驱
+Hysterical Assault	狂化突击
+In Air	在空中
+Imperator	凯旋将军
+Savage Silence	残酷无息
+Tactics	应对技巧
+Clashing Forest	巨林冲击
+Corrupted MOA	堕落恐鸟
+Acolyte	追随者
+Stolen Dreams	被偷走的梦
+Combustion Rounds	燃烧弹头
+Tennogen Weapon Skin Bundle	Tennogen武器外观组合包
+Corrupt Charge	邪恶蓄力
+Fast Deflection	快速充能
+Quotes	语录
+Kama	短柄战镰
+Martial Fury	狂暴尚武
+Kotara	窟窿
+Physique	体魄
+Vulklok	金工火枪
+Medi-Ray	医疗射线
+Bleeding Key	残血龙钥
+Color Picker Extension	调色板
+Shield Overload	护盾过载
+Vicious Frost	蚀骨寒霜
+Nightmare Mode Mods	噩梦MOD
+Territorial Aggression	侵略领土
+Shotgun Spazz	表演时间
+Viral Damage	病毒伤害
+Credit Booster	现金加成
+Feral Kubrow	库狛（野生）
+Jupiter	木星
+Hysteria (Weapon)	狂化爆发（武器）
+Councilor Vay Hek	Vay Hek议员
+Thumper	重击者
+Holiday Content	节日特供
+Tectonics	大地构筑
+Aiming at Downed Enemy	对着倒地敌人
+Updateme	待更页面
+Warrior	战士
+Cryo Rounds	低温弹头
+Detron Crewman	德特昂船员
+Neural Sensors	神经传感器
+Color Palettes	色彩包
+Karyst	凯洛斯特
+Codex	资料库
+Mios	牝狮神
+Djinn Sentinel	引灵
+Boltor	螺钉步枪
+Spoiled Strike	腐坏打击
+Singularity	奇异点
+War	战争之剑
+Searing Steel	炽燃钢铁
+Vigor	活力
+Corpus Ship	Corpus飞船
+Spira	旋刃飞刀
+Gaia's Tragedy	母神的悲剧
+Hammer Shot	重锤射击
+Adhesive Blast	凝胶爆破
+Sensor Regulator	感应调整者
+Full Capacity	充量弹容
+Synoid Syandana	塞诺德披饰
+Bleedout	濒死
+Storage Containers	储存容器
+Event	活动
+Attack Multalist	发射感染孢子
+Medium Team Heal Restore	中型团队医疗回复
+Archwing Maneuvers	Archwing操控
+Large Team Ammo Restore	大型团队弹药回复
+Pluto	冥王星
+Lunaro	月动球
+Ripper Rounds	撕裂弹头
+Atomos	原子矿融砲
+Desiccation	枯沙竭血
+Rupture	破裂
+Damaged Mods	受损的MOD
+Corpus Warden	Corpus典狱长
+Primed Slip Magazine	串联弹夹Prime
+Intruder	入侵者
+Machinery	机械
+Rifle Mods	步枪MOD
+Sheev	希芙
+Zipline	滑索
+Pangolin Sword	鲮鲤剑
+Grineer Shipyard	Grineer船坞
+Charm	魅力
+Ferrite Armor	铁质装甲
+Large Team Heal Restore	大型团队医疗回复
+Sikula	水雷无人机
+Drekar Eviscerator	龙舰开膛者
+Convulsion	痉挛
+Sydon	恶龙
+Navigator	导向抛体
+Ammo Stock	霰弹扩充
+Mods 2.0	MOD
+Calculated Shot	精算射击
+Free Space	外太空
+Boar Prime	野猪Prime
+Scindo Prime	分裂斩斧Prime
+Smoke Shadow	庇护烟幕
+Tipedo	提佩多
+Orthos	欧特鲁斯
+Rage	狂暴化
+The New Strange	新疑谜团
+Tiberon	狂鲨
+Antimatter Drop	反物质释放
+Sword and Shield	剑盾
+Shielded	护盾
+Synoid Gammacor	枢议咖玛腕甲枪
+Coiling Viper	毒蛇螺旋
+Sinister Reach	凶恶延伸
+Braton	布莱顿
+Mutalist Osprey	剧毒无人机
+Iron Vault	神针腾跃
+Snipetron	狙击特昂
+Pack Leader	领袖
+Dashwire Arrow	悬丝之箭
+Orbiter Segments	轨道飞行器模块
+Arcane Pulse	生机赋能
+Shimmering Blight	飞光荒疫
+Ceres	谷神星
+Covert Lethality	致命匿杀
+Lanka	兰卡
+Deconstructor	分离
+Partner	伙伴
+Grattler	格拉特勒
+Winter Bundle	冬日组合包
+Comet Rounds	彗星弹头
+Rakta Ballistica	绯红布里斯提卡
+Tactical Recall Bonus Weekend	战术警报重现奖励周末
+Synoid Heliocor	枢议赫利俄光锤
+Spectral Scream	光暴怒吼
+Equipment	配备
+Dex Furis	Dex盗贼双枪
+Bleed	出血
+Rathbone	拉斯波恩
+Eximus	卓越者
+Akmagnus	麦格努斯双枪
+Blade of Truth	真相之刃
+Electro Pulse	电光脉冲
+Rifle Aptitude	步枪才能
+Secura Lecta	保障勒克塔
+Heavy Blade	巨刃
+Jackal	豺狼
+Affinity Booster	经验值加成
+Orokin Derelict	被遗弃的Orokin船只
+Dok Thul	行刑者Dok Thul
+Rhino Stomp	犀牛践踏
+Temporal Dreg	滞缓无人机
+Volcanic Edge	爆裂刀刃
+Telos Boltor	终极螺钉步枪
+Kunai	苦无
+Updates	更新
+Fast Deflection (Kubrow)	快速充能
+Helios Sentinel	赫利俄斯
+Fire Rate	射速
+Radial Blind	致盲
+Damage 2.0/Corrosive Damage	腐蚀伤害
+Organ Shatter	肢解
+Imperator Vandal	破坏者凯旋将军
+Equilibrium	均衡点
+Ice Spring	冰冷跃动
+Stabilizer	稳定
+Prova Vandal	破坏者普罗沃
+MK1-Furax	MK1-弗拉克斯
+Team Heal	团队医疗
+Team Shield Restore	团队护盾回复
+Dark Sector Excavation	黑暗地带挖掘
+Repelling Bastille	驱除力场
+Sunlight Threshcone	日光去壳毬果
+Standing	声望
+Dual Ichor	恶脓双斧
+Kubrow Cosmetics	库狛外观
+Winds of Purity	纯净之风
+Vor's Prize quest	Vor的战利品
+Penumbra	半影屏蔽
+Idle Animations	站姿
+Multishot (Mechanic)	多重射击
+Nami Solo	海波单剑
+Momentary Pause	片刻喘息
+Media	影音资料
+Pilfering Swarm	贪夺触角
+Boosters	加成物品
+Ayatan Sculpture	Ayatan雕像
+Surplus Diverters	残盾转换
+Primed Morphic Transformer	非晶变压器Prime
+Furax	弗拉克斯
+Skana	空刃
+Maximized Power Duration	能力持续时间最大化
+Air Support Charge	空中支援呼叫器
+Paris	帕里斯
+Dual Kamas Prime	双短柄战镰Prime
+Primed Fast Hands	爆发装填Prime
+Critical Hit (Mechanic)	暴击
+Prisma Yamako	棱晶山越披饰
+Quanta Ranger	量子切割器突击队员
+Shield Flux	护盾通量
+Seeking Fire	导弹
+Tesla	特斯拉手榴弹
+Darek Draga	疏浚兵长
+Deep Freeze	深层冷冻
+Strun	斯特朗
+Attica	阿提卡
+Machete	马谢特砍刀
+Hikou Prime	飞扬Prime
+Gnashing Payara	狼鱼咬咬
+Venka	凯旋之爪
+Arrow Mutation	箭矢转换
+Expel Grineer	驱逐Grineer
+Warframe China	星际战甲
+Roaring Drums	狂吼战拳
+Guided Ordinance	指导条例
+Operation Breeding Grounds	清巢行动
+Fomorian Disruptor	巨人战舰干扰器
+Cold Damage	冰冻伤害
+Hall of Mirrors	镜厅
+Sharpened Bullets	尖锐子弹
+Gram	格拉姆
+Power Throw	奋力一掷
+Burning Wasp	炙热黄蜂
+Phage	噬菌者
+Detron	德特昂
+Blink	闪瞬
+Nok	行刑者Nok
+Antimatter Absorb	反物质吸收
+Anti MOA	逆进恐鸟
+Fracturing Wind	破碎之风
+Damage 2.0/Flesh	肉体
+Augment	强化
+Surging Dash	涌流突进
+Afuris	盗贼双枪
+Link Health	生命值连接
+Drekar Seeker	龙舰追踪者
+Adarza Kavat	镜像型库娃
+Sonicor	超音波冲击枪
+Lantern	幻灯
+Trading Post	交易站
+Primary Weapons	主武器
+Orbital Strike Drone	卫星冲击无人机
+Sol	太阳系
+Shield Polarize	护盾极化
+Rending Strike	撕裂打击
+Mobilize	全面驱动
+Machete Wraith	亡魂马谢特砍刀
+Sigils	纹章
+Nauseous Crawler	呕心爬行者
+Mara Detron	苦痛德特昂
+Pressure Point	压迫点
+Elite Crewman	精英船员
+Shotgun Ammo Mutation	霰弹枪弹药转换
+Butcher	屠夫
+Sicarus	暗杀者
+Enduring Strike	不朽打击
+Handspring	翻筋斗
+Nightmare Mode	噩梦模式
+Drekar Hellion	龙舰恶徒
+Sanctuary (Cephalon Simaris)	圣殿
+Hobbled Key	蹒跚龙钥
+Maximum Capacity	极限弹容
+Renewal	疗愈脉动
+Cestra	锡斯特
+Slash Damage Weapons	切割伤害武器
+Impaler Munitions	穿刺弹药
+Sharpened Claws	磨锋之爪
+Recoil	后坐力
+Removed	已绝版
+Berserker	狂战士
+Hushed Invisibility	静谧无踪
+A Favor For Darvo	协助Darvo
+Med Tower	治愈之塔
+Life Strike	生命打击
+Heads-Up Display	游戏界面
+Resistance Mods	抗性MOD
+Simulor	重力奇点拟成枪
+Staticor	静电能量导引枪
+Syndicate Operatives	集团特工
+Hek	海克
+Kubrow Den	库狛兽穴
+Rubedo	红化结晶
+Speed Trigger	灵敏扳机
+Void Relic	虚空遗物
+Prisma Skana	棱晶空刃
+Paris Prime	帕里斯Prime
+Seeker	追踪者
+Firestorm	烈焰风暴
+Resource Cache	资源匣
+Research lab	研究实验室
+Quick Rest	快速回复
+Garesh	行刑者Garesh
+Raptor	猛禽
+Worm Hole	虫洞
+Pistol Gambit	手枪精通
+Electricity Damage	电击伤害
+Irradiating Disarm	辐射缴械
+Nav Segment	导航模块
+Vaykor Sydon	勇气恶龙
+Ankyros Prime	甲龙双拳Prime
+Through Strike	穿龙破
+Burston Prime	伯斯顿Prime
+Neo	中纪
+Dual Decurion	什长双枪
+Blast Damage	爆炸伤害
+Shaku	双节尺棍
+Corpus Ship (Archwing)	Corpus飞船（Archwing）
+Drekar Manic	龙舰狂躁者
+Heat Generator	热能产生器
+Juggernaut	巨兽
+Enhanced Durability	耐久强化
+Sabotage	破坏
+Repel	脉冲震波
+Scorch	怒焚者
+High Roller Credit Bundle	一掷千金套组
+Violence	暴力
+Orthos Prime	欧特鲁斯Prime
+Wild	野生
+Provoked	激怒
+Railgun MOA	磁轨炮恐鸟
+Death	死亡
+Arcane Machine	法典仪器
+Kavat	库娃
+Pyrotechnic Ogris	烈焰欧格里斯
+Sunika Kubrow	猎杀型库狛
+Pointed Wind	尖锐之风
+Comba	驱逐员
+Twitch	迅速抽换
+Heliocor	赫利俄光锤
+Closed Beta	内测
+Damage 2.0/Infested Flesh	感染肉体
+Grim Fury	冷面狂怒
+Silent	静音
+Antitoxins	解毒剂
+Hawk Eye	隼目
+Shield Transference	护盾转移
+Mastery Rank	段位
+Dual Ether	苍穹双剑
+Dig	挖掘
+Dual Heat Swords	烈焰双剑
+Twin Grakatas	双子葛拉卡达
+Scavenge	搜集
+Blueprint	蓝图
+Vectis Prime	守望者Prime
+MK1-Kunai	MK1-苦无
+Carrier (Enemy)	母舰
+Power Mods and Abilities	能力MOD与技能
+Landslide	土石塌方
+Continuity	持久力
+Energy Amplifier	能量扩散
+Alerts	警报
+Martial Magnetism	心眼
+Hold	按住
+Blocking	格挡
+Vermillion Storm	朱红风暴
+Ranger	突击队员
+Crowd Dispersion	人群驱散
+Cold	冰冻
+Abra Paris Skin	帕里斯腐蚀外观
+Weapons Mastery Rank	武器段位限制
+A Man of Few Words	沉默寡言的男人
+Wyrm Prime	蛟龙Prime
+Mutalist	异融
+Devour	沙涡之祭
+Combustion Beam	灼热光束
+Assassination	刺杀
+Sparring	搏击
+Laser Barrier	激光栅栏
+PvP	玩家间对抗
+Capture	捕获
+Despair	绝望
+Proc	异常状态
+Overextended	过度延展
+Reth	行刑者Reth
+Cernos	西诺斯
+Formorian	巨人战舰
+Faction Damage Mods	派系伤害MOD
+Cephalon Suda	中枢苏达
+Redeemer	救赎者
+Venom	猛毒
+Arcane Enhancement	赋能
+Redirection	蓄能重划
+Fire Blast	火焰冲击
+Attributes	属性
+Crossing Snakes	双蛇牙突
+Flux Rifle	通量射线步枪
+Hybrid Weapons	合成武器
+Vortex	漩涡
+Deth Machine Rifle	死亡机枪
+Characters	角色
+Blade Storm	剑刃风暴
+Infested Ship (Archwing)	Infested飞船（Archwing）
+Cat's Eye	猫眼
+Power Drift	力量窜升
+Power Efficiency	能力效率
+Prisma Daedalus Chest Plate	棱晶代达罗斯胸甲
+Zanuka Hunter	Zanuka猎犬
+Hydraulic Chamber	液压枪膛
+Primed Target Cracker	弱点专精Prime
+Bullet Attractor	子弹磁石
+Ceramic Dagger	陶瓷匕首
+Torid	托里德
+Lynx	山猫
+Lancer Dreg	无人机枪兵
+Extinguished Key	熄灭龙钥
+Baro Ki'Teer Offering	Baro Ki'Teer商品
+Medium Team Energy Restore	中型团队能量回复
+Vengeful Rush	复仇冲动
+Jat Kittag	喷射战锤
+Syndicate Medallions	集团勋章
+Bane of Grineer	灭亡Grineer
+Fire Walker	风火飞轮
+Pickup	可拾取物
+Arena	竞技场
+Prisma Burst Laser	棱晶激光点发
+WARFRAME (China)	星际战甲
+Animal Instinct	动物本能
+Loaded Capacity	加载弹容
+Nightwatch Lancers	夜巡者枪兵
+Nightwatch Napalm	夜巡燃烧弹
+Comparisons	比较
+Grineer Settlement	Grineer营地
+Scrambus	扰敌员
+Corrupted Ancient	远古堕落者
+Dead Eye	死亡之眼
+Elite Arid Lancer	精英沙漠枪兵
+Drekar Scorpion	龙舰天蝎
+Viral	病毒
+Synapse	突触生化枪
+Jagged Edge	锯刃
+Stamina Mods	耐力MOD
+Shell Compression	压缩弹壳
+Components	零件
+Corrupted Lancer	堕落枪兵
+Braton Prime	布莱顿Prime
+Leech Osprey	吸血鱼鹰
+Corrosive Damage	腐蚀伤害
+Drakgoon	龙骑兵
+Incubator Upgrade Segment	孵化器升级模块
+Archwing Melee	Archwing近战
+Enemy Weapon	敌人武器
+Dragon Key	龙钥
+Augmented Mods	强化MOD
+Sortie Reward	突击奖励
+Duality	二元性状
+Heavy Impact	震地冲击
+Primed Fury	狂暴Prime
+Stormbringer	暴风使者
+Males	女性
+Well Of Life	生命之井
+Females	女性
+Omega Isotopes	奥米伽同位素
+Navbox	导航模板
+Plants	植物
+Extend	延展
+Seismic Shockwave	地震波
+Knux	克那克斯
+Primed Bane of Infested	灭亡Infested Prime
+Bane of Infested	灭亡Infested
+Kavat Mods	库娃MOD
+Zura	行刑者Zura
+Rare Mods	稀有MOD
+Penjaga Mods	Penjaga极性MOD
+The Second Dream	第二场梦
+Uncommon Mods	罕见MOD
+Kavat Cosmetics	库娃外观
+Speculation	推测
+Fast Hands	爆发装填
+Twin Grakata	双子葛拉卡达
+Fossilized	化石
+Clip Size Mods	弹匣容量MOD
+Void Key	虚空钥匙
+Ammo Mutation Mods	弹药转换MOD
+Melee Mods	近战MOD
+Flameblade	烈焰刀客
+Pistol Mods	手枪MOD
+Naramon Mods	Naramon极性MOD
+Warframe Mods	战甲MOD
+Fluctus	巨浪
+Faction	派系
+Moonlight Jadeleaf	月光玉叶
+Corrupted Nullifier	堕落虚能者
+Stance Mods	架式MOD
+Tonfa	旋棍
+Gunblade	枪刃
+Sword	剑
+Antitoxin (Gear)	解毒剂
+Fan	风扇
+Arid Eviscerator	沙漠开膛者
+Glaxion	冷冻光束步枪
+Alert	警报
+Prowl	潜影猎手
+Kubrow Egg	库狛蛋
+Chemical Lab	化学实验室
+Fist	拳套
+Hammer	锤
+Quick Thinking	随机应变
+Dual Daggers	双匕首
+Powerfist	重击手
+Azima	刺茉莉
+Polearm	长柄武器
+Sancti Tigris	圣洁猛虎
+Tidal Surge	潮汐浪涌
+The Gradivus Dilemma	荧惑
+Warframe Attributes	战甲属性
+Lasting Sting	未完之刺
+Community Concept	玩家创意
+Gorgon Wraith	亡魂蛇发女妖
+Point Strike	致命一击
+Thrown	投掷类武器
+Single Sidearm	单持副武器
+Fatal Attraction	致命诱惑
+Dual Sidearms	双持副武器
+Laser Sight	雷射瞄具
+Secondary Weapons	副武器
+Warframe China Timed Exclusive	星际战甲限时专享
+Magnetic Damage	磁力伤害
+Launchers	发射器
+Shotgun	霰弹枪
+Arsenal	军械库
+Kavat Genetic Code	库娃遗传密码
+Syndicate Offerings	集团商品
+Cleanse Grineer	净化Grineer
+Damage 2.0/Robotic	机器
+Impact Damage Weapons	冲击伤害武器
+Tactical Alert Reward	战术警报奖励
+Titan Extractor Prime	泰坦采集者Prime
+Loki Knave Skin	Loki无赖外观
+Stradavar	斯特拉迪瓦
+Semi-Automatic	半自动
+Ignis	伊格尼斯
+Puncture Damage Weapons	穿刺伤害武器
+Superchargers	极限突破装置
+Blunderbuss	雷筒
+Bow	弓
+Dual Swords	双剑
+Damage 2.0/Infested Sinew	感染肌腱
+Environmental Hazards	危机
+Ravage	破灭
+Archwing Gun	Archwing枪械
+Notes	附注
+Note	附注
+Deceptive Bond	虚伪连接
+Sources	引用
+References	引用
+Power Strength	能力强度
+See also	另见
+Behavior	行动模式
+Tips	提示
+Solar Rail Conflict	黑暗地带冲突
+Acquisition	入手方法
+Gallery	相关图片
+Ice Storm	冰风暴
+factions	派系
+Mechanics	游戏机制
+Fieldron	电磁力场装置
+Nikana	侍刃
+Color Pack Beta	颜料包B
+Trivia	小常识
+Wraith Twin Vipers	亡魂双子蝰蛇
+Override	覆写
+Damage 2.0/Gas Damage	毒气伤害
+Scanner	扫描
+Sudden Impact	瞬间冲击
+Drekar Elite Lancer	龙舰精英枪兵
+Corpus Target	Corpus目标
+Loot Detector	战利品探测器
+Mercury	水星
+Damage 2.0/Blast Damage	爆炸伤害
+Survival	生存
+Osprey	鱼鹰
+Defense	防御
+Damage 2.0/Fire Damage	火焰伤害
+Eris	阋神星
+Isolator Bursa	隔离金流恐鸟
+Fire Blast (Ruk)	火焰冲击（Ruk）
+Atlantis Vulcan	深渊之火
+Damage 2.0/Cold Damage	冰冻伤害
+Morphics	非晶态合金
+Damage 2.0/Slash Damage	切割伤害
+Damage 2.0/Shield	护盾
+Frontier Butcher	前线屠夫
+Retribution	惩戒
+Magnetic	磁力
+Specter Regiment	魅影军团
+Factions	派系
+Ferocity	凶恶终结
+Lynx Osprey	山猫鱼鹰
+Sequence Burn	延烧数列
+Hijack	劫持
+Damage 2.0/Magnetic Damage	磁力伤害
+Suppress	消音
+Damage 2.0/Machinery	机械
+Channeled Abilities	持续消耗型技能
+Damage 2.0/Infested	感染
+Damage 2.0/Fossilized	化石
+Narrow Minded	心智偏狭
+Tactical Alert	战术警报
+Vulkar Wraith	亡魂金工火神
+Quick Return	快速收回
+Damage 2.0/Cloned Flesh	复制肉体
+Damage 2.0/Alloy Armor	合金装甲
+Lie In Wait	埋伏射击
+Aim	瞄准
+Wrecking Rhino Pack	破碎Rhino包
+Dera Vandal	破坏者德拉
+Toxin Damage	毒素伤害
+Frugal Credit Bundle	节约套组
+Cephalon Simaris	中枢Simaris
+Specters of the Rail	航道幽影
+Update 16	更新16
+Update 15	更新15
+Update 13	更新13
+Maglev	磁浮
+Update 10	更新10
+Nav Coordinates	Nav座标
+Damage 2.0	伤害
+Gift Of The Lotus	Lotus的赏赐
+Mars	火星
+Eroding Blight	侵蚀毁坏
+Meso Era	前世纪
+Conclave	武形秘仪
+Operation Tubemen of Regor	Regor的实验体
+North Wind	北风
+Ether Daggers	苍穹匕首
+Dex Dakra	Dex达克拉双剑
+Dark Sword	暗黑长剑
+The Hunt For Alad V	追击Alad V
+Rapier	细剑
+Survival Weekend Event	生存（活动）
+Datamass	数据块
+Specters Of Liberty	魅影自由之战
+Damage 2.0/Proto Shield	原型护盾
+Operation: Mutalist Incursions	异融者入侵
+Elemental Damage	元素伤害
+Grineer Target	Grineer目标
+Fusion Moa Event	熔岩恐鸟活动
+Avalanche Offensive	雪崩进攻
+Prime Eos Spurs	曙光女神马刺Prime
+General Sargas Ruk	Sargas Ruk将军
+Attack Speed	攻击速度
+Operation: Shadow Debt	影子之债
+Pistol Scavenger	手枪弹药搜集者
+Operation Eyes of Blight	毁灭之眼
+Sands of Inaros	Inaros之沙
+Four Riders	天启异象
+Wallrun	墙跑时
+World On Fire	火海
+Vital Sense	弱点感应
+Pause	暂停
+Move	招式
+Launching Spring	升龙拳
+Scorch (Mod)	灼痕焦点
+Pistol Ammo Box	弹药箱
+Button Combination	按键组合
+Stretch	延伸
+Ogris	食人女魔
+Steel Meridian	钢铁防线
+Broad Eye	广域之视
+Fomorian Accelerant	巨人促进剂
+Tempered Blade	强化刀片
+Red Veil	血色面纱
+New Loka	新世间
+Oxium	奥席金属
+Specter (Enemy)	魅影（敌方）
+Justice	正义
+Gun Glide	恒稳枪杆
+Arbiters of Hexis	均衡仲裁者
+Accelerant	助燃
+Teleport	瞬移
+Drone Guardian	无人机守卫
+Mod Pack	MOD包
+Agility Drift	矫捷窜升
+Kavat Starter Kit	库娃初心者套装
+Ictus Attachments	扬音守护配件
+MOA	恐鸟
+Pistol_Ammo_Box	弹药箱
+Lith	古纪
+Incubator	孵化器
+Incubator Power Core	孵化器能量核心
+Arcane Avenger	复仇者赋能
+Glaive Prime	战刃Prime
+Day of the Dead Dark Sword Skin	暗影长剑亡灵节外观
+Cronus	克洛诺斯
+Prisma Daedalus Shoulder Guard	棱晶代达罗斯护肩
+Furax Wraith	亡魂弗拉克斯
+Semi-Auto	半自动
+Onorix	奥努里克斯
+Zebra Paracyst	附肢寄生者斑纹外观
+Void Keys	虚空钥匙
+Toxic Crawler	剧毒爬行者
+Vespa Nyx Helmet	黄蜂Nyx头盔
+Thrak Rhino Helmet	Rhino震击头盔
+Vanguard Rhino Helmet	Rhino先锋头盔
+Titan Extractor	泰坦采集者
+Team Heal Restore	团队医疗回复
+Angst	焦虑
+Overshields	过载护盾
+Stun Baton	电击棒
+Storm Volt Helmet	风暴Volt头盔
+Stealth Pack	隐秘潜入包
+Weapons	武器
+The Jordas Verdict	Jordas的审判
+Small Health Restore	小型医疗回复
+Hornet Strike	黄蜂蜇刺
+Reverb Banshee Helmet	返响Banshee头盔
+Resource Booster	资源数量加成
+Prisma Arrows	棱晶箭
+Orokin Moon/Endurance Test	坚忍考验
+Pahta	飞翔
+Ether Reaper	苍穹死神
+Rejuvenation	返老还童
+Quiver	战术箭袋
+Orokin Reactor	Orokin反应堆
+Omni Ammo Box	综合弹药箱
+Nightwatch Camouflage	夜巡者伪装迷彩
+Nexus Fur Pattern	纳瑟斯皮毛花纹
+Mutalist Cernos	异融西诺斯
+Sundering Strike	破甲
+Elite Lancer	精英枪兵
+Clan	氏族
+Large Team Shield Restore	大型团队护盾回复
+Kinetic Siphon Trap	动能吸收陷阱
+Grakata	葛拉卡达
+Brokk	布洛克战锤外观
+Kara Valkyr Helmet	刑罚Valkyr头盔
+Tempest Barrage	暴风雨弹幕
+Health Restore	医疗回复
+Moonlight Dragonlily	月光龙百合
+Rifle Scavenger	步枪弹药搜集者
+Grineer Desert Tactics Pack	Grineer突击组合包
+Grand Finale	压轴好戏
+Backdraft Ember Helmet	Ember复燃头盔
+Locust Ash Helmet	Ash飞蝗头盔
+Warframes	战甲
+Orokin Moon/Cunning Test	狡诈考验
+Lato Vandal	破坏者拉托
+Essence Loki Helmet	本质Loki头盔
+Bloomer	高爆弹
+Channeling	导引
+Mesa's Waltz	Mesa的华尔兹
+Ferrite	铁氧体
+Dual Zoren	佐伦双斧
+DNA Stabilizer	DNA稳定剂套装
+Distilling Extractor Prime	精粹采集者Prime
+Distilling Extractor	精粹采集者
+Frigid Blast	冰冷疾风
+Dragon Keys	龙钥
+Zenurik Mods	Zenurik极性MOD
+Prism	棱镜
+Dagger Axe (Zoren)	双短斧外观
+Sanctuary (Mod)	守护光罩
+Dagger Axe (Scindo)	短斧外观
+Corpus Turret	炮塔
+Coil Mag Helmet	线圈Mag头盔
+Prod Crewman	监工船员
+Clan Key	氏族钥匙
+Booster	加成物品
+Baro Ki'Teer Noggle	Baro Ki'Teer摇头娃娃
+Antiserum Injector	抗血清注射器
+Prisma Tetra	棱晶特拉
+Orokin Drone	Orokin无人机
+Aurora Frost Helmet	极光Frost头盔
+Catalyzer Link	触媒连动
+Air Support Charges	空中支援呼叫器
+Adventus Arrow Collection	初来乍到箭矢组合包
+Oberon Feyarch Skin	Oberon精灵之王外观
+MK1-Braton	MK1-布莱顿
+Saryn Orphid Skin	Saryn兰花外观
+Nightfall Apothic	夜幕药剂
+Nami Skyla	海波斯库拉对剑
+Pistol Ammo Mutation	手枪弹药转换
+Blunt	便携掩体
+Power Carrier	能量运送者
+Bright Purity	光明纯净
+Rest & Rage	暂息-怒气
+Shotgun Scavenger	霰弹枪弹药搜集者
+Corpse	尸体
+Castanas	雷爆信标
+Locker	储存柜
+Dark Sector Defense	黑暗地带防御
+Arcane Strike	速攻赋能
+Ballista	弩炮
+Drahk Master	爪喀驯兽师
+Double-Barrel Drift	游离双管
+Aklex	雷克斯双枪
+Polar Glaxion	极地外观
+Extractor	采集者
+Orokin Moon/Stealth Test	匿踪考验
+Orokin Moon/Power Test	力量考验
+Orokin Moon/Agility Test	矫捷考验
+Synthesis	结合仪式
+zipline	滑索
+Sealab Sabotage	深海研究所破坏
+The Limbo Theorem	Limbo定理
+Squall Frost Helmet	飑风Frost头盔
+Shooting Gallery	靶场
+the Jordas Verdict	Jordas的审判
+Team Annihilation	团队歼夺
+Scindo	分裂斩斧
+Damage 2.0/Radiation Damage	辐射伤害
+Rush	冲刺
+Moonlight Threshcone	月光去壳毬果
+Recovery	重整态势
+Patient Zero	零号病患
+Operation: Gate Crash	摧毁传送门
+Trench Run	战壕追逐
+Missions	任务
+Invasion	入侵
+Vaykor Hek	勇气海克
+Infested Impedance	感染者阻抗
+Secondary Fire	次要开火模式
+Mend & Maim	补愈-致残
+Fomorian Sabotage	巨人战舰破坏
+Hive Sabotage	清巢
+Damage 2.0/Object	物件
+Exterminate	歼灭
+Aklato	拉托双枪
+Archwing Weapons	Archwing武器
+Tempo Royale	皇家节奏
+Endless Defense	防御
+Cloned Flesh	复制肉体
+Deception	欺骗
+Annihilation	歼夺
+Chilling Grasp	急冻控场
+Fleeting Expertise	弹指瞬技
+Vestan Moss	灶神藓
+Entropy Flight	飞逝熵数
+Frostleaf	霜叶
+Lunar Pitcher	月之猪笼草
+Ruk's Claw	Ruk之爪
+Corpus Power Carrier	Corpus能量运送者
+Explosive Demise	爆散消亡
+Dusklight Sarracenia	尘光瓶子草
+Obex	奥比克斯
+Amphis	双头蛇
+Hellfire	地狱火
+Madurai Mods	Madurai极性MOD
+Sunlight Dragonlily	日光龙百合
+Rescue 2.0	救援
+Story and History	背景故事
+Rare Resource Blueprint	稀有资源蓝图
+Plastids	生物质
+Total Eclipse	全蚀
+Prize Kill	杀戳奖励
+Neurodes	神经元
+Primed Vigor	活力Prime
+Update 9	更新9
+Simulacrum	幻影装置
+Buzlok	巴兹火枪
+Nano Spores	纳米孢子
+Gallium	镓
+Eros Arrow Skin	爱神之箭外观
+Fieldron Sample	电磁力场装置样本
+Arid Heavy Gunner	沙漠重型机枪手
+Fire Rate (Mechanic)	射速
+Detonite Injector	爆燃喷射器
+Lacera	悲痛之刃
+Credit Cache	现金匣
+Argon Crystal	氩结晶
+Alloy Plate	合金板
+Dakra	达克拉
+Biological Lab	生物实验室
+research lab	研究实验室
+Prisma Shade	棱晶阴影
+Wyrm Sentinel	蛟龙
+Shade Sentinel	阴影
+The Sergeant	海军陆战队中士
+Drekar Trooper	龙舰骑兵
+Dethcube Sentinel	死亡魔方
+Smeeta Kavat	笑面型库娃
+Ice Wave	冰浪
+Sahasa Kubrow	突击型库狛
+Star Chart	星图
+Rotation	轮次
+Hush	消音器
+Phaedra	菲德菈
+Vampire Leech	汲能榨取
+Neo Era	中世纪
+Undertow	水漩涡
+Lith Era	古世纪
+Axi	后纪
+Void Traces	虚空光体
+Denial Bursa	守护金流恐鸟
+Fragments	碎片
+Void Fissure	虚空裂缝
+Rumbled	轰隆石者
+Starchart	星图
+Void Relics	虚空遗物
+Reactor Sabotage	核心破坏
+Sharpened Blade	锐利刀刃
+Eject Magazine	弹匣置换
+Stinging Truth	过激真相
+Cosmic Crush	星体震荡
+Syandana	披饰
+Sniper Rifle	狙击枪
+Derelict	遗迹
+Wraith	亡魂
+Truth	真相
+Sensor Bar	感应条
+Alternate Fire	次要开火模式
+Zanuka Project	Zanuka计划
+Assassin	刺客
+Field Bosses	乱入头目
+Finishing Damage	终结伤害
+invasion	入侵
+Prisma	棱晶
+Cerebrum	头部
+Bastille	力场牢狱
+Experience Mechanics	经验机制
+Companion	同伴
+Sybaris	席芭莉丝
+Blight	毁坏
+Tainted Shell	污秽弹药
+Tilesets	地图板块
+Soma	月神
+Burst Fire	连发点射
+Zoom	瞄准
+Toxic	毒素
+Power Efficiency (Mechanic)	能力效率
+Starburst	光芒四射
+Weapon Augment Mods	武器强化MOD
+Vengeful Revenant	复仇亡灵
+Veritux	真理巨剑
+Auto	自动
+Bo Prime	玻之武杖Prime
+Shockwave MOA	震荡恐鸟
+Warframe Chassis Blueprint	战甲机体蓝图
+Warframe Augment Mods	战甲强化MOD
+Scythe	镰刀
+Striker	前锋
+Toxin	毒素
+Supercharger	极限突破装置
+Stamina	耐力
+Special Weapons	特殊武器
+Corrupted	堕落者
+slide	滑行
+Proto Shield	原型护盾
+Crewmen	船员
+Sigil	纹章
+Shields	护盾
+Lasting Purity	永恒纯净
+Sentinel	守护
+Prime Eos Shoulder Plate	曙光女神肩甲Prime
+Sure Footed	顶天立地
+Schema	架构
+Penta	潘塔
+Robotic	机器
+Research/Tenno Lab Research Tab	Tenno实验室
+Blueprints	蓝图
+Quest	系列任务
+Punch Through	穿透
+Projectile Speed	弹体飞行速度
+Prime Access	Prime特权
+Power Range	能力范围
+Power Duration	能力持续时间
+Polarization	极化
+Penta Ranger	潘塔突击队员
+Slash	切割
+Pressurized Magazine	增压弹匣
+Sugatra	坠饰
+Primed Pistol Mutation	手枪弹药转换Prime
+Ninkondi	降灵追猎者
+Overshield	过载护盾
+Orokin Vault	Orokin宝库
+objects	物件
+Object	物件
+Hollow Point	空尖弹
+Mod	MOD
+Maximized Power Efficiency	能力效率最大化
+Maximized	最大化
+Corrosive	腐蚀
+Neptune	海王星
+Sling-Stone Event	破坏巨人战舰
+Login Rewards	登录奖励
+Kogake	科加基
+Hunt	狩猎
+I. Flesh	感染肉体
+Heat Sword	烈焰长剑
+Infested Flesh	感染肉体
+Breach Loader	破裂装填
+Health	生命
+Furis	盗贼
+Flesh	肉体
+Contagious Spread	传染蔓延
+Insulation	隔热
+Finisher	终结
+Ferrite armor	铁质装甲
+Energy Conversion	能量转换
+Prisma Gorgon	棱晶蛇发女妖
+Elemental Sandstorm	元素沙暴
+Snipetron Vandal	破坏者狙击特昂
+Suspicious Shipments	可疑的货物
+Daily Tribute	每日献礼
+Torment	折磨
+Critical Hit	暴击
+credits	现金
+Credits	现金
+Pull	吸引
+Corrupted Mods	堕落MOD
+Sweeper	扫除者
+System Reroute	系统重划
+Medium Team Ammo Restore	中型团队弹药回复
+Challenge Reward	挑战奖励
+Gorth	行刑者Gorth
+Primed Ravage	破灭Prime
+Boss	头目
+Research	研究
+Aura	光环
+armour	护甲
+Ammo	弹药
+Alloy Armor	合金装甲
+Solar Rails	星际航道
+Dagger	匕首
+Toxic Slash	剧毒鞭苔
+Affinity	经验值
+Pathogen Rounds	病原弹头
+Creeping Bullseye	匍匐靶心
+Accuracy	精准度
+Arcane Eruption	爆发赋能
+Entropy Burst	熵数爆发
+Phoenix Renewal	凤凰新生
+Toxic Sequence	毒素数列
+Steady Hands	稳定枪手
+Quickdraw	持续火力
+Deadly Sequence	致命数列
+Antimatter Mine	反物质地雷
+Vacuum	吸取
+Abilities	能力
+Carpet Bomb	地毯式轰炸
+Planets	星球
+Pyrana	食人鱼
+Benevolent Decoy	仁慈诱饵
+Lingering Torment	恒久折磨
+Primed Point Blank	抵近射击Prime
+Orokin Moon/Collaboration Test	协力考验
+Anticipation	冲击预感
+Serrated Edges	锯齿边缘
+Flak Shot	高射炮击
+Crash Shot	溃散射击
+Prosecutor	判官
+Reflex Coil	增幅线圈
+Low Current Leap	低能耗飞跃
+Tempered Bound	调节跳跃
+Soul Survivor	幸存生灵
+Air Thrusters	空中推进
+Narrow Barrel	狭窄枪膛
+Collision Force	冲突武力
+Reflect	反射（库娃）
+Nano-Applicator	纳米涂覆
+Runner	奔跑者
+Weeping Wounds	创口溃烂
+Hydraulic Crosshairs	液压准心
+Coaction Drift	协力窜升
+Speed Drift	速度窜升
+Cunning Drift	狡诈窜升
+Radial Javelin	标枪
+Stealth Drift	匿踪窜升
+Primed Rifle Mutation	步枪弹药转换Prime
+Artificer	技工
+Vitality (Sentinel)	生命力
+Shadows Of The Dead	亡者幽影
+Corvas	黑鸦
+Vitality	生命力
+Vile Acceleration	卑劣加速
+Bronco	野马
+Streamline	简化
+Astral Twilight	星界微光
+Vazarin Transmute Core	Vazarin转换核心
+Axi Era	后世纪
+True Steel	斩铁
+Brutal Tide	残暴浪潮
+True Punishment	真实惩罚
+Decisive Judgement	果断裁决
+Toxic Blight	毁坏毒素
+Toxic Barrage	毒素弹幕
+Pigment	颜料
+Poisonous Sting	剧毒螯刺
+Tracking Shot	标记射击
+Hysterical Fixation	狂化冲动
+Infested Hive	感染巢囊
+Swift Deth	瞬杀
+Target Cracker	弱点专精
+Tainted Mag	腐败弹匣
+Tactical Reload	机动装填
+Noise Arrow	喧扰之箭
+Dual Cestra	锡斯特双枪
+Ancient Fusion Core	远古融合核心
+Tactical Pump	战术上膛
+Vulpine Mask	狡狐诈面
+Weapon Augments	武器强化
+Thermite Rounds	铝热焊弹
+Primed Flow	川流不息Prime
+Superior Defenses	卓越防御
+Steel Fiber (Sentinel)	金属纤维（守护）
+Link Shields	护盾连接
+Overview	纵观全局
+Steel Charge	钢铁充能
+Stand Ground	坚守
+Magma Chamber	熔岩弹膛
+Rising Skill	飞升技巧
+Senser Bar	感应条
+Soft Hands	精湛快手
+Electromagnetic Shielding	电磁屏障
+Sniper Scavenger	狙击枪弹药搜集者
+Signal Flare	信号闪光
+Seeking Fury	狂暴追猎
+Fusion MOA Guardian	熔岩恐鸟守卫
+Shocking Touch	电击触点
+Shock Absorbers	减震器
+Shell Shock	电冲弹壳
+Seeker (Mod)	弹头导引
+Second Wind	再起
+Savagery	野蛮压制
+Ruinous Extension	毁灭扩展
+Rifle Amp	步枪增幅
+Revenge	复仇
+Damage 2.0/Shielded	护盾
+Resonance	残响共鸣
+Rending Turn	撕裂翻转
+Drekar Manic Bombard	龙舰轰击狂躁者
+Damage 2.0/Toxin Damage	毒素伤害
+Recharge Barrier	充能电幕
+Quickening	加速
+Quick Charge	护盾速充
+Purifying Flames	净化烈焰
+Pummel	强力猛击
+Protect	保护
+Primed Shotgun Ammo Mutation	霰弹枪弹药转换Prime
+Investigator	侦察
+Primed Rifle Ammo Mutation	步枪弹药转换Prime
+Heartseeker	觅心猎手
+Drone	无人机
+Heat Dagger	烈焰短剑
+Primed Heavy Trauma	重创Prime
+Harpak	哈帕克
+Trick Mag	戏法增幅
+Piercing Step	穿刺步伐
+Parallax Scope	视差瞄具
+Watchful Swarm	警惕机群
+Operation False Profit	变造利益
+No Return	有去无回
+Natural Talent	天赋
+Damage 2.0/Finishing Damage	终结伤害
+Naramon Transmute Core	Naramon转换核心
+Escape Velocity	脱离速度
+Morphic Transformer	非晶变压器
+Molten Impact	熔岩冲击
+Hunter's Bonesaw	猎人骨锯
+Modified Munitions	弹药改良
+Mind Freak	精神狂怒
+Metal Auger	合金钻头
+Melee Prowess	非凡技巧
+Stalking Fan	缠旋风切
+Loose Hatch	松弛枪盖
+Lock and Load	填弹上膛
+Link Armor	护甲连接
+Lightning Dash	电光冲刺
+Legendary Core	传说核心
+Killing Blow	一击必杀
+Kinetic Collision	动能碰撞
+Iron Shrapnel	碎铁弹片
+Iron Phoenix	钢铁凤凰
+Intensify	聚精会神
+Interception	拦截
+Incendiary Coat	燃烧外壳
+Hyperion Thrusters	超越推进
+Sicarus Prime	暗杀者Prime
+Howl	嚎声
+Transient Fortitude	瞬时坚毅
+Multishot	多重射击
+Nitain Extract	泥炭萃取物
+Drekar Lancer	龙舰枪兵
+Heavy Caliber	重口径
+Guardian	守护者
+Glacial Edge	冰冷刃缘
+Sleight Of Hand	戏法
+Ghost	幽灵
+Swarm-Mutalist MOA	异融胞群恐鸟
+Fortitude	不屈不挠
+Flow	川流不息
+Heat Damage	火焰伤害
+Fast Deflection (Sentinel)	快速充能
+Enemy Radar	侦敌雷达
+Electrified Barrel	带电枪管
+Disruptor	冲击干扰
+Homing Fang	连牙追袭
+Pox	脓痘
+the Grustrag Three	Grustrag三霸
+Smite Infusion	惩击洗礼
+Continuous Misery	无尽苦难
+Constitution	百折不挠
+Burdened Magazine	过载弹匣
+Blind Shot	盲目射击
+Blind Justice	无明制裁
+Bleeding Willow	血色万柳
+Bite	咬碎
+Primed Pistol Gambit	手枪精通Prime
+Auxiliary Power	辅助动力
+Automatic Trigger	自动扳机
+Auger Strike	螺钻打击
+Venomous Clip	恶毒弹匣
+Apex Predator	顶级掠食者
+Overload	超负荷
+Air Recon	空中侦查
+Accelerated Blast	加速冲击
+Relay	中继站
+Heavy Gunner	重型机枪手
+Rift Strike	裂缝打击
+Sense Danger	危机感知
+Pounce	猛扑
+Mischief	顽皮
+FAQ	提问与解答
+Void Shade	虚空之影
+Crit Chance	暴击机率
+acolyte	追随者
+Rending Crane	撕裂鹤击
+Conculyst	震荡使
+Helios	赫利俄斯
+Dual Kamas	双短柄战镰
+The Grustrag Three	Grustrag三霸
+Galvanized Blade	通电刀刃
+Warframe Systems Blueprint	战甲系统蓝图
+Reinforced Glass	强化玻璃
+Widget	改造器
+Maiming Strike	致残突击
+Tornado	龙卷云风
+Propaganda Drone	宣传无人机
+Oxium Osprey	奥席金属鱼鹰
+Oculyst	全视使
+Kavasa Prime Collar	喀婆萨Prime项圈
+Manic	狂躁Grineer
+Lynx Turret	山猫炮塔
+Locust Drone	蝗虫无人机
+Dark Sector Reference	黑暗地带相关
+Leaper	奔跳者
+Arid Lancer	沙漠枪兵
+Kubrow (Feral)	库狛（野生）
+Juggernaut Behemoth	重装巨兽
+Hellion Dargyn	恶徒轻型艇
+Dargyn	轻型艇
+Vaykor Marelok	勇气玛瑞火枪
+Grineer Power Carrier	Grineer能量运送者
+Contagion	传染
+Shred	撕裂
+Fusion MOA	熔岩恐鸟
+Bane of Corpus	灭亡Corpus
+Dark Sector Survival	黑暗地带生存
+Polarity	极性
+Captain Vor	Vor上尉
+Drekar Butcher	龙舰屠夫
+Attack Drone	无人机
+Ancient Disruptor	远古干扰者
+Vay Molta	行刑者Vay Molta
+Bosses	头目
+Venus	金星
+Saturn	土星
+Dark Sectors	黑暗地带
+Corpus Ice Planet	Corpus冰原星球
+Clan Dojo	氏族道场
+Exilus Adapter	劣化功能槽链接器
+Huntsman Soma	猎手外观
+Warcry	咆哮
+Switch Teleport	移形换位
+Sonic Boom	超声波
+Smoke Screen	烟幕
+Roar	战吼
+Shadows of the Dead	亡者幽影
+Rumblers	漫步石者
+Rippling Shockwave	震荡波
+Miasma	瘴气
+Link	链接
+Chesa Kubrow	寻猎型库狛
+Magnus	麦格努斯
+Blessing	祝福
+Absorb	吸收
+Overcharge Detectors	溢能感应
+Damage 2.0/Electricity Damage	电击伤害
+Plasma Sword	等离子长剑
+Tonkor	征服榴砲
+Tigris	猛虎
+Ether Sword	苍穹之剑
+Boar	野猪
+Sarpa	蛇刃
+Prime Laser Rifle	激光步枪Prime
+Mutalist Quanta	异融量子枪
+Electric Shield	电磁屏障
+Hate	憎恨
+Polar Magazine	极地弹仓
+Galatine	迦伦提恩
+Set\t套装

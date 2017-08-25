@@ -1,0 +1,1086 @@
+[24/Aug/2017 14:08:00] "POST /wx?signature=ea1df53d38d5890212dcc5cf0afa1b690d9019f8&timestamp=1503583680&nonce=1642885548&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 394
+[24/Aug/2017 14:08:54] "POST /wx?signature=0d7037a7424d74182c99192eb091592e58a94c93&timestamp=1503583734&nonce=1332798413&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+[24/Aug/2017 14:09:03] "POST /wx?signature=1646bec768070c2ecd2a795ee685cf315672b303&timestamp=1503583743&nonce=1967291439&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 394
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:07:48
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+(110L, u'Fleeting Expertise', u'\u5f39\u6307\u77ac\u6280\r', u'Mod', u'Warframe', u'unknown', 5, u'http://warframe.wikia.com/wiki/Fleeting_Expertise', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+(110L, u'Fleeting Expertise', u'\u5f39\u6307\u77ac\u6280\r', u'Mod', u'Warframe', u'unknown', 5, u'http://warframe.wikia.com/wiki/Fleeting_Expertise', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:10:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:11:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 16, in getInfoByZh
+    sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(nameZh)
+TypeError: not enough arguments for format string
+[24/Aug/2017 14:11:28] "POST /wx?signature=a48b4cf3211636ffd7a5a54692ce646947c1bcd5&timestamp=1503583888&nonce=2020212223&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 73976
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 16, in getInfoByZh
+    sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(nameZh)
+TypeError: not enough arguments for format string
+[24/Aug/2017 14:11:42] "POST /wx?signature=42278954b8b6d9ae45479af873aca2ba333815c3&timestamp=1503583902&nonce=1328100668&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 73976
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 16, in getInfoByZh
+    sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(nameZh)
+TypeError: not enough arguments for format string
+[24/Aug/2017 14:11:49] "POST /wx?signature=16cc453c4fbdadeecbd3d543aebb600ec0151374&timestamp=1503583909&nonce=1095680125&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 74000
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:11:22
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 28, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+[24/Aug/2017 14:12:42] "POST /wx?signature=051c9bfa617ee3cb119d0a5cdecd5423fc184792&timestamp=1503583962&nonce=504538419&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 76541
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 28, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+[24/Aug/2017 14:12:47] "POST /wx?signature=d65cf88647ce7d227e4ff5cd21085b3cb2ee144e&timestamp=1503583967&nonce=1869428835&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 76319
+[24/Aug/2017 14:12:52] "POST /wx?signature=5b0217fa178c3b7727f343e026a720645da95e17&timestamp=1503583972&nonce=853244255&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 394
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 28, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+[24/Aug/2017 14:13:24] "POST /wx?signature=e6abcc95158a6e2225ed052e754326a2caf4a678&timestamp=1503584004&nonce=1868190024&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 76126
+[24/Aug/2017 14:13:28] "POST /wx?signature=dfd325228db320cd76e68858f3de1840ffa36945&timestamp=1503584008&nonce=1225255326&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+  File "/root/web_django/wechat/warframe.py", line 28, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+[24/Aug/2017 14:13:32] "POST /wx?signature=d514353b952a1616532ae5d9dd681904ba86c1ef&timestamp=1503584012&nonce=1571223016&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 77090
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:12:36
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(110L, u'Fleeting Expertise', u'\u5f39\u6307\u77ac\u6280\r', u'Mod', u'Warframe', u'unknown', 5, u'http://warframe.wikia.com/wiki/Fleeting_Expertise', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(472L, u'Aura Trinity Helmet', None, u'Arcane Helmet', u'', u'', 0, u'http://warframe.wikia.com/wiki/Aura_Trinity_Helmet', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+Not Found: /
+[24/Aug/2017 14:17:53] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[24/Aug/2017 14:17:55] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[24/Aug/2017 16:53:28] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[24/Aug/2017 17:01:35] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[24/Aug/2017 17:01:35] code 400, message Bad request syntax ('\x04\x01')
+[24/Aug/2017 17:01:35] "" 400 -
+[24/Aug/2017 17:01:36] code 400, message Bad request syntax ('\x05\x01')
+[24/Aug/2017 17:01:36] "" 400 -
+Not Found: /
+[24/Aug/2017 18:26:13] "GET / HTTP/1.1" 404 2024
+Not Found: /
+[24/Aug/2017 19:42:39] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[24/Aug/2017 21:35:51] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[24/Aug/2017 22:05:46] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[24/Aug/2017 22:05:46] code 400, message Bad request syntax ('\x04\x01')
+[24/Aug/2017 22:05:46] "" 400 -
+[24/Aug/2017 22:05:47] code 400, message Bad request syntax ('\x05\x01')
+[24/Aug/2017 22:05:47] "" 400 -
+[25/Aug/2017 00:07:48] "POST /wx?signature=6d651876f4a7742961378815b30b22e7178d854a&timestamp=1503619668&nonce=1882415142&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 373
+[25/Aug/2017 00:07:52] "POST /wx?signature=bca12e499b4cde034dadea278fa434b243d0196d&timestamp=1503619672&nonce=1956633787&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 372
+[25/Aug/2017 00:08:09] "POST /wx?signature=93854ca2d29a7848eff449e0215aaa19892ae9ed&timestamp=1503619689&nonce=458782481&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[25/Aug/2017 00:08:16] "POST /wx?signature=6e90093c4f0c8b9798becd1e8ad86c4411e58ba7&timestamp=1503619696&nonce=117778147&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+[25/Aug/2017 00:09:23] "POST /wx?signature=b308aeb7fcd8023851f2f8b25418f52b9fadbdf0&timestamp=1503619763&nonce=211021601&openid=opD4r0ZT08JCFN5IDNyobpoTszyU HTTP/1.1" 200 372
+[25/Aug/2017 00:31:54] "POST /wx?signature=26923ef825b69bca05a71bc79718aa9626b6286f&timestamp=1503621114&nonce=995841264&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+[25/Aug/2017 00:33:46] "POST /wx?signature=8ad1d43f379f14e16fd2106134765311ee1ed5b3&timestamp=1503621226&nonce=745419941&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+[25/Aug/2017 00:34:12] "POST /wx?signature=38f0672d657641298f757551bdc431c9ee6a0163&timestamp=1503621252&nonce=1583258734&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+[25/Aug/2017 00:34:32] "POST /wx?signature=42685ed55a702d560e516b6fd2fd293f974fb0f6&timestamp=1503621272&nonce=215775002&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 388
+[25/Aug/2017 00:35:28] "POST /wx?signature=65a66da23d63296c9f566be3fabcf925969795d4&timestamp=1503621328&nonce=80318900&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 273
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 24, 2017 - 14:13:40
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+(108L, u'Serration', u'\u819b\u7ebf\r', u'Mod', u'Rifle', u'unknown', 10, u'http://warframe.wikia.com/wiki/Serration', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+(265L, u'Master Thief', u'\u76d7\u8d3c\u5927\u5e08\r', u'Mod', u'Warframe', u'unknown', 3, u'http://warframe.wikia.com/wiki/Master_Thief', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+Unhandled exception in thread started by <function wrapper at 0x33f9a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 18
+    print sql
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x2ee4a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 18
+    print sql
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x2c5ca28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 39, in <module>
+    print wf.getInfoByZh('nek')
+  File "/root/web_django/wechat/warframe.py", line 29, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+Unhandled exception in thread started by <function wrapper at 0x3692a28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 39, in <module>
+    print wf.getInfoByZh('nek')
+  File "/root/web_django/wechat/warframe.py", line 29, in getInfoByZh
+    wikiZH = 'http://warframe.huijiwiki.com/wiki/'+name_zh
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+Unhandled exception in thread started by <function wrapper at 0x2609a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 52, in <module>
+    print wf.getInfoByZh('nek')
+AttributeError: 'warframe' object has no attribute 'getInfoByZh'
+Unhandled exception in thread started by <function wrapper at 0x29a7a28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 52, in <module>
+    print wf.getInfoByName('nek')
+  File "/root/web_django/wechat/warframe.py", line 31, in getInfoByName
+    wikiZH = getZhWikiUrl(name_zh,name_en,itemType)
+NameError: global name 'getZhWikiUrl' is not defined
+Unhandled exception in thread started by <function wrapper at 0x197fa28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 52, in <module>
+    print wf.getInfoByName('nek')
+  File "/root/web_django/wechat/warframe.py", line 31, in getInfoByName
+    wikiZH = getZhWikiUrl(name_zh,name_en,itemType)
+NameError: global name 'getZhWikiUrl' is not defined
+Unhandled exception in thread started by <function wrapper at 0x1c90a28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 55, in <module>
+    print wf.getInfoByName('nek')
+  File "/root/web_django/wechat/warframe.py", line 41, in getInfoByName
+    wikiZH = getZhWikiUrl(name_zh,name_en,itemType)
+NameError: global name 'getZhWikiUrl' is not defined
+Unhandled exception in thread started by <function wrapper at 0x1ea5a28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 55, in <module>
+    print wf.getInfoByName('nek')
+  File "/root/web_django/wechat/warframe.py", line 41, in getInfoByName
+    wikiZH = getZhWikiUrl(name_zh,name_en,itemType)
+NameError: global name 'getZhWikiUrl' is not defined
+Unhandled exception in thread started by <function wrapper at 0x1ed2a28>
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 55, in <module>
+    print wf.getInfoByName('nek')
+  File "/root/web_django/wechat/warframe.py", line 41, in getInfoByName
+    wikiZH = self.getZhWikiUrl(name_zh,name_en,itemType)
+TypeError: getZhWikiUrl() takes exactly 3 arguments (4 given)
+[25/Aug/2017 02:12:49] "POST /wx?signature=c37cbfaf280f77f646043b374f140e05126831ee&timestamp=1503627169&nonce=1257279819&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getInfoByZh(itemName)
+AttributeError: 'warframe' object has no attribute 'getInfoByZh'
+[25/Aug/2017 02:12:52] "POST /wx?signature=1d80288a4a60802ba4ff39bf455a3517ec40fba5&timestamp=1503627172&nonce=1000753098&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 69832
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: None(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Chassis'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Neuroptics'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Systems'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Blueprint'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 02:12:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: None(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Chassis'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Neuroptics'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Systems'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Blueprint'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 02:13:22
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 02:13:37] "POST /wx?signature=d246707a3bff0d5bf714285fdeee853e1c047c66&timestamp=1503627217&nonce=2022757764&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 428
+[25/Aug/2017 02:13:43] "POST /wx?signature=60c845551cc2489b9b744854acc42c67dc6f502e&timestamp=1503627223&nonce=1266268875&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 428
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: None(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Chassis'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Neuroptics'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Systems'>Wiki</a>】
+
+ Blueprint: None(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Blueprint'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 02:13:34
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', None, u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', None, u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Unhandled exception in thread started by <function wrapper at 0x28fea28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 64
+    elif content == '小绿':
+    ^
+IndentationError: unexpected indent
+[25/Aug/2017 04:21:18] "POST /wx?signature=ca4ca14917d7f66fac3a77494d8ed109fb3b6f80&timestamp=1503634878&nonce=1769561904&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 574
+[25/Aug/2017 04:21:48] "POST /wx?signature=f74e8c7de8c6dddb93e3dcbc8d41ef4b0d2c7f1c&timestamp=1503634908&nonce=903433162&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 383
+[25/Aug/2017 04:22:46] "POST /wx?signature=f26d010dc4ab3a59828e01c1ba5cab21676d676d&timestamp=1503634966&nonce=2138703386&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[25/Aug/2017 04:22:50] "POST /wx?signature=313c7469a597fe2649793abd3d7ae036070e5f23&timestamp=1503634970&nonce=701929945&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 288
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: Nekros Prime Set(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: Nekros Prime 机体(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 机体'>Wiki</a>】
+
+ Blueprint: Nekros Prime 头部神经光元(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 头部神经光元'>Wiki</a>】
+
+ Blueprint: Nekros Prime 系统(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 系统'>Wiki</a>】
+
+ Blueprint: Nekros Prime 蓝图(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 蓝图'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:21:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%海克%' or name_en like '%海克%' 
+(641L, u'Vaykor Hek', u'\u52c7\u6c14\u6d77\u514b\r', u'Syndicate', u'Weapon', u'', 0, u'http://warframe.wikia.com/wiki/Vaykor_Hek', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+(1574L, u'Vay Hek Frequency Triangulator', u'Vay \u6d77\u514b Frequency Triangulator', u'Triangulator', u'Collectible', u'', 0, u'http://warframe.wikia.com/wiki/Vay_Hek_Frequency_Triangulator', None, None, datetime.datetime(2017, 8, 24, 17, 4, 52))
+SELECT * from item where name_zh like '%重口径%' or name_en like '%重口径%' 
+(273L, u'Heavy Caliber', u'\u91cd\u53e3\u5f84\r', u'Mod', u'Rifle', u'unknown', 10, u'http://warframe.wikia.com/wiki/Heavy_Caliber', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+SELECT * from item where name_zh like '%魔兽%' or name_en like '%魔兽%' 
+[25/Aug/2017 04:23:26] "POST /wx?signature=0286fcde02915d283082a159f621ed625b283914&timestamp=1503635006&nonce=668320170&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 346
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: Nekros Prime Set(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: Nekros Prime 机体(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 机体'>Wiki</a>】
+
+ Blueprint: Nekros Prime 头部神经光元(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 头部神经光元'>Wiki</a>】
+
+ Blueprint: Nekros Prime 系统(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 系统'>Wiki</a>】
+
+ Blueprint: Nekros Prime 蓝图(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 蓝图'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:23:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%魔兽%' or name_en like '%魔兽%' 
+[25/Aug/2017 04:23:53] "POST /wx?signature=d13b17ed925d7005f066d7275926668a0cab300b&timestamp=1503635033&nonce=1628826864&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 986
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: Nekros Prime Set(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+ Blueprint: Nekros Prime 机体(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 机体'>Wiki</a>】
+ Blueprint: Nekros Prime 头部神经光元(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 头部神经光元'>Wiki</a>】
+ Blueprint: Nekros Prime 系统(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 系统'>Wiki</a>】
+ Blueprint: Nekros Prime 蓝图(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 蓝图'>Wiki</a>】
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:23:48
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+[25/Aug/2017 04:25:05] "POST /wx?signature=26d07a35c45ccc01009a2e9b3f1241f93f156e23&timestamp=1503635105&nonce=480885278&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 991
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+ Set: Nekros Prime Set(Nekros Prime Set)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime Set'>Wiki</a>】
+
+ Blueprint: Nekros Prime 机体(Nekros Prime Chassis)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 机体'>Wiki</a>】
+
+ Blueprint: Nekros Prime 头部神经光元(Nekros Prime Neuroptics)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 头部神经光元'>Wiki</a>】
+
+ Blueprint: Nekros Prime 系统(Nekros Prime Systems)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 系统'>Wiki</a>】
+
+ Blueprint: Nekros Prime 蓝图(Nekros Prime Blueprint)
+ wiki:【<a href='http://warframe.huijiwiki.com/wiki/Nekros Prime 蓝图'>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:25:01
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:25:27
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 04:27:31] "POST /wx?signature=b0958daf3c0a86222ca2e97cfa19589dcec09a50&timestamp=1503635251&nonce=599374386&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1086
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:27:27
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+[25/Aug/2017 04:30:26] "POST /wx?signature=feaf7aca8e3a80a3afd9dadf2778449d00d4897d&timestamp=1503635426&nonce=464939834&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1017
+[25/Aug/2017 04:30:36] "POST /wx?signature=cedb527b1b56e17b0910cac1b3129936010f9542&timestamp=1503635436&nonce=722918618&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 418
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:30:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+SELECT * from item where name_zh like '%弹指%' or name_en like '%弹指%' 
+(110L, u'Fleeting Expertise', u'\u5f39\u6307\u77ac\u6280\r', u'Mod', u'Warframe', u'unknown', 5, u'http://warframe.wikia.com/wiki/Fleeting_Expertise', None, None, datetime.datetime(2017, 8, 24, 17, 4, 50))
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:30:56
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 04:31:31] "POST /wx?signature=a0a8183aebf1a8c2d92c7195583fd17bf7069c88&timestamp=1503635491&nonce=456958418&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1012
+[25/Aug/2017 04:31:39] "POST /wx?signature=b002014a8ebfbdb9219f24f7d4bf44146a643bf0&timestamp=1503635499&nonce=1298617285&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1012
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:31:26
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+(1167L, u'Nekros Prime Set', u'Nekros Prime Set', u'Set', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1168L, u'Nekros Prime Chassis', u'Nekros Prime \u673a\u4f53', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1169L, u'Nekros Prime Neuroptics', u'Nekros Prime \u5934\u90e8\u795e\u7ecf\u5149\u5143', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1170L, u'Nekros Prime Systems', u'Nekros Prime \u7cfb\u7edf', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+(1180L, u'Nekros Prime Blueprint', u'Nekros Prime \u84dd\u56fe', u'Blueprint', u'Warframe', u'', 0, u'http://warframe.wikia.com/wiki/Nekros/Prime', None, None, datetime.datetime(2017, 8, 24, 17, 4, 51))
+Unhandled exception in thread started by <function wrapper at 0x3377a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 46
+    if not isFirst:
+                  ^
+IndentationError: unindent does not match any outer indentation level
+[25/Aug/2017 04:34:11] "POST /wx?signature=4be2f4e6a6a7d141f5fe51f0482a798fb3251c45&timestamp=1503635651&nonce=1993930523&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1012
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:34:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+[25/Aug/2017 04:34:34] "POST /wx?signature=49618dfcdded2548a2fb045d0ffc8bd556ae83bc&timestamp=1503635674&nonce=565614093&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1017
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:34:26
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+[25/Aug/2017 04:35:58] "POST /wx?signature=c5d35d1bb769714db1d8009f3ded08391bcea704&timestamp=1503635758&nonce=130902121&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1471
