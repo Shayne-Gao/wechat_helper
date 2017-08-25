@@ -1086,3 +1086,1550 @@ SELECT * from item where name_zh like '%nek%' or name_en like '%nek%'
 [25/Aug/2017 04:35:58] "POST /wx?signature=c5d35d1bb769714db1d8009f3ded08391bcea704&timestamp=1503635758&nonce=130902121&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1471
 Not Found: /
 [25/Aug/2017 05:45:06] "GET / HTTP/1.0" 404 2025
+[25/Aug/2017 06:01:20] "POST /wx?signature=2993fad151ae56bfcae0168cdcb4d7d9450fc9e8&timestamp=1503640880&nonce=271435697&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 346
+[25/Aug/2017 06:01:26] "POST /wx?signature=117d5bfb800160aa8953e128ad653302197a1684&timestamp=1503640886&nonce=1686600418&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 919
+[25/Aug/2017 06:02:21] "POST /wx?signature=4a179d4e27fca1e382384948bfd25d3ac551e76e&timestamp=1503640941&nonce=1026885901&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[25/Aug/2017 06:02:23] "POST /wx?signature=00dc37d60e27d22a7f2bf499b5a6fa5263609fba&timestamp=1503640943&nonce=588992385&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 905
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 04:35:03
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%螺钉%' or name_en like '%螺钉%' 
+SELECT * from item where name_zh like '% Dual%' or name_en like '% Dual%' 
+SELECT * from item where name_zh like '%kamas%' or name_en like '%kamas%' 
+SELECT * from item where name_zh like '%Kavasa%' or name_en like '%Kavasa%' 
+Unhandled exception in thread started by <function wrapper at 0x192aa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 55
+    import sys
+         ^
+IndentationError: expected an indented block
+[25/Aug/2017 06:15:13] "POST /wx?signature=c3b23dd11fafe645ee842577cde50a243fa54531&timestamp=1503641713&nonce=1292801091&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 539
+[25/Aug/2017 06:15:40] "POST /wx?signature=a0d3a0819295e8db52af618ea21bea556ef6e641&timestamp=1503641740&nonce=488373651&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 539
+[25/Aug/2017 06:16:50] "POST /wx?signature=68057ae423c6a0d17d7aa89e1ec2a8b666e8a16b&timestamp=1503641810&nonce=1352236212&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1496
+[25/Aug/2017 06:16:57] "POST /wx?signature=fd15e0e1e91ba1f8cf3207de294fd52a4ea9b9c3&timestamp=1503641817&nonce=266983635&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 1496
+[25/Aug/2017 06:17:59] "POST /wx?signature=5ad450475002bb97869da43855311a484acc4268&timestamp=1503641879&nonce=1872986275&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 331
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:15:10
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%val%' or name_en like '%val%' 
+SELECT * from item where name_zh like '%val%' or name_en like '%val%' 
+Unhandled exception in thread started by <function wrapper at 0x29dca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 66
+    resStr += "%s(%s) - %s(%s)\nLv:%s\n结束于:%s\n奖励:%s \n" /%(starName,mapName,taskType,monsType,endTime,reward)
+                                                                    ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x30cea28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 89, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 83, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 65, in getAlarm
+    endTime = timestamp_datetime(tempL[8])
+NameError: global name 'timestamp_datetime' is not defined
+Unhandled exception in thread started by <function wrapper at 0x2c8ca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 20
+    def getZhWikiUrl(self,nameZh,nameEn,itemType):
+                                                 ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x2d84a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 21
+    def getZhWikiUrl(self,nameZh,nameEn,itemType):
+                                                 ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+类别: Set
+名称: Nekros Prime Set
+英文名: Nekros Prime Set
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 机体
+英文名: Nekros Prime Chassis
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 头部神经光元
+英文名: Nekros Prime Neuroptics
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 系统
+英文名: Nekros Prime Systems
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 蓝图
+英文名: Nekros Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:32:48
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+类别: Set
+名称: Nekros Prime Set
+英文名: Nekros Prime Set
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 机体
+英文名: Nekros Prime Chassis
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 头部神经光元
+英文名: Nekros Prime Neuroptics
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 系统
+英文名: Nekros Prime Systems
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+类别: Blueprint
+名称: Nekros Prime 蓝图
+英文名: Nekros Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Nekros '>Wiki</a>】
+
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:32:53
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x1f84a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 90, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 84, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 74, in getAlarm
+    endTime = timestamp_datetime(tempL[8])
+NameError: global name 'timestamp_datetime' is not defined
+Unhandled exception in thread started by <function wrapper at 0x2352a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 90, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 84, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 74, in getAlarm
+    endTime = self.timestamp_datetime(tempL[8])
+  File "/root/web_django/wechat/warframe.py", line 14, in timestamp_datetime
+    value = time.localtime(value)
+NameError: global name 'time' is not defined
+Unhandled exception in thread started by <function wrapper at 0x1d5ea28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 90, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 84, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 74, in getAlarm
+    endTime = self.timestamp_datetime(tempL[8])
+  File "/root/web_django/wechat/warframe.py", line 14, in timestamp_datetime
+    value = time.localtime(value)
+TypeError: a float is required
+Performing system checks...
+
+['599fba11e359d09e52aa2996', 'Tamu', 'Kuva Fortress', 'Spy', 'Grineer', '35', '37', '1503640341', '1503648079', '12,500cr - 5 Synthula', '']
+['599fbc697b27ed59d0bf023b', 'Olympus', 'Mars', 'Defense', 'Grineer', '14', '16', '1503640973', '1503643721', '6,200cr', '']
+['599fc119d327668512344823', 'Callisto', 'Jupiter', 'Spy', 'Infestation', '19', '24', '1503642149', '1503645528', '8,000cr - 100 Endo', '']
+['599fc3e9a52b2c6e70d02378', 'Caelus', 'Uranus', 'Mobile Defense', 'Grineer', '28', '33', '1503642853', '1503645126', '11,000cr', ' (Archwing)']
+['']
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:37:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+['599fba11e359d09e52aa2996', 'Tamu', 'Kuva Fortress', 'Spy', 'Grineer', '35', '37', '1503640341', '1503648079', '12,500cr - 5 Synthula', '']
+['599fbc697b27ed59d0bf023b', 'Olympus', 'Mars', 'Defense', 'Grineer', '14', '16', '1503640973', '1503643721', '6,200cr', '']
+['599fc119d327668512344823', 'Callisto', 'Jupiter', 'Spy', 'Infestation', '19', '24', '1503642149', '1503645528', '8,000cr - 100 Endo', '']
+['599fc3e9a52b2c6e70d02378', 'Caelus', 'Uranus', 'Mobile Defense', 'Grineer', '28', '33', '1503642853', '1503645126', '11,000cr', ' (Archwing)']
+['']
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:37:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x20c2a28>
+Performing system checks...
+
+1503648079
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 91, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 85, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 75, in getAlarm
+    endTime = self.timestamp_datetime(tempL[8])
+  File "/root/web_django/wechat/warframe.py", line 15, in timestamp_datetime
+    value = time.localtime(value)
+TypeError: a float is required
+Unhandled exception in thread started by <function wrapper at 0x2a07a28>
+Performing system checks...
+
+1503648079
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 92, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 86, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 77, in getAlarm
+    resStr += "%s(%s) - %s(%s)\nLv:%s\n结束于:%s\n奖励:%s \n" %(starName,mapName,taskType,monsType,endTime,reward)
+TypeError: not enough arguments for format string
+Unhandled exception in thread started by <function wrapper at 0x312ca28>
+Performing system checks...
+
+1503648079
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 92, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 86, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 77, in getAlarm
+    resStr += "%s(%s) - %s(%s)\nLv:%s\n结束于:%s\n奖励:%s \n" %(starName,mapName,taskType,monsType,endTime,reward)
+TypeError: not enough arguments for format string
+Unhandled exception in thread started by <function wrapper at 0x34e2a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 91, in <module>
+    test()
+  File "/root/web_django/wechat/warframe.py", line 85, in test
+    print wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 69, in getAlarm
+    starName = tempL[2]
+IndexError: list index out of range
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 08:01:19
+奖励:12,500cr - 5 Synthula 
+Mars(Olympus) - Defense(Grineer)
+Lv:14 - 16
+结束于:2017-08-25 06:48:41
+奖励:6,200cr 
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 07:18:48
+奖励:8,000cr - 100 Endo 
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 07:12:06
+奖励:11,000cr 
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:40:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+['']
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 08:01:19
+奖励:12,500cr - 5 Synthula 
+Mars(Olympus) - Defense(Grineer)
+Lv:14 - 16
+结束于:2017-08-25 06:48:41
+奖励:6,200cr 
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 07:18:48
+奖励:8,000cr - 100 Endo 
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 07:12:06
+奖励:11,000cr 
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:40:43
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:41:16
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:41:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 06:43:41] "POST /wx?signature=ebf651ce53e6cdfb01412d281e897cf92bd6376f&timestamp=1503643421&nonce=692318867&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 354
+[25/Aug/2017 06:43:57] "POST /wx?signature=ee987bd88c85c820599678b7024f95cb811611ea&timestamp=1503643437&nonce=502628963&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 350
+[25/Aug/2017 06:44:01] "POST /wx?signature=5fea3976ac4e5f21334419be9340df3dd28085bc&timestamp=1503643441&nonce=1669235691&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 589
+[25/Aug/2017 06:44:17] "POST /wx?signature=904c138a0f2cd00a599cdf9965a96734a039ea9c&timestamp=1503643457&nonce=8070663&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 610
+[25/Aug/2017 06:44:29] "POST /wx?signature=cc33d228ae50aced19085857a6b6498451b7e351&timestamp=1503643469&nonce=1086991343&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 345
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:43:29
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '% Icy Avalanche%' or name_en like '% Icy Avalanche%' 
+SELECT * from item where name_zh like '% Ash Prime%' or name_en like '% Ash Prime%' 
+SELECT * from item where name_zh like '% ash%' or name_en like '% ash%' 
+SELECT * from item where name_zh like '% Trini%' or name_en like '% Trini%' 
+SELECT * from item where name_zh like '%  nek%' or name_en like '%  nek%' 
+[25/Aug/2017 06:45:14] "POST /wx?signature=f6f2e4422ce2677f6b47861f7bcd4db75bb6f5a7&timestamp=1503643514&nonce=715664834&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1017
+[25/Aug/2017 06:45:21] "POST /wx?signature=d5e247052d612c1fc362a49438f633756d7f0e30&timestamp=1503643521&nonce=2142656802&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 407
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:45:10
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%Icy Avalanche%' or name_en like '%Icy Avalanche%' 
+Unhandled exception in thread started by <function wrapper at 0x311aa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x29dfa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x32eda28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x1b3ba28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x20c2a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x1991a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x28d3a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警报' or subContent.lower() =='alarm':
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x2a4aa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警':
+                         ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x3113a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    reply_text = wf.getAlarm()
+                             ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x235da28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 69
+    if subContent =='警':
+                         ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function wrapper at 0x2602a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 68
+    subContent = content[2:].strip()
+                                   ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:53:55
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 06:54:18] "POST /wx?signature=ff8482e653517b788586af2b09b2c440f30349f5&timestamp=1503644058&nonce=1943601937&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 407
+[25/Aug/2017 06:54:34] "POST /wx?signature=c600b1fad0595ecd66454303cbe9f89fec66d617&timestamp=1503644063&nonce=1005602874&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 702
+[25/Aug/2017 06:54:57] "POST /wx?signature=c600b1fad0595ecd66454303cbe9f89fec66d617&timestamp=1503644063&nonce=1005602874&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 702
+[25/Aug/2017 06:55:00] "POST /wx?signature=c600b1fad0595ecd66454303cbe9f89fec66d617&timestamp=1503644063&nonce=1005602874&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 702
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:54:16
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Icy Avalanche%' or name_en like '%Icy Avalanche%' 
+[25/Aug/2017 06:55:11] "POST /wx?signature=96ddfd6b914342a6f643e8ff3835d593b120f53e&timestamp=1503644109&nonce=482858880&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 810
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:55:08
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 06:55:58] "POST /wx?signature=15af784f8479519328c9a4b53fa5fbec6cfd7829&timestamp=1503644157&nonce=1392288227&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 810
+[25/Aug/2017 06:58:06] "POST /wx?signature=c2ed14ed286e5ac6ac5817f58ec055ecb862808f&timestamp=1503644286&nonce=82007053&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+[25/Aug/2017 06:58:33] "POST /wx?signature=2fc87f83f22ef69c3c6308e55f93d21c21546c53&timestamp=1503644313&nonce=1161790904&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:58:29
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 06:59:52] "POST /wx?signature=90d11f73e4daca3f464175eb73df09002733145d&timestamp=1503644391&nonce=1317716382&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 987
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 06:59:47
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 79, in getAlarm
+    resStr +="--------------------------\n"+localtime(tempL[8])
+NameError: global name 'localtime' is not defined
+[25/Aug/2017 07:01:11] "POST /wx?signature=0ff4c84683ccb1ae5bcb9516c54b949ec3ef0acc&timestamp=1503644470&nonce=554542896&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 77321
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 07:01:07
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 07:01:29] "POST /wx?signature=4a307540f820f0ceb8a9d963374db67f8c62f815&timestamp=1503644489&nonce=1984410306&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 345
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 70, in index
+    reply_text = wf.getAlarm()
+  File "/root/web_django/wechat/warframe.py", line 79, in getAlarm
+    resStr +="--------------------------\n"+time.localtime(tempL[8])
+TypeError: a float is required
+[25/Aug/2017 07:01:33] "POST /wx?signature=83330ef8e6556194e7f468377c3fb38e14bced45&timestamp=1503644492&nonce=1741753997&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 77172
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 07:01:27
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%alram%' or name_en like '%alram%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 07:03:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 08:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 07:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 07:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 07:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 07:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 07:03:47
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 07:03:58] "POST /wx?signature=bf72377e854ed2f56c8219069a3f2b1a241e37ab&timestamp=1503644637&nonce=1527642948&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+[25/Aug/2017 07:05:13] "POST /wx?signature=7fcc4edcdf6ca47d0a525feca94577d0ce451932&timestamp=1503644712&nonce=1347465441&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 08:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 07:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 07:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 07:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 07:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 07:05:10
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 15:06:23] "POST /wx?signature=79eef9dfe1c8c5b68b48f12003a5c40483557319&timestamp=1503644782&nonce=1587507319&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 16:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 15:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 15:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 15:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 15:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 15:06:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Not Found: /
+[25/Aug/2017 15:08:23] "GET / HTTP/1.0" 404 2025
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 16:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 15:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 15:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 15:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 15:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 15:08:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 15:08:58] "POST /wx?signature=7e370c2143cda40ed826c37300914a4c9c021d7a&timestamp=1503644938&nonce=812854013&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 501
+[25/Aug/2017 15:09:07] "POST /wx?signature=d78d8f611adb115e58da3d92068cfa58599bbac2&timestamp=1503644947&nonce=271823789&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 937
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 16:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 15:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 15:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 15:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 15:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 15:08:54
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[25/Aug/2017 15:09:24] "POST /wx?signature=05658941b14aeda04dfb8898f1a8cfb482d66fd5&timestamp=1503644964&nonce=171643377&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 587
+[25/Aug/2017 15:09:31] "POST /wx?signature=cba5b5ad18f2a589c6bc8062c21c177be8ac4892&timestamp=1503644971&nonce=179634475&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 319
+[25/Aug/2017 15:09:41] "POST /wx?signature=070e76caa9c881ff194b6ff6e576929c40eb8d3f&timestamp=1503644980&nonce=26981731&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 937
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 16:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 15:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 15:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 15:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 15:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 15:09:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.

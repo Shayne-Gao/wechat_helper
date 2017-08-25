@@ -53,7 +53,8 @@ def index(request):
         if content == 'help':
             reply_text = (
                     '目前支持的功能：\n1. 输入【博客】来查看我的博客\n'
-                    '2. 回复【随机】来随机展示文章\n'
+                    '2. 回复【wf 物品名】来查询warframe国际版的物品\n'
+                    '3. 回复【wf 警报】或者【wf alarm】来查询warframe国际版的警报任务\n'
                     '还有更多功能正在开发中哦 ^_^\n'
                     '【<a href="http://hi-ink.lofter.com/">我的Loft</a>】'
                 )
@@ -64,10 +65,12 @@ def index(request):
         elif content == '小绿':
 	        reply_text = '么么哒恭喜你进入了隐藏的空间，当你看到这句话的时候我一定在想你哟！'
         elif content.startswith('wf'):
-	        wf = warframe()
-	    	tempList = content.split(' ')
-	    	itemName = tempList[1]
-	    	reply_text = wf.getInfoByName(itemName)
+            wf = warframe()
+            subContent = content[2:].strip()
+            if subContent =='警报' or subContent.lower()=='alarm':
+                reply_text = wf.getAlarm()
+            else:
+	    	    reply_text = wf.getInfoByName(subContent)
     	else:
         	reply_text = '功能还在开发中哦,亲可以提出您宝贵的意见'
 
