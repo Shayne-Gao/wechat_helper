@@ -1084,3 +1084,5 @@ Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
 [25/Aug/2017 04:35:58] "POST /wx?signature=c5d35d1bb769714db1d8009f3ded08391bcea704&timestamp=1503635758&nonce=130902121&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1471
+Not Found: /
+[25/Aug/2017 05:45:06] "GET / HTTP/1.0" 404 2025
