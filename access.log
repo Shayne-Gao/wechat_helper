@@ -2633,3 +2633,2620 @@ August 25, 2017 - 15:09:24
 Django version 1.11.4, using settings 'web_django.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
+[25/Aug/2017 15:12:15] "POST /wx?signature=2dc614e6bdf2469efcdd30b4d16653661eaebc4c&timestamp=1503645135&nonce=603780821&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 421
+[25/Aug/2017 15:17:02] "POST /wx?signature=4ecdfa9c546cd48a03a16bfe6312b06952275e2a&timestamp=1503645422&nonce=882070508&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1125
+[25/Aug/2017 15:19:39] "POST /wx?signature=0082ae21d8c0f71f78caa6cdd176e6accdd3011b&timestamp=1503645579&nonce=2006090053&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 539
+[25/Aug/2017 15:23:00] "POST /wx?signature=fdb31e528b6c914f8b2d47d2c6420664437d4bae&timestamp=1503645779&nonce=32864173&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 819
+[25/Aug/2017 15:25:48] "POST /wx?signature=fa6aa733588e7aa730d289c4e780ef0317aac1d5&timestamp=1503645948&nonce=1003299619&openid=opD4r0R3CDahtXCkQgpijbBcj7VE HTTP/1.1" 200 428
+[25/Aug/2017 15:26:05] "POST /wx?signature=cb5d6609e00107f3502c9364314299fa183fc354&timestamp=1503645965&nonce=859044779&openid=opD4r0VRrLnFuKBKKS6PaKQHQhYg HTTP/1.1" 200 428
+[25/Aug/2017 15:39:39] "POST /wx?signature=d2f0bf88296cf47ba7a9b444048e39d6250d3c66&timestamp=1503646779&nonce=2060763301&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 5111
+[25/Aug/2017 15:40:08] "POST /wx?signature=df873e674823b432b291ad90913a50b7974e2bac&timestamp=1503646808&nonce=1248749507&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 5111
+[25/Aug/2017 15:40:18] "POST /wx?signature=e4e321d6bab18d178294ae0288a42d437bfff656&timestamp=1503646817&nonce=395056767&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 800
+[25/Aug/2017 15:40:23] "POST /wx?signature=d82378594fb05fe450178caf1cd4b3b54493e426&timestamp=1503646823&nonce=773158477&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 346
+[25/Aug/2017 15:40:27] "POST /wx?signature=8e5786cdd54b853b7e658f3853af2335cd4b30d2&timestamp=1503646827&nonce=550696710&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 539
+[25/Aug/2017 15:40:32] "POST /wx?signature=1cc683dd03a495ff58dbb8cbbb51676b511c4cfd&timestamp=1503646832&nonce=243930455&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 5111
+[25/Aug/2017 15:40:39] "POST /wx?signature=d120594818873c408cbfd372ad8bea4506f12c4a&timestamp=1503646839&nonce=373804994&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1017
+[25/Aug/2017 15:40:46] "POST /wx?signature=cc56cb47e261876e33a33e567965c126a98fae5b&timestamp=1503646846&nonce=311607573&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1369
+[25/Aug/2017 15:55:35] "POST /wx?signature=ccc3613b62c46c7ee1895ce78980eefe98d93899&timestamp=1503647735&nonce=360436865&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 346
+Not Found: /http:/10.177.152.217/proxy.html
+[25/Aug/2017 16:00:56] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[25/Aug/2017 16:00:56] code 400, message Bad request syntax ('\x04\x01')
+[25/Aug/2017 16:00:56] "" 400 -
+[25/Aug/2017 16:00:57] code 400, message Bad request syntax ('\x05\x01')
+[25/Aug/2017 16:00:57] "" 400 -
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+[25/Aug/2017 16:15:46] "GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1" 404 2159
+Not Found: /phpMyAdmin/scripts/setup.php
+[25/Aug/2017 16:15:47] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 2120
+Not Found: /phpmyadmin/scripts/setup.php
+[25/Aug/2017 16:15:47] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 2120
+Not Found: /pma/scripts/setup.php
+[25/Aug/2017 16:15:48] "GET /pma/scripts/setup.php HTTP/1.1" 404 2099
+Not Found: /myadmin/scripts/setup.php
+[25/Aug/2017 16:15:48] "GET /myadmin/scripts/setup.php HTTP/1.1" 404 2111
+Not Found: /MyAdmin/scripts/setup.php
+[25/Aug/2017 16:15:49] "GET /MyAdmin/scripts/setup.php HTTP/1.1" 404 2111
+[25/Aug/2017 16:35:56] "POST /wx?signature=6f2c2487bd747ed6675740b917c7b32a20b4f49f&timestamp=1503650156&nonce=1780901076&openid=opD4r0SzI4hdemHiIsirrit44T8w HTTP/1.1" 200 428
+[25/Aug/2017 16:49:27] "POST /wx?signature=65936bf53bc22fc0ba0dd1f324eaeba965b8b825&timestamp=1503650966&nonce=674791542&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 769
+Not Found: /
+[25/Aug/2017 17:39:46] "GET / HTTP/1.1" 404 2023
+Performing system checks...
+
+Kuva Fortress(Tamu) - Spy(Grineer)
+Lv:35 - 37
+结束于:2017-08-25 16:01:19
+奖励:12,500cr - 5 Synthula 
+--------------------------
+Jupiter(Callisto) - Spy(Infestation)
+Lv:19 - 24
+结束于:2017-08-25 15:18:48
+奖励:8,000cr - 100 Endo 
+--------------------------
+Uranus(Caelus) - Mobile Defense(Grineer)
+Lv:28 - 33
+结束于:2017-08-25 15:12:06
+奖励:11,000cr 
+--------------------------
+Ceres(Draco) - Interception(Infestation)
+Lv:15 - 20
+结束于:2017-08-25 15:33:02
+奖励:6,800cr - Infested Impedance 
+--------------------------
+Earth(Eurasia) - Mobile Defense(Infestation)
+Lv:6 - 8
+结束于:2017-08-25 15:43:58
+奖励:4,100cr 
+--------------------------
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 15:09:49
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Infested Impedance%' or name_en like '%Infested Impedance%' 
+SELECT * from item where name_zh like '%nfested%' or name_en like '%nfested%' 
+SELECT * from item where name_zh like '%压迫%' or name_en like '%压迫%' 
+SELECT * from item where name_zh like '%tri%' or name_en like '%tri%' 
+SELECT * from item where name_zh like '%tri%' or name_en like '%tri%' 
+SELECT * from item where name_zh like '%奶妈%' or name_en like '%奶妈%' 
+SELECT * from item where name_zh like '%压迫%' or name_en like '%压迫%' 
+SELECT * from item where name_zh like '%tri%' or name_en like '%tri%' 
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%trini%' or name_en like '%trini%' 
+SELECT * from item where name_zh like '%Kogake%' or name_en like '%Kogake%' 
+Unhandled exception in thread started by <function wrapper at 0x1f6ca28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 9, in <module>
+    import wftools.translator
+ImportError: No module named wftools.translator
+Unhandled exception in thread started by <function wrapper at 0x2ec1a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 9, in <module>
+    import wftools.translator
+  File "/root/web_django/wftools/translator.py", line 12, in <module>
+    class translator:
+  File "/root/web_django/wftools/translator.py", line 14, in translator
+    file = open("zh_name2.txt")
+IOError: [Errno 2] No such file or directory: 'zh_name2.txt'
+Unhandled exception in thread started by <function wrapper at 0x1b74a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/__init__.py", line 1, in <module>
+    import translator
+ImportError: No module named translator
+[25/Aug/2017 18:42:29] "POST /wx?signature=7a6f631fccfa8cc07367354514cb80763c73619d&timestamp=1503657748&nonce=94794867&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 779
+[25/Aug/2017 18:52:02] "POST /wx?signature=c6e2c6ac34c4962195b143cbeb45e693a0d6ae81&timestamp=1503658322&nonce=88877391&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 331
+[25/Aug/2017 19:36:28] "POST /wx?signature=dca8c7050033845475dbb971bb42ad38b0dab4b6&timestamp=1503660988&nonce=1240319244&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 397
+Not Found: /http:/clientapi.ipip.net/echo.php
+[25/Aug/2017 20:54:43] "GET http://clientapi.ipip.net/echo.php?info=1234567890 HTTP/1.1" 404 1720
+[25/Aug/2017 21:20:42] "POST /wx?signature=384071a8cecec2e21abfce9fb5869759e4721834&timestamp=1503667240&nonce=1237929893&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 846
+[25/Aug/2017 21:27:18] "POST /wx?signature=df671f76c43379e7315b0a5f5d7baa882d0b00e0&timestamp=1503667638&nonce=553004524&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1349
+[25/Aug/2017 21:31:21] "POST /wx?signature=cdb14942d05b4b72132c01b96d0c3528383bc912&timestamp=1503667879&nonce=660548410&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 831
+Not Found: /
+[25/Aug/2017 21:58:18] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[25/Aug/2017 22:08:56] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[25/Aug/2017 22:08:56] code 400, message Bad request syntax ('\x04\x01')
+[25/Aug/2017 22:08:56] "" 400 -
+[25/Aug/2017 22:08:57] code 400, message Bad request syntax ('\x05\x01')
+[25/Aug/2017 22:08:57] "" 400 -
+[25/Aug/2017 22:37:48] "POST /wx?signature=6cdaaf333e93a1f39693e40d7202aaf70382e41d&timestamp=1503671867&nonce=514541822&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 955
+[25/Aug/2017 22:39:22] "POST /wx?signature=5e3b46a64aab89e5bd9839537ece52dcfc48be3a&timestamp=1503671962&nonce=1184464740&openid=opD4r0ZT08JCFN5IDNyobpoTszyU HTTP/1.1" 200 331
+Not Found: /
+[25/Aug/2017 23:52:33] "GET /?id=1'+and+1=1+and+'<script>alert(1)</script> HTTP/1.0" 404 2079
+Not Found: /phpmyadmin/index.php
+[26/Aug/2017 02:23:49] "GET /phpmyadmin/index.php HTTP/1.1" 404 2096
+Not Found: /
+[26/Aug/2017 04:20:33] "GET / HTTP/1.1" 404 2020
+Not Found: /
+[26/Aug/2017 05:41:19] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[26/Aug/2017 06:11:37] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[26/Aug/2017 06:11:38] code 400, message Bad request syntax ('\x04\x01')
+[26/Aug/2017 06:11:38] "" 400 -
+[26/Aug/2017 06:11:38] code 400, message Bad request syntax ('\x05\x01')
+[26/Aug/2017 06:11:38] "" 400 -
+Not Found: /
+[26/Aug/2017 06:43:47] "GET / HTTP/1.0" 404 2025
+Not Found: /
+[26/Aug/2017 06:50:44] "GET / HTTP/1.1" 404 2021
+[26/Aug/2017 07:25:33] code 400, message Bad request syntax ('\x16\x03\x01\x01"\x01\x00\x01\x1e\x03\x03\xc2\xa6bV\x94\x97\x00~~\xa3\xb1\x89X\x0e,w&\x18\x9f\x85\xae\xb7%\xcc{E[\x9e\x19x\x92`\x00\x00\x88\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0')
+[26/Aug/2017 07:25:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.7/SocketServer.py", line 649, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib64/python2.7/socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+[26/Aug/2017 07:25:39] code 400, message Bad request syntax ('USER test +iw test :Test Wuz Here')
+[26/Aug/2017 07:25:39] "USER test +iw test :Test Wuz Here" 400 -
+Not Found: /
+[26/Aug/2017 07:25:39] "GET / HTTP/1.1" 404 2021
+Not Found: /manager/html
+[26/Aug/2017 08:48:19] "GET /manager/html HTTP/1.1" 404 2075
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[26/Aug/2017 09:39:47] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[26/Aug/2017 10:03:06] "POST /wx?signature=f311243127cfc025ba9d47102dd6450007bf4ee3&timestamp=1503712986&nonce=383456909&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 930
+Not Found: /
+[26/Aug/2017 10:03:07] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 10:36:55] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 10:37:47] "GET / HTTP/1.1" 404 2023
+[26/Aug/2017 10:38:07] "POST /wx?signature=a4ea80b81bc956be43c704bd0d156c2664564591&timestamp=1503715086&nonce=1713063797&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 809
+Not Found: /
+[26/Aug/2017 10:42:34] "GET / HTTP/1.1" 404 2021
+Not Found: /
+[26/Aug/2017 11:12:19] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 11:24:07] "GET / HTTP/1.0" 404 2025
+Not Found: /hndUnblock.cgi
+[26/Aug/2017 11:28:17] "GET /hndUnblock.cgi HTTP/1.0" 404 2078
+Not Found: /tmUnblock.cgi
+[26/Aug/2017 11:28:18] "GET /tmUnblock.cgi HTTP/1.0" 404 2075
+Not Found: /moo
+[26/Aug/2017 11:28:19] "GET /moo HTTP/1.0" 404 2045
+Not Found: /
+[26/Aug/2017 11:28:20] "GET / HTTP/1.0" 404 2018
+[26/Aug/2017 11:31:10] "POST /wx?signature=e1cbbd46f7e54982510c784886f7b83a689bc71e&timestamp=1503718268&nonce=1268154200&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 794
+Not Found: /http:/10.177.152.217/proxy.html
+[26/Aug/2017 12:06:18] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[26/Aug/2017 12:06:18] code 400, message Bad request syntax ('\x04\x01')
+[26/Aug/2017 12:06:18] "" 400 -
+[26/Aug/2017 12:06:19] code 400, message Bad request syntax ('\x05\x01')
+[26/Aug/2017 12:06:19] "" 400 -
+Not Found: /
+[26/Aug/2017 13:01:46] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 13:16:20] "GET / HTTP/1.0" 404 2025
+Not Found: /
+[26/Aug/2017 13:24:39] "GET / HTTP/1.1" 404 2018
+[26/Aug/2017 13:39:45] "POST /wx?signature=5c472a2ff177d485938cb934cbe0bd38ba896a3d&timestamp=1503725985&nonce=794652073&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 806
+Not Found: /
+[26/Aug/2017 14:18:53] "GET / HTTP/1.0" 404 2025
+Not Found: /
+[26/Aug/2017 14:33:10] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 14:33:31] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[26/Aug/2017 15:03:07] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[26/Aug/2017 15:03:08] code 400, message Bad request syntax ('\x04\x01')
+[26/Aug/2017 15:03:08] "" 400 -
+[26/Aug/2017 15:03:08] code 400, message Bad request syntax ('\x05\x01')
+[26/Aug/2017 15:03:08] "" 400 -
+Invalid HTTP_HOST header: '`hostname`.rid2hgreiddtwskfwjme711yyp4gs5.burpcollaborator.net'. The domain name provided is not valid according to RFC 1034/1035.
+[26/Aug/2017 15:42:58] "GET / HTTP/1.1" 400 59896
+[2017-08-26 15:42:58,851] - Broken pipe from ('103.238.225.70', 49067)
+
+[26/Aug/2017 15:49:59] "POST /wx?signature=19fbf13d56372fe0b48fdc7ff4d5c2eee33ef21e&timestamp=1503733799&nonce=834051302&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 722
+Not Found: /
+[26/Aug/2017 16:12:22] "GET / HTTP/1.1" 404 2023
+Not Found: /
+[26/Aug/2017 16:13:54] "GET / HTTP/1.1" 404 2023
+Not Found: /manager/html
+[26/Aug/2017 16:16:47] "GET /manager/html HTTP/1.1" 404 2072
+Not Found: /
+[26/Aug/2017 17:21:16] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[26/Aug/2017 17:47:37] "GET / HTTP/1.1" 404 2018
+Not Found: /http:/180.97.33.108/s
+[26/Aug/2017 17:52:14] "GET http://180.97.33.108/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=122.152.209.45&rsv_pq=bf5332e100 HTTP/1.1" 404 1764
+Not Found: /
+[26/Aug/2017 18:39:43] "GET / HTTP/1.1" 404 2023
+[26/Aug/2017 19:16:55] "POST /wx?signature=02c247443b955e30d4e944d8660693d6968df996&timestamp=1503746214&nonce=307865365&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 693
+Not Found: /
+[26/Aug/2017 20:52:09] "GET / HTTP/1.1" 404 2018
+Not Found: /http:/clientapi.ipip.net/echo.php
+[26/Aug/2017 21:00:17] "GET http://clientapi.ipip.net/echo.php?info=1234567890 HTTP/1.1" 404 1720
+Not Found: /
+[26/Aug/2017 23:30:01] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[27/Aug/2017 00:08:43] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[27/Aug/2017 00:08:43] code 400, message Bad request syntax ('\x04\x01')
+[27/Aug/2017 00:08:43] "" 400 -
+[27/Aug/2017 00:08:44] code 400, message Bad request syntax ('\x05\x01')
+[27/Aug/2017 00:08:44] "" 400 -
+Not Found: /
+[27/Aug/2017 02:31:46] "GET / HTTP/1.1" 404 2020
+Not Found: /phpMyAdmin/scripts/setup.php
+[27/Aug/2017 03:16:06] "GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 404 2120
+Not Found: /pma/scripts/setup.php
+[27/Aug/2017 03:16:06] "GET /pma/scripts/setup.php HTTP/1.1" 404 2099
+Not Found: /myadmin/scripts/setup.php
+[27/Aug/2017 03:16:06] "GET /myadmin/scripts/setup.php HTTP/1.1" 404 2111
+Not Found: /
+[27/Aug/2017 06:53:36] "GET / HTTP/1.0" 404 2018
+Not Found: /
+[27/Aug/2017 07:22:44] "POST / HTTP/1.1" 404 2022
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[27/Aug/2017 07:32:15] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /
+[27/Aug/2017 08:28:40] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[27/Aug/2017 09:03:52] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[27/Aug/2017 09:03:53] code 400, message Bad request syntax ('\x04\x01')
+[27/Aug/2017 09:03:53] "" 400 -
+[27/Aug/2017 09:03:53] code 400, message Bad request syntax ('\x05\x01')
+[27/Aug/2017 09:03:53] "" 400 -
+Not Found: /
+[27/Aug/2017 09:16:04] "GET / HTTP/1.0" 404 2025
+Not Found: /
+[27/Aug/2017 10:38:52] "GET / HTTP/1.1" 404 2023
+Not Found: /
+[27/Aug/2017 11:44:54] "GET / HTTP/1.1" 404 2018
+Not Found: /manager/html
+[27/Aug/2017 14:51:10] "GET /manager/html HTTP/1.1" 404 2072
+Not Found: /
+[27/Aug/2017 15:13:29] "GET / HTTP/1.0" 404 2025
+Not Found: /x
+[27/Aug/2017 16:10:44] "GET /x HTTP/1.1" 404 2046
+[27/Aug/2017 16:46:17] "POST /wx?signature=18a115dc1e11d7e02c37d29289ac113536f2ce9e&timestamp=1503823576&nonce=331638718&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 805
+[27/Aug/2017 16:46:38] "POST /wx?signature=ce3579e242bd6d6589c28067bf868e737595c16d&timestamp=1503823598&nonce=130689217&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 392
+Not Found: /
+[27/Aug/2017 17:06:11] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[27/Aug/2017 18:04:50] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[27/Aug/2017 18:04:51] code 400, message Bad request syntax ('\x04\x01')
+[27/Aug/2017 18:04:51] "" 400 -
+[27/Aug/2017 18:04:51] code 400, message Bad request syntax ('\x05\x01')
+[27/Aug/2017 18:04:51] "" 400 -
+Not Found: /
+[27/Aug/2017 18:32:45] "GET / HTTP/1.1" 404 2023
+Not Found: /http:/clientapi.ipip.net/echo.php
+[27/Aug/2017 18:55:41] "GET http://clientapi.ipip.net/echo.php?info=1234567890 HTTP/1.1" 404 1720
+Not Found: /manager/html
+[27/Aug/2017 19:05:20] "GET /manager/html HTTP/1.1" 404 2072
+Not Found: /
+[27/Aug/2017 19:58:12] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[27/Aug/2017 20:24:35] "GET / HTTP/1.0" 404 2025
+Not Found: /
+[27/Aug/2017 20:27:57] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[27/Aug/2017 21:01:04] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[27/Aug/2017 21:01:04] code 400, message Bad request syntax ('\x04\x01')
+[27/Aug/2017 21:01:04] "" 400 -
+[27/Aug/2017 21:01:05] code 400, message Bad request syntax ('\x05\x01')
+[27/Aug/2017 21:01:05] "" 400 -
+Not Found: /
+[27/Aug/2017 23:20:40] "GET / HTTP/1.1" 404 2018
+[27/Aug/2017 23:44:25] "POST /wx?signature=944546fc2976a91b93df3f83725f99b78fadb067&timestamp=1503848665&nonce=323016978&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 351
+[27/Aug/2017 23:44:29] "POST /wx?signature=72a6f3b12235df28fa0e912272cc705555d20902&timestamp=1503848669&nonce=865355259&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 398
+[27/Aug/2017 23:44:36] "GET /wx HTTP/1.1" 400 13
+Not Found: /
+[28/Aug/2017 02:18:48] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[28/Aug/2017 02:31:51] "GET / HTTP/1.1" 404 2024
+Not Found: /
+[28/Aug/2017 04:12:00] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[28/Aug/2017 04:40:53] "GET / HTTP/1.0" 404 2025
+[28/Aug/2017 05:29:09] "GET /wx HTTP/1.1" 400 13
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[28/Aug/2017 05:36:38] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /
+[28/Aug/2017 06:10:44] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[28/Aug/2017 07:08:48] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[28/Aug/2017 07:08:49] code 400, message Bad request syntax ('\x04\x01')
+[28/Aug/2017 07:08:49] "" 400 -
+[28/Aug/2017 07:08:49] code 400, message Bad request syntax ('\x05\x01')
+[28/Aug/2017 07:08:49] "" 400 -
+Not Found: /
+[28/Aug/2017 07:33:12] "GET / HTTP/1.1" 404 2018
+Not Found: /muieblackcat
+[28/Aug/2017 07:39:13] "GET /muieblackcat HTTP/1.1" 404 2072
+Not Found: //phpMyAdmin/scripts/setup.php
+[28/Aug/2017 07:39:14] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 2123
+Not Found: /
+[28/Aug/2017 07:39:14] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[28/Aug/2017 07:51:19] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[28/Aug/2017 09:05:41] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[28/Aug/2017 09:22:48] "GET / HTTP/1.1" 404 2018
+[28/Aug/2017 09:23:25] "POST /wx?signature=c1f6b9f9714b6722a810e87c905899f63e3c9660&timestamp=1503883404&nonce=1684797858&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 808
+[28/Aug/2017 09:23:59] "POST /wx?signature=54af7c457b32ce23d6422784f860c04d22df2073&timestamp=1503883439&nonce=1934714051&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 426
+[28/Aug/2017 09:43:44] "POST /wx?signature=cc04f87e900d886984f6a97d9357d0ed2661c391&timestamp=1503884623&nonce=551144560&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 345
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 25, 2017 - 18:42:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%狂战士%' or name_en like '%狂战士%' 
+SELECT * from item where name_zh like '%vauban%' or name_en like '%vauban%' 
+----------------------------------------
+Exception happened during processing of request from ('123.59.146.153', 35634)
+----------------------------------------
+SELECT * from item where name_zh like '%体魄%' or name_en like '%体魄%' 
+SELECT * from item where name_zh like '%blunderbass%' or name_en like '%blunderbass%' 
+SELECT * from item where name_zh like '%blun%' or name_en like '%blun%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%limbo%' or name_en like '%limbo%' 
+[28/Aug/2017 09:55:25] "POST /wx?signature=a99e2005418a8bc1ba3b34690fa782908efed460&timestamp=1503885325&nonce=1703452316&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[28/Aug/2017 09:55:30] "POST /wx?signature=bf6b2dac903028109883fa1ea1d4ed249a13189a&timestamp=1503885330&nonce=1147255602&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 411
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 09:55:12
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%limbo%' or name_en like '%limbo%' 
+[28/Aug/2017 09:55:59] "POST /wx?signature=4c41a851bc348af7454a4d0cc2f667c08d2c994b&timestamp=1503885359&nonce=858806807&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 432
+Not Found: /
+[28/Aug/2017 10:13:31] "GET / HTTP/1.0" 404 2025
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 09:55:55
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%limbo%' or name_en like '%limbo%' 
+Unhandled exception in thread started by <function wrapper at 0x19fba28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 14, in <module>
+    from wftools.translator import translator
+ImportError: cannot import name translator
+[28/Aug/2017 10:30:55] "POST /wx?signature=d50af018a147870007f975bc41ec631c0880c843&timestamp=1503887455&nonce=1164506488&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 432
+[28/Aug/2017 10:31:00] "POST /wx?signature=e426e6baf4386f4ec784744e6a826e6e8b5f68c9&timestamp=1503887458&nonce=1907666758&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 975
+[28/Aug/2017 10:35:42] "POST /wx?signature=3e717dde63eeea88c7bcafe4ef6e7d1416edb087&timestamp=1503887742&nonce=1099281570&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 399
+Performing system checks...
+
+{'cheapest_price': 89, 'record_time': '2017-08-28 10:30:35', 'all_count': 69, 'top_sum': 3241, 'top_avg': 95, 'top_count': 34, 'top_rec': [u'[_kirill_:89x1]', u'[I_SURVIVED_THE_90s:90x6]', u'[didiprasetya:90x1]'], 'all_avg': 156}
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:30:35
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%limbo%' or name_en like '%limbo%' 
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:36:26] "POST /wx?signature=f85f21d3ee2fbc85b7da729f0e3f7166b8cf8244&timestamp=1503887783&nonce=1405102992&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 566
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:36:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:37:43] "POST /wx?signature=aa8887cb8e18d084ef9a65bef37e6acc27130a58&timestamp=1503887861&nonce=1738973132&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 584
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:37:35
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:38:07] "POST /wx?signature=90feaf64309190fe9e2bceb136dcefc476f4c09b&timestamp=1503887884&nonce=1597922920&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 584
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:37:59
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:38:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 10:39:48] "POST /wx?signature=5cdd5ee07929cb914bd127ea59417ab480f48a98&timestamp=1503887986&nonce=1400147752&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 582
+Not Found: /
+[28/Aug/2017 10:40:32] "GET / HTTP/1.1" 404 2024
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:39:45
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:41:24] "POST /wx?signature=4fbd1b0ecfda9f516fc0c8cf9e7020558000cefe&timestamp=1503888082&nonce=341984291&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 567
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:41:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 54, in getPriceFromWm
+    res['top_rec'].append(strT)
+KeyError: 'top_rec'
+[28/Aug/2017 10:42:06] "POST /wx?signature=239206146b1bd26e9fbf8a8a7cadb44abee894d4&timestamp=1503888122&nonce=2129061969&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 109734
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:42:01
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 54, in getPriceFromWm
+    res['top_rec'] += strT
+KeyError: 'top_rec'
+[28/Aug/2017 10:42:24] "POST /wx?signature=badc783154c994b266f4b57e1dbc593e4e2805c2&timestamp=1503888141&nonce=1308437425&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 109724
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:42:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:42:55] "POST /wx?signature=320f313d8d8e2b9cc4288742b486fa23442e3759&timestamp=1503888172&nonce=580622408&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 555
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:42:51
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+[28/Aug/2017 10:43:20] "POST /wx?signature=8665156366f989c08e3dbac8b0e61f92ffeb6443&timestamp=1503888198&nonce=1728658457&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 558
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:45:29] "POST /wx?signature=a74a81316f26d7297d5018ec64a7a055bc9c9212&timestamp=1503888321&nonce=1800616578&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119224
+[2017-08-28 10:45:29,979] - Broken pipe from ('182.254.86.149', 61616)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:45:31] "POST /wx?signature=a74a81316f26d7297d5018ec64a7a055bc9c9212&timestamp=1503888321&nonce=1800616578&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119179
+[2017-08-28 10:45:31,852] - Broken pipe from ('182.254.86.139', 29475)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:45:36] "POST /wx?signature=a74a81316f26d7297d5018ec64a7a055bc9c9212&timestamp=1503888321&nonce=1800616578&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119179
+[2017-08-28 10:45:36,859] - Broken pipe from ('182.254.86.149', 49271)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:46:20] "POST /wx?signature=0d3dadb54afbb57c7d00a56155ec4bded397a75e&timestamp=1503888374&nonce=1464291159&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119219
+[2017-08-28 10:46:20,137] - Broken pipe from ('182.254.86.143', 25251)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:46:25] "POST /wx?signature=0d3dadb54afbb57c7d00a56155ec4bded397a75e&timestamp=1503888374&nonce=1464291159&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119224
+[2017-08-28 10:46:25,317] - Broken pipe from ('182.254.86.143', 46291)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 70, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 10:46:30] "POST /wx?signature=0d3dadb54afbb57c7d00a56155ec4bded397a75e&timestamp=1503888374&nonce=1464291159&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 119194
+[2017-08-28 10:46:30,016] - Broken pipe from ('182.254.86.153', 14921)
+
+[28/Aug/2017 10:46:53] "POST /wx?signature=69594acd15b5882143defe5ec08c3ade96959b9f&timestamp=1503888411&nonce=293102703&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 559
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:43:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime Set%' or name_en like '%Ash Prime Set%' 
+SELECT * from item where name_zh like '%Rhino%' or name_en like '%Rhino%' 
+SELECT * from item where name_zh like '%Rhino%' or name_en like '%Rhino%' 
+SELECT * from item where name_zh like '%Rhino%' or name_en like '%Rhino%' 
+SELECT * from item where name_zh like '%rhino%' or name_en like '%rhino%' 
+SELECT * from item where name_zh like '%rhino%' or name_en like '%rhino%' 
+SELECT * from item where name_zh like '%rhino%' or name_en like '%rhino%' 
+SELECT * from item where name_zh like '%rhino prime set%' or name_en like '%rhino prime set%' 
+[28/Aug/2017 10:51:29] "POST /wx?signature=9a8e64184be7f010fe3d9d3e44b550c2cc60e6d4&timestamp=1503888689&nonce=1467709642&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1328
+[28/Aug/2017 10:51:42] "POST /wx?signature=f1b26d12b93f425b1239fae2991fcfd96d6df256&timestamp=1503888702&nonce=1214847320&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1002
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:51:18
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%rhino%' or name_en like '%rhino%' 
+SELECT * from item where name_zh like '%Rhino Prime%' or name_en like '%Rhino Prime%' 
+[28/Aug/2017 10:52:11] "POST /wx?signature=dc02d71ee3868767013eaa5b602852df4dd3accc&timestamp=1503888731&nonce=2090442336&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[28/Aug/2017 10:52:21] "POST /wx?signature=9b25d406ac652838f0af9d61b784f8f992ec9fb3&timestamp=1503888733&nonce=2024182553&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1748
+[28/Aug/2017 10:52:26] "POST /wx?signature=9b25d406ac652838f0af9d61b784f8f992ec9fb3&timestamp=1503888733&nonce=2024182553&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1748
+[28/Aug/2017 10:52:30] "POST /wx?signature=9b25d406ac652838f0af9d61b784f8f992ec9fb3&timestamp=1503888733&nonce=2024182553&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1748
+[28/Aug/2017 10:53:00] "POST /wx?signature=2ff4d2f688248fd3be4551b913eb0c06876bf0f0&timestamp=1503888779&nonce=2035152352&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 565
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:52:10
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Rhino Prime%' or name_en like '%Rhino Prime%' 
+SELECT * from item where name_zh like '%Rhino Prime%' or name_en like '%Rhino Prime%' 
+SELECT * from item where name_zh like '%Rhino Prime%' or name_en like '%Rhino Prime%' 
+SELECT * from item where name_zh like '%rubedo%' or name_en like '%rubedo%' 
+Unhandled exception in thread started by <function wrapper at 0x1983a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 79
+    if directNameZh != ''
+                        ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x19e8a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 79
+    if directNameZh != 't'
+                         ^
+SyntaxError: invalid syntax
+[28/Aug/2017 10:58:21] "POST /wx?signature=e9b2d011352839edc9d577bbbfdd2dd7a3a83527&timestamp=1503889101&nonce=428090754&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 611
+[28/Aug/2017 10:59:24] "POST /wx?signature=96763a6e5f5eb13a7fe1cc46e90154ed442bf983&timestamp=1503889164&nonce=1454846767&openid=opD4r0R3CDahtXCkQgpijbBcj7VE HTTP/1.1" 200 587
+[28/Aug/2017 10:59:41] "POST /wx?signature=5c188657be13f90287bbba551d9a2fdc63ea5cd0&timestamp=1503889181&nonce=1444697232&openid=opD4r0R3CDahtXCkQgpijbBcj7VE HTTP/1.1" 200 430
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 10:58:21
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%rubedo%' or name_en like '%rubedo%' 
+SELECT * from item where name_zh like '%alam%' or name_en like '%alam%' 
+Unhandled exception in thread started by <function wrapper at 0x267aa28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 14, in <module>
+    from wftools.translator import WmTranslator
+  File "/root/web_django/wftools/translator.py", line 65, in <module>
+    tsl = translator()
+NameError: name 'translator' is not defined
+Performing system checks...
+
+木星
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:00:07
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:00:19] "POST /wx?signature=22be9b55c8bc82668cca70ba32dad4e154fe60c7&timestamp=1503889218&nonce=1573540798&openid=opD4r0R3CDahtXCkQgpijbBcj7VE HTTP/1.1" 200 430
+[28/Aug/2017 11:00:56] "POST /wx?signature=e15dce6d4a2ccc49c2951a619bf95f8d0bf10f8e&timestamp=1503889256&nonce=230053853&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:00:18
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%wiki%' or name_en like '%wiki%' 
+SELECT * from item where name_zh like '%JUpiter%' or name_en like '%JUpiter%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 47, in getInfoByName
+    resStr += "您的输入也可以直接被翻译为:"+directNameZh
+UnboundLocalError: local variable 'resStr' referenced before assignment
+[28/Aug/2017 11:01:46] "POST /wx?signature=276b2cb94685ef26a6729ec7406ac407967234a7&timestamp=1503889306&nonce=452983377&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 74003
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:01:43
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:02:24] "POST /wx?signature=96338988374f50c3ed06ec862ef366d688e55262&timestamp=1503889344&nonce=2113947295&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:02:20
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:02:54] "POST /wx?signature=55225b7c2fb76dd5de3a2a694ec62c31b1ff7d76&timestamp=1503889374&nonce=323945465&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:02:51
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:03:17] "POST /wx?signature=79ee4733212cb34be927264d4197cfcefa242105&timestamp=1503889397&nonce=593250904&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 483
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:03:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:03:34] "POST /wx?signature=7ad26f7904ec1f9021e712c665c760f28be48399&timestamp=1503889414&nonce=1927830111&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 484
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:03:33
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:03:51] "POST /wx?signature=4da272b9c87d15c9d0ed63bdb8160d0a741afb1d&timestamp=1503889431&nonce=242321298&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 485
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:03:49
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:04:19] "POST /wx?signature=6cc216112b5532a4f4e651026a842b4ae612fe89&timestamp=1503889459&nonce=710988443&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 485
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:04:14
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+[28/Aug/2017 11:04:29] "POST /wx?signature=25073045237034247d839d24484fc110cd4acade&timestamp=1503889469&nonce=1820505925&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 484
+Not Found: /http:/10.177.152.217/proxy.html
+[28/Aug/2017 11:05:36] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[28/Aug/2017 11:05:37] code 400, message Bad request syntax ('\x04\x01')
+[28/Aug/2017 11:05:37] "" 400 -
+[28/Aug/2017 11:05:37] code 400, message Bad request syntax ('\x05\x01')
+[28/Aug/2017 11:05:37] "" 400 -
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:04:28
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:05:56
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:06:06] "POST /wx?signature=f92f01a0187def7aae52704fe9b04b8515732d4e&timestamp=1503889566&nonce=1253001950&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 484
+[28/Aug/2017 11:06:18] "POST /wx?signature=7a83037e221a985106696e0fe540a27863383af8&timestamp=1503889577&nonce=900177553&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 619
+Not Found: /manager/html
+[28/Aug/2017 11:08:25] "GET /manager/html HTTP/1.1" 404 2072
+[28/Aug/2017 11:09:37] "POST /wx?signature=d0167eb858cb16baeb56fb1ff0820cc06c0ea5bf&timestamp=1503889777&nonce=1389204006&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2934
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:06:03
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%jupiter%' or name_en like '%jupiter%' 
+SELECT * from item where name_zh like '%rubedo%' or name_en like '%rubedo%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:10:18] "POST /wx?signature=57de8d617ada96dd3edf761cd4e0228b5b60aac4&timestamp=1503889818&nonce=476224837&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2934
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:10:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+Performing system checks...
+
+Jupi
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:10:45
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:11:12
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:11:23] "POST /wx?signature=e1edadb0f5362292126465234cc2d6ae9097fc7b&timestamp=1503889883&nonce=1624853212&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:11:44] "POST /wx?signature=bea2938d725048d8488110504a670c6dfa56b9bb&timestamp=1503889904&nonce=697424325&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:11:21
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:12:02] "POST /wx?signature=8bc3dd450fca8400994bda31ebd6436e0907aa46&timestamp=1503889922&nonce=11484040&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:12:18] "POST /wx?signature=15197795ea9f0ae07be6b216cb6db22a9a771ee3&timestamp=1503889931&nonce=1499804566&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1760
+[28/Aug/2017 11:12:24] "POST /wx?signature=15197795ea9f0ae07be6b216cb6db22a9a771ee3&timestamp=1503889931&nonce=1499804566&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1760
+[28/Aug/2017 11:12:29] "POST /wx?signature=15197795ea9f0ae07be6b216cb6db22a9a771ee3&timestamp=1503889931&nonce=1499804566&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1760
+[28/Aug/2017 11:12:55] "POST /wx?signature=0d19efecc573b6ffc0c7ad88f36275682b0feee9&timestamp=1503889973&nonce=487869299&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 563
+[28/Aug/2017 11:13:25] "POST /wx?signature=21319c85c9bc27c5f99c3445be7d5bbbdc698aff&timestamp=1503890005&nonce=88677968&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:13:34] "POST /wx?signature=42e6459ea8bd39a8fe10c6241963abca7386830d&timestamp=1503890014&nonce=1816050343&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:12:00
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%nekros%' or name_en like '%nekros%' 
+SELECT * from item where name_zh like '%nekros%' or name_en like '%nekros%' 
+SELECT * from item where name_zh like '%nekros%' or name_en like '%nekros%' 
+SELECT * from item where name_zh like '%ash prime set%' or name_en like '%ash prime set%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%12lisdf%' or name_en like '%12lisdf%' 
+[28/Aug/2017 11:13:48] "POST /wx?signature=9eac3c2b2f65e43f5ee26b7657799823138dcfc5&timestamp=1503890028&nonce=824453951&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+[28/Aug/2017 11:13:53] "POST /wx?signature=83884a04ed8ea7dd519264fad8f641fa4a91ea1c&timestamp=1503890033&nonce=2078344807&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:14:12] "POST /wx?signature=cc0b587a262a54026e8ed6fbbcd1a4326a38290e&timestamp=1503890052&nonce=1726108514&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1328
+[28/Aug/2017 11:14:48] "POST /wx?signature=e9bd40638de661dc43942ec3ce8cc0d781d6e150&timestamp=1503890078&nonce=898411318&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 563
+[28/Aug/2017 11:14:51] "POST /wx?signature=e9bd40638de661dc43942ec3ce8cc0d781d6e150&timestamp=1503890078&nonce=898411318&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 563
+[28/Aug/2017 11:14:52] "POST /wx?signature=e9bd40638de661dc43942ec3ce8cc0d781d6e150&timestamp=1503890078&nonce=898411318&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 563
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:13:43
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%sdlfwef%' or name_en like '%sdlfwef%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%rhino%' or name_en like '%rhino%' 
+SELECT * from item where name_zh like '%ash prime set%' or name_en like '%ash prime set%' 
+SELECT * from item where name_zh like '%ash prime set%' or name_en like '%ash prime set%' 
+SELECT * from item where name_zh like '%ash prime set%' or name_en like '%ash prime set%' 
+[28/Aug/2017 11:15:17] "POST /wx?signature=54a369ecca32c6e05a0b53dba3eaeaed121687e4&timestamp=1503890117&nonce=2139298126&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:15:45] "POST /wx?signature=a33fad1385dae2f70c36f3d12c0a92eca36aea03&timestamp=1503890145&nonce=1162440323&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 432
+[28/Aug/2017 11:15:51] "POST /wx?signature=d36733d650cacb9c0d33cc694d9c558af8362e01&timestamp=1503890151&nonce=491300562&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1142
+[28/Aug/2017 11:16:20] "POST /wx?signature=3973b4b1597966194982cb774ff4e89333337276&timestamp=1503890180&nonce=1810205231&openid=opD4r0VO9nhPF1U_X7PFqn9TwGTo HTTP/1.1" 200 2889
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:16:22] "POST /wx?signature=a4a9927beb6237beb3c5397c842435f6c8b5a703&timestamp=1503890181&nonce=528069149&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86082
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:15:14
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%limbo%' or name_en like '%limbo%' 
+SELECT * from item where name_zh like '%nova%' or name_en like '%nova%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+[28/Aug/2017 11:16:45] "POST /wx?signature=4eb2b652b3c09adf58dccb742b1705fb53fd30db&timestamp=1503890205&nonce=2004831005&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 427
+[28/Aug/2017 11:16:52] "POST /wx?signature=ed3a9346ad0e6b53b9ab597b312a9055fd5b46ea&timestamp=1503890212&nonce=1944542940&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 3809
+[28/Aug/2017 11:19:02] "POST /wx?signature=464bcaa6be1b8eed329cb2c98cd4c6f7bae08245&timestamp=1503890342&nonce=2110927179&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 427
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:16:44
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:19:19] "POST /wx?signature=53357163a111cfdc7aae03f203491d98b17064ae&timestamp=1503890358&nonce=254818007&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86082
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:19:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+[28/Aug/2017 11:19:43] "POST /wx?signature=b78323a98a683278e7144368ba786deb838d32f5&timestamp=1503890383&nonce=1112514778&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 426
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:19:40
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:20:15] "POST /wx?signature=e4b56889f1de17399faa2877b391c7ef91d284bd&timestamp=1503890414&nonce=437858577&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86030
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:20:33] "POST /wx?signature=d3dee11d8d0eb4fcd219a179200571bc4ec94ace&timestamp=1503890432&nonce=312998191&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86030
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:20:12
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:21:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x366ea28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 82
+    if temPrice is not None
+                          ^
+SyntaxError: invalid syntax
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:21:56] "POST /wx?signature=50980f0719d3e5428a7c4f71d1d75b906cd3f0a1&timestamp=1503890515&nonce=2056540139&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86020
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 81, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 30, in getPriceFromWm
+    sellInfo = data['response']['sell'];
+TypeError: string indices must be integers
+[28/Aug/2017 11:22:04] "POST /wx?signature=cc84a0425b43450a8d72c8482ecf4a72195e360a&timestamp=1503890523&nonce=138179135&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 86011
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:21:53
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 82, in getInfoByName
+    if temPrice is not None:
+NameError: global name 'temPrice' is not defined
+[28/Aug/2017 11:24:29] "POST /wx?signature=14fff031e28d79c3fe6c608502ad81d333444010&timestamp=1503890669&nonce=1700071923&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 77349
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:24:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+[28/Aug/2017 11:24:48] "POST /wx?signature=d260996d29597800735b64dc30ec884f7c34263f&timestamp=1503890688&nonce=1875464796&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+[28/Aug/2017 11:24:50] "POST /wx?signature=b825a00a50d44f97a7f6af9652f77eb41540bafc&timestamp=1503890689&nonce=470967830&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 426
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:24:47
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+[28/Aug/2017 11:25:26] "POST /wx?signature=2636ba77a1bad8f0f104f682b3b9b197c360dfcb&timestamp=1503890726&nonce=120506383&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:25:29] "POST /wx?signature=90665257cb671e717b86c06de75c8c94a945aebd&timestamp=1503890728&nonce=145181347&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 444
+[28/Aug/2017 11:25:54] "POST /wx?signature=31fdcf2bd1cd5d4f288446ab82abd97886973116&timestamp=1503890754&nonce=1491199995&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2889
+[28/Aug/2017 11:26:13] "POST /wx?signature=fe9356846701cbd15de49bae3869c71083127e6a&timestamp=1503890773&nonce=225237346&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 819
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:25:24
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:26:36] "POST /wx?signature=efa05a8b70b416587a42b9518fad6a4905a455f7&timestamp=1503890796&nonce=745960248&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 3809
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:26:34
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:27:11] "POST /wx?signature=00d0946787c5f42d0786af73d8e23b66ce244af2&timestamp=1503890831&nonce=1870306070&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 275
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:27:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:27:56] "POST /wx?signature=6a0a04a79abd93478ab60fcfa1dffe25822bca13&timestamp=1503890876&nonce=1461293581&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1660
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:27:55
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:28:09] "POST /wx?signature=31330d984a5e89c1fec2abdf3baafef89d40afcb&timestamp=1503890889&nonce=1202636816&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2355
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:28:06
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:28:20] "POST /wx?signature=0e7dcd558779cd39fc9fa5cc348e4e92eaa6e6dd&timestamp=1503890900&nonce=2106515297&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2229
+[28/Aug/2017 11:29:41] "POST /wx?signature=3cbb6919e0f0c439fbcf5e03eb44d5cd7e79b4fc&timestamp=1503890981&nonce=315013013&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 972
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:28:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:31:03
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:34:32] "POST /wx?signature=f956d6521be7cae75b7c932621303e341c64779d&timestamp=1503891272&nonce=1939504509&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2566
+[28/Aug/2017 11:34:59] "POST /wx?signature=248330838f1527c2c63828dacfd8df8f087671a6&timestamp=1503891299&nonce=85767394&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2566
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:34:29
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:35:15] "POST /wx?signature=40f81c9314bb46ea46f4362830bc5918461b7625&timestamp=1503891315&nonce=1278755797&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2566
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:35:14
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:35:33] "POST /wx?signature=16ce93e1595318a65af86fba8fbfadc915e57a2e&timestamp=1503891333&nonce=1248859582&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2500
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:35:32
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:35:42
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:36:13] "POST /wx?signature=a6f035f239b2d34c9e7efe00af2414a462cbf2fe&timestamp=1503891373&nonce=1551878513&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 275
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:36:12
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:37:14] "POST /wx?signature=85c4ef75d99e873f8349635a12bd83c4a6f89b6c&timestamp=1503891434&nonce=1924463639&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 430
+[28/Aug/2017 11:37:16] "POST /wx?signature=bbbb331753c7c2663efbf14755aacb583957288c&timestamp=1503891436&nonce=1895987835&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1810
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:37:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ashg%' or name_en like '%ashg%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:37:54] "POST /wx?signature=b51f59624ed9e3914e15ccb925e4bffe7f1d79fe&timestamp=1503891474&nonce=1015776417&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1817
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:37:53
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:38:06] "POST /wx?signature=c46861824f140210039d15d1e35f8d9a502d1157&timestamp=1503891486&nonce=1437498430&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1816
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:38:05
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+Unhandled exception in thread started by <function wrapper at 0x1f18a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 78
+    resStr += "搜索到的记录太多，询价过慢，请完善关键词，如#wf Ash Prime Set\n"
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x1890a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 78
+    resStr += "搜索到的记录太多，询价过慢，请完善关键词，如#wf Ash Prime Set\n"
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x194da28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 78
+    resStr += "搜索到的记录太多，询价过慢，请完善关键词，如#wf Ash Prime Set\n"
+    ^
+IndentationError: unexpected indent
+[28/Aug/2017 11:39:21] "POST /wx?signature=6164e61ed5843a58288c7922a625ec26cc3ba03e&timestamp=1503891561&nonce=2061807505&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1817
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:39:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:39:36] "POST /wx?signature=eeaa0d8a32d3a0b82c2b4ba714f04f2c6f4f1cae&timestamp=1503891576&nonce=1275852131&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1817
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:39:33
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:42:44] "POST /wx?signature=4a8f06746a6a5ac42cbb84f0364604a3063c5b84&timestamp=1503891764&nonce=313990255&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1817
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:42:43
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:43:34] "POST /wx?signature=501b3a59eed0609639f683a294d495db5dead63d&timestamp=1503891814&nonce=2001173133&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1838
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:43:32
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:44:21] "POST /wx?signature=77716e56117cdd57ee582bfd6d08ab04f984e2a5&timestamp=1503891861&nonce=1481119197&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1839
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:44:18
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[28/Aug/2017 11:45:30] "POST /wx?signature=91fb7cb430f2d77e7dce6608d53a56644ef41908&timestamp=1503891930&nonce=1947573761&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1845
+[28/Aug/2017 11:45:59] "POST /wx?signature=fee1f7112e63027899aad5c7e2c83a05f6899890&timestamp=1503891938&nonce=1679412535&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1741
+[28/Aug/2017 11:46:03] "POST /wx?signature=fee1f7112e63027899aad5c7e2c83a05f6899890&timestamp=1503891938&nonce=1679412535&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1741
+[28/Aug/2017 11:46:05] "POST /wx?signature=fee1f7112e63027899aad5c7e2c83a05f6899890&timestamp=1503891938&nonce=1679412535&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1741
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:45:27
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+Unhandled exception in thread started by <function wrapper at 0x3534a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 18
+    MAX_RECORD_PRICE_NUM = 3 3 3 
+                             ^
+SyntaxError: invalid syntax
+[28/Aug/2017 11:46:21] "POST /wx?signature=edc9b3d8647235e48e1b79aba5cbfb126a457c68&timestamp=1503891981&nonce=1461515592&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1076
+[28/Aug/2017 11:46:36] "POST /wx?signature=ff43340948ed03283c9cf66ee2c2f05d0ebde57d&timestamp=1503891993&nonce=532782308&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 841
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:46:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+[28/Aug/2017 11:47:15] "POST /wx?signature=a22fe526ce8a49634de9ea7e45a60b9b6d4235bb&timestamp=1503892032&nonce=91531899&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 903
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:47:08
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+[28/Aug/2017 11:47:32] "POST /wx?signature=cb5cabf4ab72a9b60be6e2ef20134a1fe3599a09&timestamp=1503892051&nonce=768986362&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 573
+[28/Aug/2017 11:47:52] "POST /wx?signature=c8c07dae81df89163fc0ca2ea9f43f4b0f680f4a&timestamp=1503892072&nonce=160338265&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 446
+[28/Aug/2017 11:48:44] "POST /wx?signature=2da076293e0012903114a31565e968ec77374e33&timestamp=1503892122&nonce=2140135490&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 909
+[28/Aug/2017 11:50:55] "POST /wx?signature=e66467d1c39d5d57c2f3ee465b895fc71adf4b20&timestamp=1503892255&nonce=1475247401&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2113
+[28/Aug/2017 11:51:27] "POST /wx?signature=2a24549b1328374c1b05a4cc6b56a53d24cbadde&timestamp=1503892287&nonce=1567896981&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1697
+[28/Aug/2017 11:52:00] "POST /wx?signature=b2232054c591ed28d8c9dc01f01f87b7bae6e732&timestamp=1503892320&nonce=920822433&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1151
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:47:25
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%膛线%' or name_en like '%膛线%' 
+SELECT * from item where name_zh like '%膛线 prime%' or name_en like '%膛线 prime%' 
+SELECT * from item where name_zh like '%低温弹头%' or name_en like '%低温弹头%' 
+SELECT * from item where name_zh like '%tri%' or name_en like '%tri%' 
+SELECT * from item where name_zh like '%trini%' or name_en like '%trini%' 
+SELECT * from item where name_zh like '%双短柄%' or name_en like '%双短柄%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 27, in getPriceFromWm
+    resp =urllib2.urlopen(req)
+  File "/usr/lib64/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib64/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+  File "/usr/lib64/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib64/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "/usr/lib64/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+[28/Aug/2017 11:52:24] "POST /wx?signature=4d0a918da690da69e2a72e5ce013162fc7beb3a5&timestamp=1503892340&nonce=202694884&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 118873
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:52:14
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 31, in getPriceFromWm
+    except HTTPError:
+NameError: global name 'HTTPError' is not defined
+[28/Aug/2017 11:55:29] "POST /wx?signature=582126eb91a624b0b9c7535646848dd6a7577e99&timestamp=1503892523&nonce=1868522351&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 88176
+[2017-08-28 11:55:29,684] - Broken pipe from ('182.254.86.148', 44164)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 31, in getPriceFromWm
+    except HTTPError:
+NameError: global name 'HTTPError' is not defined
+[28/Aug/2017 11:55:35] "POST /wx?signature=582126eb91a624b0b9c7535646848dd6a7577e99&timestamp=1503892523&nonce=1868522351&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 88176
+[2017-08-28 11:55:35,810] - Broken pipe from ('182.254.86.150', 11073)
+
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 31, in getPriceFromWm
+    except HTTPError:
+NameError: global name 'HTTPError' is not defined
+[28/Aug/2017 11:55:38] "POST /wx?signature=582126eb91a624b0b9c7535646848dd6a7577e99&timestamp=1503892523&nonce=1868522351&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 87940
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:55:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+[28/Aug/2017 11:55:59] "POST /wx?signature=d2b59d6daadc63a00028adf22e3768d0ba2122fa&timestamp=1503892551&nonce=1252243327&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1517
+[28/Aug/2017 11:56:04] "POST /wx?signature=d2b59d6daadc63a00028adf22e3768d0ba2122fa&timestamp=1503892551&nonce=1252243327&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1517
+[28/Aug/2017 11:56:08] "POST /wx?signature=d2b59d6daadc63a00028adf22e3768d0ba2122fa&timestamp=1503892551&nonce=1252243327&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1517
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:55:51
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+[28/Aug/2017 11:58:25] "POST /wx?signature=2daf12e183adec9ef25506e6a50c150423deea37&timestamp=1503892700&nonce=1512035268&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1530
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:58:19
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:58:36
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 11:59:41] "POST /wx?signature=6a8567ee56ca64ed9add83956656903c0774b9be&timestamp=1503892777&nonce=473204712&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1470
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 11:59:34
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+[28/Aug/2017 12:01:24] "POST /wx?signature=2a84c987ddfcd8e8c9e625fbe898a31c433d4fbf&timestamp=1503892872&nonce=1834480200&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1823
+[28/Aug/2017 12:01:33] "POST /wx?signature=2a84c987ddfcd8e8c9e625fbe898a31c433d4fbf&timestamp=1503892872&nonce=1834480200&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1823
+[28/Aug/2017 12:01:40] "POST /wx?signature=2a84c987ddfcd8e8c9e625fbe898a31c433d4fbf&timestamp=1503892872&nonce=1834480200&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1823
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:01:07
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 12:01:48] "POST /wx?signature=685e2a41a4c7656f6e638e91e32498d2c1907c27&timestamp=1503892908&nonce=1614148171&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1236
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:01:42
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 12:02:24] "POST /wx?signature=0955e0ed65406ad50e6f5fa980aeb43e123f9632&timestamp=1503892944&nonce=960365682&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1231
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:02:21
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 12:02:55] "POST /wx?signature=c1221fab3fb792ac26122e88399b7a477640bccf&timestamp=1503892961&nonce=2011705536&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1818
+[28/Aug/2017 12:02:57] "POST /wx?signature=c1221fab3fb792ac26122e88399b7a477640bccf&timestamp=1503892961&nonce=2011705536&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1818
+[28/Aug/2017 12:03:01] "POST /wx?signature=c1221fab3fb792ac26122e88399b7a477640bccf&timestamp=1503892961&nonce=2011705536&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1818
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:02:36
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 12:10:20] "POST /wx?signature=c2346320db18c39a70821d14b9a8e88665af1d5c&timestamp=1503893417&nonce=1788356243&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 872
+[28/Aug/2017 12:10:30] "POST /wx?signature=067eeba9f8975943da2c171cd85db0ef78c66bc9&timestamp=1503893430&nonce=965512311&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1231
+[28/Aug/2017 12:12:56] "POST /wx?signature=efcaf7e9486ad532ae1c110e82c79d4502da28f8&timestamp=1503893576&nonce=207290207&openid=opD4r0ZT08JCFN5IDNyobpoTszyU HTTP/1.1" 200 331
+Not Found: /axis-cgi/jpg/image.cgi
+[28/Aug/2017 12:38:59] "GET /axis-cgi/jpg/image.cgi HTTP/1.1" 404 2102
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:10:03
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 12:50:32] "POST /wx?signature=5bf10d513d3726433c7a5555d73972af3244d42e&timestamp=1503895828&nonce=1845010167&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 572
+[28/Aug/2017 12:51:23] "POST /wx?signature=5a4c4a73c207e1dfe54b04abecf88baf7f2714b5&timestamp=1503895879&nonce=1880251496&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 866
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:50:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime set%' or name_en like '%ash prime set%' 
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+[28/Aug/2017 12:53:16] "POST /wx?signature=40581f29c32d443bb0fde9b1264befe69d4e2751&timestamp=1503895993&nonce=807248075&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 864
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 12:53:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+Unhandled exception in thread started by <function wrapper at 0x2f5da28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 19
+SyntaxError: Non-ASCII character '\xe4' in file /root/web_django/wftools/pricer.py on line 19, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 16, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 60, in getPriceFromWm
+    strT = self.sellerRecFormat(onlineSellRec[i])
+IndexError: list index out of range
+[28/Aug/2017 13:03:51] "POST /wx?signature=eac1e08208e7b556376ed4620b8d9278b229a4aa&timestamp=1503896630&nonce=625586424&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 105606
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:03:44
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+Unhandled exception in thread started by <function wrapper at 0x17e8a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 19
+SyntaxError: Non-ASCII character '\xe4' in file /root/web_django/wftools/pricer.py on line 19, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 18, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 62, in getPriceFromWm
+    strT = self.sellerRecFormat(onlineSellRec[i])
+IndexError: list index out of range
+[28/Aug/2017 13:05:20] "POST /wx?signature=402d2b448808f175fa36dd6e8f97ed47b1c3cb3f&timestamp=1503896719&nonce=5895363&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 105628
+[28/Aug/2017 13:05:32] "POST /wx?signature=1c96c2455e213d23ef3f7b6adf64b92e17519c34&timestamp=1503896729&nonce=1644903242&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 875
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 18, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 62, in getPriceFromWm
+    strT = self.sellerRecFormat(onlineSellRec[i])
+IndexError: list index out of range
+[28/Aug/2017 13:05:38] "POST /wx?signature=1c6bf319fd0a846fe27dbc37081e53e350fff139&timestamp=1503896738&nonce=973943467&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 104946
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:05:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+[28/Aug/2017 13:07:13] "POST /wx?signature=25e7b33680d0b9ee3de4574dfc5fa426edd9ff60&timestamp=1503896830&nonce=69622144&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 814
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:07:06
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 18, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 60, in getPriceFromWm
+    topSellerSum = Math.min(self.TOP_SELLER_NUM,len(onlineSellec))
+NameError: global name 'Math' is not defined
+[28/Aug/2017 13:08:33] "POST /wx?signature=fbff337f47bc39dd6551ca552c004c24aa28479e&timestamp=1503896912&nonce=1487981662&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 105566
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:08:26
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+Unhandled exception in thread started by <function wrapper at 0x1838a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 13, in <module>
+    import Math
+ImportError: No module named Math
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 89, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 17, in getPrice
+    return self.getPriceFromWm(nameEn,itemType)
+  File "/root/web_django/wftools/pricer.py", line 59, in getPriceFromWm
+    topSellerSum = min(self.TOP_SELLER_NUM,len(onlineSellec))
+NameError: global name 'onlineSellec' is not defined
+[28/Aug/2017 13:09:22] "POST /wx?signature=107cc6ef80d0d83c94d9248a27df692eaa271519&timestamp=1503896961&nonce=963205923&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 105612
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:09:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+[28/Aug/2017 13:09:44] "POST /wx?signature=cce6116ca8031492b02b7366caeceb94e155fc7e&timestamp=1503896976&nonce=2124263416&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 836
+[28/Aug/2017 13:09:47] "POST /wx?signature=cce6116ca8031492b02b7366caeceb94e155fc7e&timestamp=1503896976&nonce=2124263416&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 836
+[28/Aug/2017 13:09:48] "POST /wx?signature=cce6116ca8031492b02b7366caeceb94e155fc7e&timestamp=1503896976&nonce=2124263416&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 836
+[28/Aug/2017 13:12:57] "POST /wx?signature=e6b3f26539bc7b682232f0f00dfe9e6fa686d76a&timestamp=1503897177&nonce=1056908180&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2089
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[28/Aug/2017 13:36:33] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 13:09:35
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+SELECT * from item where name_zh like '%剑风%' or name_en like '%剑风%' 
+SELECT * from item where name_zh like '%tri%' or name_en like '%tri%' 
+[28/Aug/2017 14:33:31] "POST /wx?signature=598076a2cfbc2b9406ea60675208d45274c02618&timestamp=1503902003&nonce=2065961203&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+[28/Aug/2017 14:33:35] "POST /wx?signature=598076a2cfbc2b9406ea60675208d45274c02618&timestamp=1503902003&nonce=2065961203&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+[28/Aug/2017 14:33:40] "POST /wx?signature=598076a2cfbc2b9406ea60675208d45274c02618&timestamp=1503902003&nonce=2065961203&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:33:13
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 14:34:53] "POST /wx?signature=92c45bfe1ef47006c2a40b4367f91292f5a96e8a&timestamp=1503902075&nonce=524979785&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+[28/Aug/2017 14:34:55] "POST /wx?signature=92c45bfe1ef47006c2a40b4367f91292f5a96e8a&timestamp=1503902075&nonce=524979785&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+[28/Aug/2017 14:34:57] "POST /wx?signature=92c45bfe1ef47006c2a40b4367f91292f5a96e8a&timestamp=1503902075&nonce=524979785&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:34:26
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 14:36:05] "POST /wx?signature=059e564d57bfdac21ac74f4d2ec2e689b583b526&timestamp=1503902149&nonce=157756452&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1658
+[28/Aug/2017 14:36:08] "POST /wx?signature=059e564d57bfdac21ac74f4d2ec2e689b583b526&timestamp=1503902149&nonce=157756452&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1658
+[28/Aug/2017 14:36:09] "POST /wx?signature=059e564d57bfdac21ac74f4d2ec2e689b583b526&timestamp=1503902149&nonce=157756452&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1658
+[28/Aug/2017 14:36:51] "POST /wx?signature=f284200bd2a9e3f2595cf494e60f28ad393af050&timestamp=1503902208&nonce=1231671387&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1459
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:35:46
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%短柄战镰%' or name_en like '%短柄战镰%' 
+Unhandled exception in thread started by <function wrapper at 0x274da28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 18
+    MAX_RECORD_PRICE_NUM = 4444   def timestamp_datetime(self,value):
+                                    ^
+SyntaxError: invalid syntax
+[28/Aug/2017 14:37:55] "POST /wx?signature=b813453bdc6cdc1e765f1857dd3f949c49722616&timestamp=1503902264&nonce=892917078&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1505
+[28/Aug/2017 14:37:56] "POST /wx?signature=b813453bdc6cdc1e765f1857dd3f949c49722616&timestamp=1503902264&nonce=892917078&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1505
+[28/Aug/2017 14:37:59] "POST /wx?signature=b813453bdc6cdc1e765f1857dd3f949c49722616&timestamp=1503902264&nonce=892917078&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1505
+[28/Aug/2017 14:38:31] "POST /wx?signature=48b1079ba9b3c3dd625aa7a0f7d38d053744f957&timestamp=1503902300&nonce=1683787549&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2018
+[28/Aug/2017 14:38:34] "POST /wx?signature=48b1079ba9b3c3dd625aa7a0f7d38d053744f957&timestamp=1503902300&nonce=1683787549&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2018
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:37:43
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%短柄战镰%' or name_en like '%短柄战镰%' 
+SELECT * from item where name_zh like '%短柄战镰%' or name_en like '%短柄战镰%' 
+SELECT * from item where name_zh like '%短柄战镰%' or name_en like '%短柄战镰%' 
+SELECT * from item where name_zh like '%nova%' or name_en like '%nova%' 
+SELECT * from item where name_zh like '%nova%' or name_en like '%nova%' 
+SELECT * from item where name_zh like '%nova%' or name_en like '%nova%' 
+[28/Aug/2017 14:39:01] "POST /wx?signature=238bfce71dda355354560d3d0f38f62f8ab48952&timestamp=1503902329&nonce=1295243337&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1691
+[28/Aug/2017 14:39:10] "POST /wx?signature=238bfce71dda355354560d3d0f38f62f8ab48952&timestamp=1503902329&nonce=1295243337&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1691
+[28/Aug/2017 14:39:14] "POST /wx?signature=238bfce71dda355354560d3d0f38f62f8ab48952&timestamp=1503902329&nonce=1295243337&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1691
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:38:44
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+[28/Aug/2017 14:39:20] "POST /wx?signature=6fce3ac15da153ed8f4c5667ae2c5acd20e773a7&timestamp=1503902357&nonce=1588462354&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1440
+[28/Aug/2017 14:39:25] "POST /wx?signature=91f92f71d35192b6c62b37b39a56df83215d3736&timestamp=1503902362&nonce=1315616614&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1543
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:39:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%短柄战镰%' or name_en like '%短柄战镰%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+[28/Aug/2017 14:41:05] "POST /wx?signature=4c8c49eabf3eca4c7275444d32281c2ee14505a7&timestamp=1503902452&nonce=80950463&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1696
+[28/Aug/2017 14:41:06] "POST /wx?signature=4c8c49eabf3eca4c7275444d32281c2ee14505a7&timestamp=1503902452&nonce=80950463&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1696
+[28/Aug/2017 14:41:08] "POST /wx?signature=4c8c49eabf3eca4c7275444d32281c2ee14505a7&timestamp=1503902452&nonce=80950463&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1696
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 28, 2017 - 14:40:35
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ember prime%' or name_en like '%ember prime%' 
+SELECT * from item where name_zh like '%ember prime%' or name_en like '%ember prime%' 
+SELECT * from item where name_zh like '%ember prime%' or name_en like '%ember prime%' 
+[28/Aug/2017 14:41:25] "POST /wx?signature=bcceac5c73a72662f7598012e31f78e1aeedf069&timestamp=1503902481&nonce=1735632228&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1553
