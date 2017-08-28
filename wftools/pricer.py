@@ -10,6 +10,7 @@ import MySQLdb
 import types
 import urllib2
 import time
+import httplib 
 class WmPricer:   
 
     TOP_SELLER_NUM = 3
@@ -28,6 +29,11 @@ class WmPricer:
             req=urllib2.Request(url)
             resp =urllib2.urlopen(req)
             html = resp.read()
+            
+            #conn = httplib.HTTPConnection('warframe.market')
+            #conn.request('GET','/api/get_orders/'+itemType+'/'+nameEn)
+            #html = conn.getresponse()
+
             data = json.loads(html)
         except :
             return None
@@ -74,3 +80,5 @@ class WmPricer:
         res['top_avg'] = topSum / topCount
         res['record_time'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
         return res
+wm = WmPricer()
+print wm.getPrice('Ash Prime Set','Set')
