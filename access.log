@@ -5386,3 +5386,1433 @@ Django version 1.11.4, using settings 'web_django.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 [28/Aug/2017 15:10:09] "POST /wx?signature=894e5cb178a4e6f61a2e3764a5086b84de3990f1&timestamp=1503904206&nonce=2050817255&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 599
+Not Found: /manager/html
+[28/Aug/2017 16:45:48] "GET /manager/html HTTP/1.1" 404 2072
+Not Found: /
+[28/Aug/2017 17:15:09] "GET / HTTP/1.0" 404 2025
+[28/Aug/2017 17:49:35] "POST /wx?signature=f0ee5c1c882976c8093c060cc7a8e077de452800&timestamp=1503913769&nonce=746792987&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 569
+[28/Aug/2017 17:49:40] "POST /wx?signature=f0ee5c1c882976c8093c060cc7a8e077de452800&timestamp=1503913769&nonce=746792987&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 569
+[28/Aug/2017 17:49:43] "POST /wx?signature=f0ee5c1c882976c8093c060cc7a8e077de452800&timestamp=1503913769&nonce=746792987&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 569
+[28/Aug/2017 17:49:44] "POST /wx?signature=0151de99b276278d70b649cc7df6be68de10830c&timestamp=1503913781&nonce=1859915626&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 581
+[28/Aug/2017 17:50:11] "POST /wx?signature=ba903b582f1c0a3774312ab55eec98d7d389a4eb&timestamp=1503913805&nonce=1324351241&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 591
+[28/Aug/2017 17:50:16] "POST /wx?signature=ba903b582f1c0a3774312ab55eec98d7d389a4eb&timestamp=1503913805&nonce=1324351241&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 591
+[28/Aug/2017 17:50:18] "POST /wx?signature=ba903b582f1c0a3774312ab55eec98d7d389a4eb&timestamp=1503913805&nonce=1324351241&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 591
+[28/Aug/2017 19:19:06] "GET /wx?signature=b505c70d385153a9f5ee93a69ccbc069865bb56e&echostr=14488217846078766187&timestamp=1503919146&nonce=3628414979 HTTP/1.0" 200 20
+[28/Aug/2017 19:19:16] "POST /wx?signature=aa5e1f9d169b27bfbaf6a1376cfe4d3dac1fa1f3&timestamp=1503919156&nonce=1438844477&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 956
+Performing system checks...
+
+{'cheapest_price': 88, 'record_time': '2017-08-28 19:18:33', 'all_count': 95, 'top_sum': 3160, 'top_avg': 95, 'top_count': 33, 'top_rec': 'E.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\nLomers : 90 x 6\xe4\xb8\xaa\n', 'all_avg': 166}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:18:33
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[28/Aug/2017 19:22:15] "POST /wx?signature=64e82a8e1cce382085d5e862967eb12d52fb001d&timestamp=1503919329&nonce=725785018&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+[28/Aug/2017 19:22:20] "POST /wx?signature=64e82a8e1cce382085d5e862967eb12d52fb001d&timestamp=1503919329&nonce=725785018&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+[28/Aug/2017 19:22:25] "POST /wx?signature=64e82a8e1cce382085d5e862967eb12d52fb001d&timestamp=1503919329&nonce=725785018&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:22:03', 'all_count': 1095, 'top_sum': 82970, 'top_avg': 80, 'top_count': 1031, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:22:03
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Ash Prime%' or name_en like '%Ash Prime%' 
+SELECT * from item where name_zh like '%Ash Prime%' or name_en like '%Ash Prime%' 
+SELECT * from item where name_zh like '%Ash Prime%' or name_en like '%Ash Prime%' 
+[28/Aug/2017 19:22:38] "POST /wx?signature=8899df3e60787b2413a58c97a26e621f6cb06b6d&timestamp=1503919356&nonce=1319726711&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2548
+[28/Aug/2017 19:22:53] "POST /wx?signature=bbda82797c2eab9725f2de7ea8ba8638a6faa243&timestamp=1503919368&nonce=297332863&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1799
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:22:32', 'all_count': 1094, 'top_sum': 82960, 'top_avg': 80, 'top_count': 1031, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:22:32
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 19:23:30] "POST /wx?signature=63240526175530e4b460e98ca8eb0cc97157dfb9&timestamp=1503919404&nonce=1679483386&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+[28/Aug/2017 19:23:35] "POST /wx?signature=63240526175530e4b460e98ca8eb0cc97157dfb9&timestamp=1503919404&nonce=1679483386&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+[28/Aug/2017 19:23:41] "POST /wx?signature=63240526175530e4b460e98ca8eb0cc97157dfb9&timestamp=1503919404&nonce=1679483386&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:23:17', 'all_count': 1093, 'top_sum': 82960, 'top_avg': 80, 'top_count': 1031, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:23:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+SELECT * from item where name_zh like '%ash prime%' or name_en like '%ash prime%' 
+[28/Aug/2017 19:25:34] "POST /wx?signature=2302322f80ca56a55d4b47bf0fe9df643589c9a8&timestamp=1503919529&nonce=1157503645&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1831
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:23:51', 'all_count': 1093, 'top_sum': 82960, 'top_avg': 80, 'top_count': 1031, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:23:51
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+[28/Aug/2017 19:26:12] "POST /wx?signature=85aaa6c742630ea7d7d85de62c5fc83d63f7b6aa&timestamp=1503919569&nonce=1728734624&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2551
+[28/Aug/2017 19:26:28] "POST /wx?signature=f051530dc47827217a4ddcfa3444cc857962da6d&timestamp=1503919583&nonce=217699017&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1826
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:26:08', 'all_count': 1094, 'top_sum': 83370, 'top_avg': 80, 'top_count': 1035, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:26:08
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+[28/Aug/2017 19:27:26] "POST /wx?signature=1a4134547081f3d61d124fbf79939eb65b920261&timestamp=1503919642&nonce=671696950&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2303
+[28/Aug/2017 19:28:36] "POST /wx?signature=c330777a56a63d2df2380f7e11c5216d97779e19&timestamp=1503919715&nonce=1975501492&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 956
+Not Found: /
+[28/Aug/2017 19:31:02] "GET / HTTP/1.1" 404 2021
+Not Found: /http:/139.219.106.96:11000/1qiWaz2wRsx3eXdc4rDfv5tgb6yhn7Uujm8Lik999
+[28/Aug/2017 20:05:28] "GET http://139.219.106.96:11000/1qiWaz2wRsx3eXdc4rDfv5tgb6yhn7Uujm8Lik999 HTTP/1.1" 404 1811
+Not Found: /
+[28/Aug/2017 20:31:29] "GET / HTTP/1.1" 404 2023
+[28/Aug/2017 20:37:00] code 400, message Bad request syntax ("Gh0st\xad\x00\x00\x00\xe0\x00\x00\x00x\x9cKS``\x98\xc3\xc0\xc0\xc0\x06\xc4\x8c@\xbcQ\x96\x81\x81\tH\x07\xa7\x16\x95e&\xa7*\x04$&g+\x182\x94\xf6\xb000\xac\xa8rc\x00\x01\x11\xa0\x82\x1f\\`&\x83\xc7K7\x86\x19\xe5n\x0c9\x95n\x0c;\x84\x0f3\xac\xe8sch\xa8^\xcf4'J\x97\xa9\x82\xe30\xc3\x91h]&\x90\xf8\xce\x97S\xcbA4L?2=\xe1\xc4\x92\x86\x0b@\xf5`\x0cT\x1f\xae\xaf]")
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/logging/__init__.py", line 851, in emit
+    msg = self.format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 724, in format
+    return fmt.format(record)
+  File "/usr/lib/python2.7/site-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib64/python2.7/logging/__init__.py", line 467, in format
+    s = self._fmt % record.__dict__
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xad in position 6: invalid start byte
+Logged from file basehttp.py, line 124
+Not Found: /http:/clientapi.ipip.net/echo.php
+[28/Aug/2017 21:22:08] "GET http://clientapi.ipip.net/echo.php?info=1234567890 HTTP/1.1" 404 1720
+[28/Aug/2017 21:33:47] "POST /wx?signature=7ffc8e3952699177850ebc35605f719e3ff755d2&timestamp=1503927221&nonce=1717750223&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1842
+[28/Aug/2017 21:33:52] "POST /wx?signature=7ffc8e3952699177850ebc35605f719e3ff755d2&timestamp=1503927221&nonce=1717750223&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1842
+[28/Aug/2017 21:33:57] "POST /wx?signature=7ffc8e3952699177850ebc35605f719e3ff755d2&timestamp=1503927221&nonce=1717750223&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1842
+[28/Aug/2017 21:34:07] "POST /wx?signature=f62d2aaa17df6e6cc0a3a79da22e39bf5e1ea07f&timestamp=1503927243&nonce=100121204&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 882
+[28/Aug/2017 21:38:32] "POST /wx?signature=ff022aa4ef9b43d79c49cc01e6c64d90bee2b805&timestamp=1503927512&nonce=1195480214&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 442
+[28/Aug/2017 21:38:46] "POST /wx?signature=75df1d9a483f4a022067db34c927a97ba6683936&timestamp=1503927520&nonce=1610265259&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1805
+[28/Aug/2017 21:38:51] "POST /wx?signature=75df1d9a483f4a022067db34c927a97ba6683936&timestamp=1503927520&nonce=1610265259&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1805
+[28/Aug/2017 21:38:56] "POST /wx?signature=75df1d9a483f4a022067db34c927a97ba6683936&timestamp=1503927520&nonce=1610265259&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1805
+Not Found: /
+[28/Aug/2017 21:42:23] "GET / HTTP/1.0" 404 2025
+[28/Aug/2017 21:46:09] "POST /wx?signature=387ec97c9ba5deeae462342c864ac555a5216050&timestamp=1503927969&nonce=967700221&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 587
+Not Found: /http:/10.177.152.217/proxy.html
+[28/Aug/2017 22:08:45] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[28/Aug/2017 22:08:46] code 400, message Bad request syntax ('\x04\x01')
+[28/Aug/2017 22:08:46] "" 400 -
+[28/Aug/2017 22:08:46] code 400, message Bad request syntax ('\x05\x01')
+[28/Aug/2017 22:08:46] "" 400 -
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-28 19:27:17', 'all_count': 1093, 'top_sum': 83380, 'top_avg': 80, 'top_count': 1035, 'top_rec': 'HellerX : 80 x 1000\xe4\xb8\xaa\nE.I.G.H.T : 88 x 1\xe4\xb8\xaa\nYukain : 89 x 2\xe4\xb8\xaa\n', 'all_avg': 87}
+System check identified no issues (0 silenced).
+August 28, 2017 - 19:27:17
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%val%' or name_en like '%val%' 
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%nove prime%' or name_en like '%nove prime%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+SELECT * from item where name_zh like '%nova prime%' or name_en like '%nova prime%' 
+Not Found: /
+[29/Aug/2017 00:05:29] "GET / HTTP/1.0" 404 2025
+[29/Aug/2017 01:07:45] "POST /wx?signature=d52e5a5ecfa37a2159a1dd468580dad785b94b71&timestamp=1503940060&nonce=1608926725&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1682
+[29/Aug/2017 01:07:49] "POST /wx?signature=d52e5a5ecfa37a2159a1dd468580dad785b94b71&timestamp=1503940060&nonce=1608926725&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1682
+[29/Aug/2017 01:07:50] "POST /wx?signature=4ce8de5f9948f544f3166c9a311c218ed7b02af1&timestamp=1503940067&nonce=160479143&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2458
+Not Found: /
+[29/Aug/2017 02:58:49] "GET / HTTP/1.1" 404 2021
+Not Found: /http:/www.qq.com/404/search_children.js
+[29/Aug/2017 03:45:47] "GET http://www.qq.com/404/search_children.js HTTP/1.1" 404 1714
+[29/Aug/2017 03:45:52] code 400, message Bad request syntax ('\x04\x01\x00PpTi4\x00')
+[29/Aug/2017 03:45:52] " PpTi4 " 400 -
+[29/Aug/2017 03:45:53] code 400, message Bad request syntax ('\x05\x01\x00')
+[29/Aug/2017 03:45:53] " " 400 -
+Not Found: /
+[29/Aug/2017 04:25:56] "GET / HTTP/1.1" 404 2018
+Not Found: /
+[29/Aug/2017 05:21:02] "GET / HTTP/1.1" 404 2019
+Not Found: /
+[29/Aug/2017 05:33:45] "GET / HTTP/1.0" 404 2025
+Not Found: /http:/10.177.152.217/proxy.html
+[29/Aug/2017 06:07:16] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[29/Aug/2017 06:07:16] code 400, message Bad request syntax ('\x04\x01')
+[29/Aug/2017 06:07:16] "" 400 -
+[29/Aug/2017 06:07:17] code 400, message Bad request syntax ('\x05\x01')
+[29/Aug/2017 06:07:17] "" 400 -
+Performing system checks...
+
+{'cheapest_price': 89, 'record_time': '2017-08-28 22:18:31', 'all_count': 175, 'top_sum': 4412, 'top_avg': 98, 'top_count': 45, 'top_rec': 'ming348rar : 89 x 2\xe4\xb8\xaa\n--S.B.O--JimmyTM : 90 x 1\xe4\xb8\xaa\nLinsu : 90 x 3\xe4\xb8\xaa\n', 'all_avg': 133}
+System check identified no issues (0 silenced).
+August 28, 2017 - 22:18:31
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%oberon%' or name_en like '%oberon%' 
+SELECT * from item where name_zh like '%oberon%' or name_en like '%oberon%' 
+SELECT * from item where name_zh like '%ob%' or name_en like '%ob%' 
+[29/Aug/2017 10:29:59] "POST /wx?signature=c79275dec0d798869870367bb0b5998bada892b8&timestamp=1503973796&nonce=1808791570&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 875
+[29/Aug/2017 11:18:01] "POST /wx?signature=4dc6112df81b8e284af3f03f597b10ef38cd33a9&timestamp=1503976680&nonce=45676814&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 476
+[29/Aug/2017 11:31:07] "POST /wx?signature=c9088785ee34041d78398217cbdbb545a530b68e&timestamp=1503977467&nonce=224089560&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 443
+[29/Aug/2017 11:31:32] "POST /wx?signature=b72529e284f825b6dea453a3d227f1ace29f2a88&timestamp=1503977491&nonce=1703881034&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 436
+[29/Aug/2017 11:39:11] "POST /wx?signature=c76b228a969a5f9b69d30baa02f048c0cf97a682&timestamp=1503977947&nonce=1297542208&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1712
+Performing system checks...
+
+{'cheapest_price': 80, 'record_time': '2017-08-29 10:29:50', 'all_count': 56, 'top_sum': 3711, 'top_avg': 112, 'top_count': 33, 'top_rec': 'darkmetter : 80 x 1\xe4\xb8\xaa\nJoaoWebs : 95 x 1\xe4\xb8\xaa\nVVega : 99 x 1\xe4\xb8\xaa\n', 'all_avg': 144}
+System check identified no issues (0 silenced).
+August 29, 2017 - 10:29:50
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%压迫点%' or name_en like '%压迫点%' 
+SELECT * from item where name_zh like '%mesa%' or name_en like '%mesa%' 
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+SELECT * from item where name_zh like '%Trinity%' or name_en like '%Trinity%' 
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+Unhandled exception in thread started by <function wrapper at 0x258da28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 14
+    import WarframeDb from db
+                         ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x32fba28>
+Performing system checks...
+
+{'itemId': 648L, 'cheapest_price': 6L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 48), 'all_count': 53L, 'item': u'Trinity Prime Neuroptics', 'top_avg': 18L, 'top_count': 53L, 'top_rec': u'Riflenche:6x1|musaDoh:6x1|DaWhoVian:7x1|', 'all_avg': 18L, 'type': u'Blueprint'}
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 14, in <module>
+    from db import WarframeDb
+ImportError: cannot import name WarframeDb
+Unhandled exception in thread started by <function wrapper at 0x290fa28>
+Performing system checks...
+
+{'itemId': 648L, 'cheapest_price': 6L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 48), 'all_count': 53L, 'item': u'Trinity Prime Neuroptics', 'top_avg': 18L, 'top_count': 53L, 'top_rec': u'Riflenche:6x1|musaDoh:6x1|DaWhoVian:7x1|', 'all_avg': 18L, 'type': u'Blueprint'}
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 15, in <module>
+    from wftools.pricer import WmPricer
+  File "/root/web_django/wftools/pricer.py", line 87, in <module>
+    print wm.getPrice('Ash Prime Set','Set')
+  File "/root/web_django/wftools/pricer.py", line 19, in getPrice
+    wfdb = WarFrameDB()
+NameError: global name 'WarFrameDB' is not defined
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 93, in getInfoByName
+    resStr += "售价：\n最低：%s \n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_sum'],itemPrice['top_rec'])
+KeyError: 'top_sum'
+[29/Aug/2017 12:14:18] "POST /wx?signature=73406bdc2532556b8ae77d6261958eb24dd93a4a&timestamp=1503980057&nonce=932100131&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 79241
+Performing system checks...
+
+{'itemId': 648L, 'cheapest_price': 6L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 48), 'all_count': 53L, 'item': u'Trinity Prime Neuroptics', 'top_avg': 18L, 'top_count': 53L, 'top_rec': u'Riflenche:6x1|musaDoh:6x1|DaWhoVian:7x1|', 'all_avg': 18L, 'type': u'Blueprint'}
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1|VVega:99x1|warramssie-EGT-:99x4|', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:14:11
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 93, in getInfoByName
+    resStr += "售价：\n最低：%s \n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_sum'],itemPrice['top_rec'])
+KeyError: 'top_sum'
+[29/Aug/2017 12:15:17] "POST /wx?signature=05d2f5ef397d55dbc2e2a1fcd0d5c22d0e0837bf&timestamp=1503980116&nonce=1995933969&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 79250
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1|VVega:99x1|warramssie-EGT-:99x4|', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:14:53
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1|VVega:99x1|warramssie-EGT-:99x4|', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:16:58
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 12:17:56] "POST /wx?signature=1cb61aa2d1529ff3fe39f3cb8dfd9270cc43adef&timestamp=1503980276&nonce=1339717172&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1637
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1|VVega:99x1|warramssie-EGT-:99x4|', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:17:51
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+[29/Aug/2017 12:18:19] "POST /wx?signature=2ea80ef064108b71e77808a563b63666db376a29&timestamp=1503980299&nonce=1913154595&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1764
+Not Found: /
+[29/Aug/2017 12:32:04] "GET / HTTP/1.0" 404 2025
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1|VVega:99x1|warramssie-EGT-:99x4|', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:18:18
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+[29/Aug/2017 12:42:52] "POST /wx?signature=bbfaf4be530994926ef37f16cb215165f94ebefa&timestamp=1503981772&nonce=2106575732&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1282
+Performing system checks...
+
+None
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:42:47
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+[29/Aug/2017 12:43:05] "POST /wx?signature=9aeacfd1457d23e987abae5b50742aa78c4b24c9&timestamp=1503981785&nonce=761092461&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1809
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1\u4e2a\nVVega:99x1\u4e2a\nwarramssie-EGT-:99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:43:05
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime%' or name_en like '%Trinity Prime%' 
+[29/Aug/2017 12:44:38] "POST /wx?signature=968dd969901a562627212d28fdbee81d42b8c529&timestamp=1503981878&nonce=227851423&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 91, in getInfoByName
+    itemPrice = pricer.getPrice(name_en,itemType)
+  File "/root/web_django/wftools/pricer.py", line 22, in getPrice
+    dbprice = wfdb.getPriceByNameEnAndType(nameEn,itemType)
+  File "/root/web_django/wftools/db.py", line 49, in getPriceByNameEnAndType
+    return resList
+NameError: global name 'resList' is not defined
+[29/Aug/2017 12:44:41] "POST /wx?signature=7d461bd42e0616c8742f9990ac495f88b11ce1dd&timestamp=1503981881&nonce=630060634&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 88270
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1\u4e2a\nVVega:99x1\u4e2a\nwarramssie-EGT-:99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:44:37
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%trinity%' or name_en like '%trinity%' 
+[29/Aug/2017 12:46:24] "POST /wx?signature=4b3679b4cb0eed026c2659ec256ef8391b424043&timestamp=1503981983&nonce=491604605&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2101
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter:80x1\u4e2a\nVVega:99x1\u4e2a\nwarramssie-EGT-:99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:46:09
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%trinity%' or name_en like '%trinity%' 
+[29/Aug/2017 12:47:20] "POST /wx?signature=88cd732d1eb0e61bdb26333beb1fed3690c6a5fd&timestamp=1503982039&nonce=1363813666&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1839
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:47:16
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%trinity prime%' or name_en like '%trinity prime%' 
+Unhandled exception in thread started by <function wrapper at 0x1bc4a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 92
+    if len(results) <= self.MAX_URL_RRICE_NUM
+                                            ^
+SyntaxError: invalid syntax
+[29/Aug/2017 12:51:05] "POST /wx?signature=d81b16f4a3ad684befaf79c4373925de33eac70e&timestamp=1503982265&nonce=1905950843&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 331
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 92, in getInfoByName
+    if len(results) <= self.MAX_URL_RRICE_NUM:
+AttributeError: 'warframe' object has no attribute 'MAX_URL_RRICE_NUM'
+[29/Aug/2017 12:51:06] "POST /wx?signature=dc01c237d149e51ac32593abc53afa6ee8df81d8&timestamp=1503982266&nonce=1746109029&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 78318
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:51:04
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime Neuroptics%' or name_en like '%Trinity Prime Neuroptics%' 
+[29/Aug/2017 12:52:21] "POST /wx?signature=608b6e1ad4981bcac2b0d222f421b0504b470be2&timestamp=1503982340&nonce=1979112550&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 687
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:52:15
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime Neuroptics%' or name_en like '%Trinity Prime Neuroptics%' 
+[29/Aug/2017 12:53:31] "POST /wx?signature=62e53f5baa88bf12a85c37113e9b868930155a85&timestamp=1503982410&nonce=2062132769&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 692
+[29/Aug/2017 12:53:44] "POST /wx?signature=2948f6bf79b302b7cf6a9ec43cc4b25991b324da&timestamp=1503982423&nonce=1729902915&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2110
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:53:30
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%Trinity Prime Neuroptics%' or name_en like '%Trinity Prime Neuroptics%' 
+SELECT * from item where name_zh like '%trinity%' or name_en like '%trinity%' 
+Unhandled exception in thread started by <function wrapper at 0x3579a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 99
+    if nowProcessTime - startProcessTime < self.MAX_PROCESS_TIME
+                                                               ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x2df2a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 99
+    if nowProcessTime - startProcessTime < self.MAX_PROCESS_TIME
+                                                               ^
+SyntaxError: invalid syntax
+[29/Aug/2017 12:58:37] "POST /wx?signature=9059c0157b2b69ca47653b53ac7f9b535f6b01dc&timestamp=1503982717&nonce=1596368549&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1812
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:58:37
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+[29/Aug/2017 12:59:06] "POST /wx?signature=e62592710756d5fae706a2d54fca16ec36aa6c58&timestamp=1503982746&nonce=1786057284&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1922
+[29/Aug/2017 12:59:25] "POST /wx?signature=88df8b97f8905175a8e3258b26987cc3ce6bebaa&timestamp=1503982762&nonce=311009983&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1591
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:58:59
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%nek%' or name_en like '%nek%' 
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 12:59:45
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x1d47a28>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/web_django/urls.py", line 21, in <module>
+    url(r'^wx', include('wechat.urls')),    
+  File "/usr/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/root/web_django/wechat/urls.py", line 3, in <module>
+    from . import views
+  File "/root/web_django/wechat/views.py", line 8, in <module>
+    from warframe import warframe
+  File "/root/web_django/wechat/warframe.py", line 108
+    if priceCount < len(results)    
+                                   ^
+SyntaxError: invalid syntax
+[29/Aug/2017 13:03:37] "POST /wx?signature=80a4c555ba8e58fc455c5aec28494b58cb58b562&timestamp=1503983013&nonce=386451092&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1483
+Internal Server Error: /wx
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/web_django/wechat/views.py", line 73, in index
+    reply_text = wf.getInfoByName(subContent)
+  File "/root/web_django/wechat/warframe.py", line 109, in getInfoByName
+    resStr += "【提示】搜索到的记录太多，只显示前%s物品价格，请缩小搜索范围，如#wf Ash Prime Set\n\n"%(priceCOunt)
+NameError: global name 'priceCOunt' is not defined
+[29/Aug/2017 13:03:53] "POST /wx?signature=32f0abae051c3064e66aca5b82ad96db5abacc33&timestamp=1503983028&nonce=1976140738&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 500 84371
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:03:33
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%双短柄战镰%' or name_en like '%双短柄战镰%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[29/Aug/2017 13:04:13] "POST /wx?signature=b15a0992bb14370520db0fc2de6624fc183e7fa2&timestamp=1503983048&nonce=2005744943&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2844
+[29/Aug/2017 13:04:46] "POST /wx?signature=c63772dd2e789cd6cb9106e295b6db562e3851cd&timestamp=1503983082&nonce=1737330733&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2714
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:04:07
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[29/Aug/2017 13:05:31] "POST /wx?signature=cd8294f7b944a63518f0d45f7fcd2bc1f737e51e&timestamp=1503983127&nonce=1529464248&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2688
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:05:26
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+Not Found: /http:/10.177.152.217/proxy.html
+[29/Aug/2017 13:06:24] "GET http://10.177.152.217/proxy.html HTTP/1.1" 404 1694
+[29/Aug/2017 13:06:25] code 400, message Bad request syntax ('\x04\x01')
+[29/Aug/2017 13:06:25] "" 400 -
+[29/Aug/2017 13:06:25] code 400, message Bad request syntax ('\x05\x01')
+[29/Aug/2017 13:06:25] "" 400 -
+[29/Aug/2017 13:06:28] "POST /wx?signature=0a475e44dfe716941b97ac4c46bf846be18af454&timestamp=1503983185&nonce=823605668&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1229
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:06:20
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%野马双枪%' or name_en like '%野马双枪%' 
+[29/Aug/2017 13:07:16] "POST /wx?signature=43bcbea50d6d3fe25f04dc91e96f1e4939af5431&timestamp=1503983231&nonce=1281185827&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 4252
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:07:08
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[29/Aug/2017 13:07:29] "POST /wx?signature=a387fc4e17625fc4844221d19c6eca8150266af9&timestamp=1503983244&nonce=1948314709&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2205
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:07:22
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+[29/Aug/2017 13:08:17] "POST /wx?signature=065b8a509a142b901d3703ef6e537a7c1584e8a8&timestamp=1503983292&nonce=369730187&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2197
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[29/Aug/2017 13:08:45] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[29/Aug/2017 13:09:31] "POST /wx?signature=4b315ee5affd57c1712c1b4d8f66b71b3018ed5a&timestamp=1503983367&nonce=2031093458&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1522
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:08:05
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0119278430939
+0.491207838058
+1.12529683113
+2.05846691132
+2.47113585472
+2.93695282936
+3.56777787209
+SELECT * from item where name_zh like '%悦音%' or name_en like '%悦音%' 
+0.0104529857635
+0.931517839432
+1.75463080406
+2.85893988609
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+SELECT * from item where name_zh like '%野马双枪%' or name_en like '%野马双枪%' 
+0.0187211036682
+3.17543292046
+3.63630390167
+-------------------------------
+类别: Blueprint
+名称: 野马双枪 Prime 蓝图
+英文名: Akbronco Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Akbronco '>Wiki</a>】
+售价
+最低：5 
+前20平均售价：8 x 7个
+最便宜卖家：
+senura : 5 x 1个
+Slayer77777 : 5 x 1个
+RemiX001 : 5 x 1个
+-------------------------------
+类别: Blueprint
+名称: 野马双枪 Prime 链接
+英文名: Akbronco Prime Link
+ 【<a href='http://warframe.huijiwiki.com/wiki/Akbronco '>Wiki</a>】
+未查询到售价
+-------------------------------
+类别: Set
+名称: 野马双枪 Prime Set
+英文名: Akbronco Prime Set
+ 【<a href='http://warframe.huijiwiki.com/wiki/Akbronco '>Wiki</a>】
+未查询到售价
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:10:21
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.00958895683289
+0.493040084839
+1.20610308647
+2.14896893501
+2.61322402954
+3.07925605774
+3.74783492088
+【提示】共搜索到19条记录，因微信限制，只显示前7条
+-------------------------------
+类别: Mod
+名称: 释放
+英文名: Unleashed
+ 【<a href='http://warframe.huijiwiki.com/wiki/Unleashed'>Wiki</a>】
+售价
+最低：10 
+前20平均售价：10 x 1个
+最便宜卖家：
+breakerion : 10 x 1个
+-------------------------------
+类别: Mod
+名称: 巨林冲击
+英文名: Clashing Forest
+ 【<a href='http://warframe.huijiwiki.com/wiki/Clashing Forest'>Wiki</a>】
+售价
+最低：3 
+前20平均售价：4 x 7个
+最便宜卖家：
+Slayer77777 : 3 x 2个
+skssnrnsrk : 5 x 1个
+Dazubo : 5 x 1个
+-------------------------------
+类别: Mod
+名称: 狼鱼咬咬
+英文名: Gnashing Payara
+ 【<a href='http://warframe.huijiwiki.com/wiki/Gnashing Payara'>Wiki</a>】
+售价
+最低：2 
+前20平均售价：4 x 28个
+最便宜卖家：
+ScrwIt : 2 x 3个
+Em--Dash : 3 x 1个
+Drgnhunter : 3 x 1个
+-------------------------------
+类别: Arcane Helmet
+名称: Ash飞蝗头盔
+英文名: Locust Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Locust Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+类别: Arcane Helmet
+名称: 毒蝎Ash头盔
+英文名: Scorpion Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Scorpion Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+类别: Mod
+名称: 枪口闪焰
+英文名: Muzzle Flash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Muzzle Flash'>Wiki</a>】
+售价
+最低：15 
+前20平均售价：20 x 6个
+最便宜卖家：
+Synikal : 15 x 1个
+TheBearShare : 20 x 1个
+Gilbertoe : 20 x 1个
+-------------------------------
+类别: Mod
+名称: 涌流突进
+英文名: Surging Dash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Surging Dash'>Wiki</a>】
+售价
+最低：15 
+前20平均售价：21 x 4个
+最便宜卖家：
+Synikal : 15 x 1个
+Dalyonin : 19 x 1个
+Gilbertoe : 20 x 1个
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:10:57
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 13:11:30] "POST /wx?signature=0e8eeedec96b7144d0e4db349c854f5938658403&timestamp=1503983486&nonce=144290861&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2545
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0217018127441
+0.519288778305
+1.40559577942
+2.38055896759
+2.82803678513
+3.29246687889
+4.00155997276
+4.00159192085
+4.00160479546
+4.00161886215
+【提示】共搜索到19条记录，因微信限制，只显示前10条
+-------------------------------
+类别: Mod
+名称: 释放
+英文名: Unleashed
+ 【<a href='http://warframe.huijiwiki.com/wiki/Unleashed'>Wiki</a>】
+售价
+最低：10 
+前20平均售价：10 x 1个
+最便宜卖家：
+breakerion : 10 x 1个
+-------------------------------
+类别: Mod
+名称: 巨林冲击
+英文名: Clashing Forest
+ 【<a href='http://warframe.huijiwiki.com/wiki/Clashing Forest'>Wiki</a>】
+售价
+最低：3 
+前20平均售价：4 x 6个
+最便宜卖家：
+Slayer77777 : 3 x 2个
+skssnrnsrk : 5 x 1个
+Dazubo : 5 x 1个
+-------------------------------
+类别: Mod
+名称: 狼鱼咬咬
+英文名: Gnashing Payara
+ 【<a href='http://warframe.huijiwiki.com/wiki/Gnashing Payara'>Wiki</a>】
+售价
+最低：2 
+前20平均售价：4 x 27个
+最便宜卖家：
+ScrwIt : 2 x 3个
+Em--Dash : 3 x 1个
+Drgnhunter : 3 x 1个
+-------------------------------
+类别: Arcane Helmet
+名称: Ash飞蝗头盔
+英文名: Locust Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Locust Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+类别: Arcane Helmet
+名称: 毒蝎Ash头盔
+英文名: Scorpion Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Scorpion Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+类别: Mod
+名称: 枪口闪焰
+英文名: Muzzle Flash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Muzzle Flash'>Wiki</a>】
+售价
+最低：15 
+前20平均售价：20 x 6个
+最便宜卖家：
+Synikal : 15 x 1个
+TheBearShare : 20 x 1个
+Gilbertoe : 20 x 1个
+-------------------------------
+类别: Mod
+名称: 涌流突进
+英文名: Surging Dash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Surging Dash'>Wiki</a>】
+-------------------------------
+类别: Mod
+名称: 连续冲击
+英文名: Crash Course
+ 【<a href='http://warframe.huijiwiki.com/wiki/Crash Course'>Wiki</a>】
+-------------------------------
+类别: Mod
+名称: 净化斩
+英文名: Purging Slash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Purging Slash'>Wiki</a>】
+-------------------------------
+类别: Blueprint
+名称: Ash Prime 蓝图
+英文名: Ash Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Ash '>Wiki</a>】
+【提示】搜索到的记录太多，只显示前6物品价格，请缩小搜索范围，如#wf Ash Prime Set
+
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:11:14
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0153450965881
+0.707281112671
+1.93059206009
+3.27136898041
+3.95415711403
+4.62736701965
+4.62739396095
+4.62740492821
+4.62742805481
+4.62744307518
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0115461349487
+0.45906996727
+1.11085295677
+2.03406691551
+2.46923804283
+2.90101099014
+3.5533850193
+4.26278805733
+4.26281309128
+4.26282691956
+【提示】共搜索到19条记录，因微信限制，只显示前10条
+-------------------------------
+【Mod】释放
+英文名: Unleashed
+ 【<a href='http://warframe.huijiwiki.com/wiki/Unleashed'>Wiki</a>】
+【售价】
+最低：10 
+前20平均售价：10 x 1个
+最便宜卖家：
+breakerion : 10 x 1个
+-------------------------------
+【Mod】巨林冲击
+英文名: Clashing Forest
+ 【<a href='http://warframe.huijiwiki.com/wiki/Clashing Forest'>Wiki</a>】
+【售价】
+最低：3 
+前20平均售价：4 x 6个
+最便宜卖家：
+Slayer77777 : 3 x 2个
+skssnrnsrk : 5 x 1个
+Dazubo : 5 x 1个
+-------------------------------
+【Mod】狼鱼咬咬
+英文名: Gnashing Payara
+ 【<a href='http://warframe.huijiwiki.com/wiki/Gnashing Payara'>Wiki</a>】
+【售价】
+最低：2 
+前20平均售价：4 x 27个
+最便宜卖家：
+ScrwIt : 2 x 3个
+Em--Dash : 3 x 1个
+Drgnhunter : 3 x 1个
+-------------------------------
+【Arcane Helmet】Ash飞蝗头盔
+英文名: Locust Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Locust Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+【Arcane Helmet】毒蝎Ash头盔
+英文名: Scorpion Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Scorpion Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+【Mod】枪口闪焰
+英文名: Muzzle Flash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Muzzle Flash'>Wiki</a>】
+【售价】
+最低：15 
+前20平均售价：20 x 6个
+最便宜卖家：
+Synikal : 15 x 1个
+TheBearShare : 20 x 1个
+Gilbertoe : 20 x 1个
+-------------------------------
+【Mod】涌流突进
+英文名: Surging Dash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Surging Dash'>Wiki</a>】
+【售价】
+最低：15 
+前20平均售价：21 x 4个
+最便宜卖家：
+Synikal : 15 x 1个
+Dalyonin : 19 x 1个
+Gilbertoe : 20 x 1个
+-------------------------------
+【Mod】连续冲击
+英文名: Crash Course
+ 【<a href='http://warframe.huijiwiki.com/wiki/Crash Course'>Wiki</a>】
+-------------------------------
+【Mod】净化斩
+英文名: Purging Slash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Purging Slash'>Wiki</a>】
+-------------------------------
+【Blueprint】Ash Prime 蓝图
+英文名: Ash Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Ash '>Wiki</a>】
+【提示】搜索到的记录太多，只显示前7物品价格，请缩小搜索范围，如#wf Ash Prime Set
+
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:13:02
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.00920796394348
+0.462331056595
+1.12738895416
+2.05148506165
+2.51056694984
+2.92293286324
+3.63120007515
+3.63121700287
+3.63122606277
+3.63123393059
+【提示】共搜索到19条记录，因微信限制，只显示前10条
+-------------------------------
+【Mod】释放
+英文名: Unleashed
+ 【<a href='http://warframe.huijiwiki.com/wiki/Unleashed'>Wiki</a>】
+【售价】
+最低：10 
+前20平均售价：10 x 1个
+最便宜卖家：
+breakerion : 10 x 1个
+-------------------------------
+【Mod】巨林冲击
+英文名: Clashing Forest
+ 【<a href='http://warframe.huijiwiki.com/wiki/Clashing Forest'>Wiki</a>】
+【售价】
+最低：3 
+前20平均售价：4 x 6个
+最便宜卖家：
+Slayer77777 : 3 x 2个
+skssnrnsrk : 5 x 1个
+Dazubo : 5 x 1个
+-------------------------------
+【Mod】狼鱼咬咬
+英文名: Gnashing Payara
+ 【<a href='http://warframe.huijiwiki.com/wiki/Gnashing Payara'>Wiki</a>】
+【售价】
+最低：2 
+前20平均售价：4 x 24个
+最便宜卖家：
+ScrwIt : 2 x 3个
+Em--Dash : 3 x 1个
+Drgnhunter : 3 x 1个
+-------------------------------
+【Arcane Helmet】Ash飞蝗头盔
+英文名: Locust Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Locust Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+【Arcane Helmet】毒蝎Ash头盔
+英文名: Scorpion Ash Helmet
+ 【<a href='http://warframe.huijiwiki.com/wiki/Scorpion Ash Helmet'>Wiki</a>】
+未查询到售价
+-------------------------------
+【Mod】枪口闪焰
+英文名: Muzzle Flash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Muzzle Flash'>Wiki</a>】
+【售价】
+最低：15 
+前20平均售价：20 x 6个
+最便宜卖家：
+Synikal : 15 x 1个
+TheBearShare : 20 x 1个
+Gilbertoe : 20 x 1个
+-------------------------------
+【Mod】涌流突进
+英文名: Surging Dash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Surging Dash'>Wiki</a>】
+-------------------------------
+【Mod】连续冲击
+英文名: Crash Course
+ 【<a href='http://warframe.huijiwiki.com/wiki/Crash Course'>Wiki</a>】
+-------------------------------
+【Mod】净化斩
+英文名: Purging Slash
+ 【<a href='http://warframe.huijiwiki.com/wiki/Purging Slash'>Wiki</a>】
+-------------------------------
+【Blueprint】Ash Prime 蓝图
+英文名: Ash Prime Blueprint
+ 【<a href='http://warframe.huijiwiki.com/wiki/Ash '>Wiki</a>】
+【提示】搜索到的记录太多，只显示前6物品价格，请缩小搜索范围，如#wf Ash Prime Set
+
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:14:06
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 13:14:24] "POST /wx?signature=cafa4db7673c1027b3ed306a6a63fe66b7664f5e&timestamp=1503983660&nonce=401650595&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2595
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:14:18
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0122098922729
+0.495661020279
+1.12938094139
+2.04109096527
+2.53506684303
+2.96359086037
+3.90725302696
+3.90726900101
+3.90727591515
+3.90728497505
+[29/Aug/2017 13:14:49] "POST /wx?signature=0a769ce5fac9ed56889b56bf7cea0ed281b553b1&timestamp=1503983686&nonce=959287242&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1833
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:14:45
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0103139877319
+0.460470914841
+1.19428801537
+2.12272381783
+2.58339190483
+3.04549479485
+[29/Aug/2017 13:15:16] "POST /wx?signature=5d3823807a8e85210131eac783c5757093dc36fb&timestamp=1503983713&nonce=523614300&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2139
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:15:11
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0109188556671
+0.529779911041
+1.2551779747
+2.22149801254
+2.68470883369
+3.11093497276
+3.11095190048
+3.11096000671
+[29/Aug/2017 13:15:39] "POST /wx?signature=e163ba5f448bbc54f018bafcda222fdcc950a237&timestamp=1503983735&nonce=1366728755&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2313
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:15:33
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.00980091094971
+0.481111049652
+1.12329506874
+2.0548479557
+2.51686000824
+2.98155498505
+3.68512988091
+3.68515205383
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:18:06
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+{'itemId': 720L, 'cheapest_price': 80L, 'record_time': datetime.datetime(2017, 8, 29, 11, 48, 52), 'all_count': 49L, 'item': u'Ash Prime Set', 'top_avg': 101L, 'top_count': 29L, 'top_rec': u'darkmetter : 80x1\u4e2a\nVVega : 99x1\u4e2a\nwarramssie-EGT- : 99x4\u4e2a\n', 'all_avg': 138L, 'type': u'Set'}
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:18:39
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:18:46
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 13:19:12] "POST /wx?signature=6c2eec7191e178069190d27acf0da4f22a920402&timestamp=1503983949&nonce=1097598586&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2195
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:19:04
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0147759914398
+0.588599920273
+1.24624180794
+2.16462492943
+2.62830996513
+3.06571984291
+3.06573987007
+3.06574678421
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:20:11
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 13:20:52] "POST /wx?signature=95e156ca5f2122be5be1b540fb20589c616dae93&timestamp=1503984048&nonce=446889080&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2326
+[29/Aug/2017 13:21:04] "POST /wx?signature=2e61e08e287c3ab18ede9147b8f16466de3125cf&timestamp=1503984061&nonce=1041544734&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2162
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:20:45
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.017578125
+0.46275806427
+1.17116498947
+2.05388498306
+2.51364707947
+2.97789001465
+3.68999099731
+3.69002509117
+SELECT * from item where name_zh like '%ash%' or name_en like '%ash%' 
+0.0191059112549
+0.488998889923
+1.8125770092
+2.7397480011
+3.2011449337
+3.20118784904
+3.20120191574
+3.20121407509
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 29, 2017 - 13:22:27
+Django version 1.11.4, using settings 'web_django.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+[29/Aug/2017 13:23:20] "POST /wx?signature=4568bec2c2bd1c71a4c72efaa7141ce62064d84d&timestamp=1503984197&nonce=1070319430&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 2193
+[29/Aug/2017 13:24:03] "POST /wx?signature=240184a3507c154f094b52e823ff831218e5a45b&timestamp=1503984243&nonce=1459996985&openid=opD4r0WskoVJmlirA9ubVCVpg-k0 HTTP/1.1" 200 1792

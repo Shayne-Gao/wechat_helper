@@ -14,8 +14,10 @@ import time
 from wftools.translator import WmTranslator
 from wftools.pricer import WmPricer
 class warframe(object):
-    MAX_RECORD_NUM = 10
-    MAX_RECORD_PRICE_NUM = 2 
+    MAX_RECORD_NUM = 8 
+    #MAX_RECORD_PRICE_NUM = 1 #最大查询价格的物品数目
+    MAX_URL_PRICE_NUM = 2 #查询物品结果数目少于此值时，强制查询远端实时价格
+    MAX_PROCESS_TIME = 3 #最大处理时间的秒数
     def timestamp_datetime(self,value):
         value = int(value)
         format = '%Y-%m-%d %H:%M:%S'
@@ -41,6 +43,8 @@ class warframe(object):
 
             
     def getInfoByName(self,itemName):
+        #记录开始时间
+        startProcessTime = time.time()
         resStr = ""
         #尝试直接翻译
         trans = WmTranslator()
@@ -48,7 +52,7 @@ class warframe(object):
         if directNameZh != itemName:
             resStr += "您的输入也可以直接被翻译为:"+directNameZh+"\n\n"
 
-        db = MySQLdb.connect("localhost","root","eas140900","warframe",charset='utf8' )
+        db = MySQLdb.connect("localhost","root","IWLX8IS12Rl","warframe",charset='utf8' )
 
         # 使用cursor()方法获取操作游标 
         cursor = db.cursor()
@@ -73,10 +77,8 @@ class warframe(object):
         pricer = WmPricer()
         checkPrice = True
         #这里限制询价的长度，因为太多的记录询价会很慢
-        if len(results) >self.MAX_RECORD_PRICE_NUM:
-            #checkPrice = False
-            resStr += "【提示】搜索到的记录太多，只显示前%s物品价格，请完善关键词，如#wf Ash Prime Set\n\n"%(self.MAX_RECORD_PRICE_NUM)
         listCount = 0;
+        priceCount = 0;
         for r in results:
             name_en=r[1]
             name_zh=r[2]
@@ -84,15 +86,30 @@ class warframe(object):
             wikiZH = self.getZhWikiUrl(name_zh,name_en,itemType)
             wikiZH = "【<a href='"+wikiZH+"'>Wiki</a>】"
             resStr += "-------------------------------\n"
-            resStr += "类别: %s\n名称: %s\n英文名: %s\n %s\n"%(itemType,name_zh,name_en,wikiZH)
+            resStr += "【%s】%s\n英文名: %s\n%s\n"%(itemType,name_zh,name_en,wikiZH)
             #get price
             listCount += 1
-            if listCount <= self.MAX_RECORD_PRICE_NUM:
-                itemPrice = pricer.getPrice(name_en,itemType)
+            isForceUrlPrice = False
+            if len(results) <= self.MAX_URL_PRICE_NUM:
+                isForceUrlPrice = True
+            nowProcessTime = time.time()
+            #if listCount <= self.MAX_RECORD_PRICE_NUM:
+            print nowProcessTime - startProcessTime
+            if nowProcessTime - startProcessTime < self.MAX_PROCESS_TIME:
+                priceCount += 1
+                itemPrice = pricer.getPrice(name_en,itemType,isForceUrlPrice)
                 if itemPrice is not None:
-                    resStr += "售价：\n最低：%s  前20平均售价：%s x %s个\n 前3位的卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_sum'],itemPrice['top_rec'])
+                    resStr += "【最低售价"
+                    if itemPrice['source'] == 'url':
+                        resStr += "(实时)"  
+                    resStr +="】"
+                    resStr += "%s 白金\n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_count'],itemPrice['top_rec'])
                 else:
                     resStr += "未查询到售价\n"
+        #是否因为时间原因未查询的物品价格？
+        if priceCount < len(results): 
+            resStr += "-------------------------------\n"
+            resStr += "【提示】搜索到的记录太多，只显示前%s物品价格，请缩小搜索范围，如#wf Ash Prime Set\n\n"%(priceCount)
         return resStr
 
     def getAlarm(self):
@@ -125,7 +142,7 @@ class warframe(object):
 
 def test():
     wf = warframe()
-    print wf.getPrice('Ash Prime Set','Set')
+    print wf.getInfoByName('ash')
 #------------------------------------------
 #test()
 #wf = warframe()

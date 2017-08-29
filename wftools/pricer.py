@@ -11,11 +11,21 @@ import types
 import urllib2
 import time
 import httplib 
+from db import WarframeDB
 class WmPricer:   
 
     TOP_SELLER_NUM = 3
-    def getPrice(self,nameEn,itemType):
-        return self.getPriceFromWm(nameEn,itemType)
+    def getPrice(self,nameEn,itemType,forceUrl=False):
+        if forceUrl:
+            return self.getPriceFromWm(nameEn,itemType)
+        wfdb = WarframeDB()
+        dbprice = wfdb.getPriceByNameEnAndType(nameEn,itemType)
+        if dbprice is not None:
+            dbprice['top_rec'] = dbprice['top_rec'].replace('|','个\n')
+            dbprice['top_rec'] = dbprice['top_rec'].replace(':',' : ')
+            return dbprice
+        else:
+            return self.getPriceFromWm(nameEn,itemType)
 
     def sellerRecFormat(self,l):
         resStr = "%s : %s x %s个\n"%(l['ingame_name'],l['price'],l['count'])
@@ -79,6 +89,7 @@ class WmPricer:
         res['top_sum'] = topSum
         res['top_avg'] = topSum / topCount
         res['record_time'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        res['source']='url'
         return res
-wm = WmPricer()
-print wm.getPrice('Ash Prime Set','Set')
+#wm = WmPricer()
+#print wm.getPrice('Ash Prime Set','Set')
