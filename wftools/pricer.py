@@ -15,23 +15,31 @@ from db import WarframeDB
 class WmPricer:   
 
     TOP_SELLER_NUM = 3
-    def getPrice(self,nameEn,itemType,forceUrl=False):
-        if forceUrl:
+    def getPrice(self,nameEn,itemType,source=''):
+        if source =='url':
             return self.getPriceFromWm(nameEn,itemType)
-        wfdb = WarframeDB()
-        dbprice = wfdb.getPriceByNameEnAndType(nameEn,itemType)
-        if dbprice is not None:
-            dbprice['top_rec'] = dbprice['top_rec'].replace('|','个\n')
-            dbprice['top_rec'] = dbprice['top_rec'].replace(':',' : ')
-            return dbprice
-        else:
-            return self.getPriceFromWm(nameEn,itemType)
+        elif source =='db':
+            return self.getPriceFromDb(nameEn,itemType)
+        else:#默认获取方式
+            dbprice = self.getPriceFromDb(nameEn,itemType)
+            if dbprice is not None:
+                return dbprice
+            else:
+                return self.getPriceFromWm(nameEn,itemType)
 
     def sellerRecFormat(self,l):
         resStr = "%s : %s x %s个\n"%(l['ingame_name'],l['price'],l['count'])
         resStr = resStr.encode("utf-8")
         resStr = urllib.unquote(resStr)
         return resStr
+    
+    def getPriceFromDb(self,nameEn,itemType):
+        wfdb = WarframeDB()
+        dbprice = wfdb.getPriceByNameEnAndType(nameEn,itemType)
+        if dbprice is not None:
+            dbprice['top_rec'] = dbprice['top_rec'].replace('|','个\n')
+            dbprice['top_rec'] = dbprice['top_rec'].replace(':',' : ')
+        return dbprice
 
     def getPriceFromWm(self,nameEn,itemType):
         url = 'http://warframe.market/api/get_orders/'+itemType+'/'+nameEn
@@ -69,6 +77,8 @@ class WmPricer:
             onlineSellRecSum += info['price'] * info['count']
             onlineSellRecCount += info['count']
         #sort and analysis
+        if len(onlineSellRec) ==0:
+            return None
         onlineSellRec.sort(key=lambda obj:obj.get('price'), reverse=False)
         res = {}
         res['top_rec'] ="" 

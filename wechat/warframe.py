@@ -13,11 +13,13 @@ import urllib2
 import time
 from wftools.translator import WmTranslator
 from wftools.pricer import WmPricer
+from wftools.builder import WmBuilder
 class warframe(object):
-    MAX_RECORD_NUM = 8 
+    MAX_RECORD_NUM = 6 
     #MAX_RECORD_PRICE_NUM = 1 #最大查询价格的物品数目
     MAX_URL_PRICE_NUM = 2 #查询物品结果数目少于此值时，强制查询远端实时价格
     MAX_PROCESS_TIME = 3 #最大处理时间的秒数
+    MAX_BUILD_NUM = 2 #获取最多的build数量
     def timestamp_datetime(self,value):
         value = int(value)
         format = '%Y-%m-%d %H:%M:%S'
@@ -40,7 +42,25 @@ class warframe(object):
         #    pageName = nameEn
         pageName = baseName
         return baseUrl+pageName
-
+    
+    def getBuildlikeName(self,itemName):
+        wmb = WmBuilder()
+        buildDict = wmb.getBuildList(itemName,self.MAX_BUILD_NUM)
+        if buildDict == None:
+            return '未找到，请修改关键词'
+        str = ""
+        outputCount = 0
+        for b in buildDict:
+            print b['formas']
+            if outputCount > self.MAX_BUILD_NUM:
+                break;
+            outputCount +=1
+            str += '------------------------\n'
+            str += "【方案%s】【极化:%s】\n"%(outputCount,b['formas'])
+            str+=b['build']
+            str+= "【<a href='"+b['url']+"'>详情</a>】\n"
+            #outputCount+=1
+        return str
             
     def getInfoByName(self,itemName):
         #记录开始时间
@@ -50,13 +70,13 @@ class warframe(object):
         trans = WmTranslator()
         directNameZh = trans.en2zh(itemName)
         if directNameZh != itemName:
-            resStr += "您的输入也可以直接被翻译为:"+directNameZh+"\n\n"
+            resStr += "您的输入也可以直接被翻译为:"+directNameZh+"\n"
 
         db = MySQLdb.connect("localhost","root","IWLX8IS12Rl","warframe",charset='utf8' )
 
         # 使用cursor()方法获取操作游标 
         cursor = db.cursor()
-        sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(itemName,itemName)
+        sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' ORDER BY TYPE DESC  """ %(itemName,itemName)
           # 执行SQL语句
         print sql   
         cursor.execute(sql)
@@ -79,6 +99,9 @@ class warframe(object):
         #这里限制询价的长度，因为太多的记录询价会很慢
         listCount = 0;
         priceCount = 0;
+        priceSource = ''
+        if len(results) <= self.MAX_URL_PRICE_NUM:
+            priceSource = 'url'
         for r in results:
             name_en=r[1]
             name_zh=r[2]
@@ -89,27 +112,26 @@ class warframe(object):
             resStr += "【%s】%s\n英文名: %s\n%s\n"%(itemType,name_zh,name_en,wikiZH)
             #get price
             listCount += 1
-            isForceUrlPrice = False
-            if len(results) <= self.MAX_URL_PRICE_NUM:
-                isForceUrlPrice = True
+            #如果结果集过小，强制从api获取价格
+            #如果访问已经超过阈值时间，则强制从本地获取（获取不到就返回空）
+            #否则走默认的方式
             nowProcessTime = time.time()
-            #if listCount <= self.MAX_RECORD_PRICE_NUM:
-            print nowProcessTime - startProcessTime
-            if nowProcessTime - startProcessTime < self.MAX_PROCESS_TIME:
-                priceCount += 1
-                itemPrice = pricer.getPrice(name_en,itemType,isForceUrlPrice)
-                if itemPrice is not None:
-                    resStr += "【最低售价"
-                    if itemPrice['source'] == 'url':
-                        resStr += "(实时)"  
-                    resStr +="】"
-                    resStr += "%s 白金\n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_count'],itemPrice['top_rec'])
-                else:
-                    resStr += "未查询到售价\n"
+            if nowProcessTime - startProcessTime > self.MAX_PROCESS_TIME:
+                priceSource = 'db'
+            itemPrice = pricer.getPrice(name_en,itemType,priceSource)
+            if itemPrice is not None:
+                resStr += "【最低售价"
+                if itemPrice['source'] == 'url':    
+                    resStr += "(实时)"
+                    priceCount += 1  
+                resStr +="】"
+                resStr += "%s 白金\n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_count'],itemPrice['top_rec'])
+            else:
+                resStr += "未查询到售价\n"
         #是否因为时间原因未查询的物品价格？
         if priceCount < len(results): 
             resStr += "-------------------------------\n"
-            resStr += "【提示】搜索到的记录太多，只显示前%s物品价格，请缩小搜索范围，如#wf Ash Prime Set\n\n"%(priceCount)
+            resStr += "【提示】记录太多，只显示了%s个物品的实时价格，请缩小搜索范围，如wf Ash Prime Set\n"%(priceCount)
         return resStr
 
     def getAlarm(self):
@@ -142,11 +164,10 @@ class warframe(object):
 
 def test():
     wf = warframe()
-    print wf.getInfoByName('ash')
+    print wf.getBuildlikeName('lenz')
 #------------------------------------------
 #test()
 #wf = warframe()
-#print wf.getInfoByName('nek')
 
 
 

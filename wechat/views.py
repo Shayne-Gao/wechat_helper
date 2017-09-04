@@ -64,6 +64,10 @@ def index(request):
             reply_text = '随机功能还在开发中噢,亲可以先查看【<a href="http://www.ddhbblog.sinaapp.com">我的博客</a>】'
         elif content == '小绿':
 	        reply_text = '么么哒恭喜你进入了隐藏的空间，当你看到这句话的时候我一定在想你哟！'
+        elif content.startswith('wfb'):
+            wf = warframe()
+            subContent = content[3:].strip()
+            reply_text = wf.getBuildlikeName(subContent)
         elif content.startswith('wf'):
             wf = warframe()
             subContent = content[2:].strip()

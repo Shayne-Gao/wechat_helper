@@ -19,6 +19,33 @@ class WarframeDB:
         self.db = MySQLdb.connect("localhost","root","IWLX8IS12Rl","warframe",charset='utf8' )
         self.cursor = self.db.cursor()
 
+    def queryBySql(self,sql):
+          # 执行SQL语句
+        self.cursor.execute(sql)
+        # 获取所有记录列表
+        self.db.commit()
+        results = self.cursor.fetchall()
+        return results
+    def getBuildItemlikeName(self,itemName):
+        sql = """SELECT id,name_en,name_zh,item_type,build_id from build_item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(itemName,itemName)
+          # 执行SQL语句
+        self.cursor.execute(sql)
+        # 获取所有记录列表
+        results = self.cursor.fetchall()
+        resList = []
+        #print results
+        if len(results)==0:
+            return resList
+        for r in results:
+            temp = {}
+            temp['id']=r[0]
+            temp['name_en']=r[1]
+            temp['name_zh']=r[2]
+            temp['item_type']=r[3]
+            temp['build_id'] = r[4]
+            resList.append(temp)
+        return resList
+
     def getItemLikeName(self,itemName):
         sql = """SELECT id,name_en,type from item where name_zh like '%%%s%%' or name_en like '%%%s%%' """ %(itemName,itemName)
           # 执行SQL语句
