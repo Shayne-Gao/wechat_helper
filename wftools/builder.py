@@ -65,9 +65,11 @@ class WmBuilder:
         db = WarframeDB()
         itemInfo = db.getBuildItemlikeName(itemName)
         if len(itemInfo)==0:
-            return None
+            return '','',None
         itemType= itemInfo[0]['item_type']
         itemBuildId = itemInfo[0]['build_id']
+        nameEn = itemInfo[0]['name_en']
+        nameZh = itemInfo[0]['name_zh']
         bs = BuildStatic()
         typeTxt = bs.typeTxtMap[itemType]
         dataInfoPrefix = 't_30_3400020000'
@@ -115,7 +117,7 @@ class WmBuilder:
             rec['build'] = self.buildDictToStr(build)
             resDict.append(rec)
             #print rec['build']
-        return resDict
+        return nameEn,nameZh,resDict
 
 
     def xpathExtractFirst(self,html,xpathStr,default=''):
@@ -132,5 +134,5 @@ url = 'http://warframe-builder.com/Warframes/Builder/Nekros_Prime/t_30_340002000
 #jres = json.dumps(res, indent=1);
 #print jres
 # 
-print wm.getBuildList('恐惧')
+#print wm.getBuildList('恐惧')
 

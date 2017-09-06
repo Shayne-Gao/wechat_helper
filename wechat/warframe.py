@@ -20,6 +20,7 @@ class warframe(object):
     MAX_URL_PRICE_NUM = 2 #查询物品结果数目少于此值时，强制查询远端实时价格
     MAX_PROCESS_TIME = 3 #最大处理时间的秒数
     MAX_BUILD_NUM = 2 #获取最多的build数量
+    MAX_RESPONSE_LEN = 1500 #微信最大的返回字节数目
     def timestamp_datetime(self,value):
         value = int(value)
         format = '%Y-%m-%d %H:%M:%S'
@@ -45,20 +46,22 @@ class warframe(object):
     
     def getBuildlikeName(self,itemName):
         wmb = WmBuilder()
-        buildDict = wmb.getBuildList(itemName,self.MAX_BUILD_NUM)
+        nameEn,nameZh,buildDict = wmb.getBuildList(itemName,self.MAX_BUILD_NUM)
         if buildDict == None:
             return '未找到，请修改关键词'
-        str = ""
+        str = "%s(%s)\n"%(nameZh,nameEn)
         outputCount = 0
         for b in buildDict:
-            print b['formas']
+            if b['formas'] =='-':
+                b['formas'] = 0
             if outputCount > self.MAX_BUILD_NUM:
                 break;
             outputCount +=1
             str += '------------------------\n'
             str += "【方案%s】【极化:%s】\n"%(outputCount,b['formas'])
             str+=b['build']
-            str+= "【<a href='"+b['url']+"'>详情</a>】\n"
+            if len(str) < self.MAX_RESPONSE_LEN: 
+                str+= "【<a href='"+b['url']+"'>详情</a>】\n"
             #outputCount+=1
         return str
             
@@ -78,7 +81,7 @@ class warframe(object):
         cursor = db.cursor()
         sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' ORDER BY TYPE DESC  """ %(itemName,itemName)
           # 执行SQL语句
-        print sql   
+        #print sql   
         cursor.execute(sql)
         # 获取所有记录列表
         results = cursor.fetchall()

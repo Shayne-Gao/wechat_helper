@@ -50,11 +50,15 @@ def index(request):
     if isinstance(message, TextMessage):
         # 当前会话内容
         content = message.content.strip()
+        print "Request:%s"%(content)
+        reply_text = '没有找到您的命令，再试试哦'
         if content == 'help':
             reply_text = (
                     '目前支持的功能：\n1. 输入【博客】来查看我的博客\n'
-                    '2. 回复【wf 物品名】来查询warframe国际版的物品\n'
+                    '2. 回复【wf 物品名或部分物品名】来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
                     '3. 回复【wf 警报】或者【wf alarm】来查询warframe国际版的警报任务\n'
+                    '4. 回复【wfb 战甲或者武器名】来查询其推荐的Mod配置，支持模糊查询和英文。例如【wf 关刀】\n'
+                    '5. 直接回复来上报bug和提出建议\n'
                     '还有更多功能正在开发中哦 ^_^\n'
                     '【<a href="http://hi-ink.lofter.com/">我的Loft</a>】'
                 )
@@ -67,17 +71,25 @@ def index(request):
         elif content.startswith('wfb'):
             wf = warframe()
             subContent = content[3:].strip()
-            reply_text = wf.getBuildlikeName(subContent)
+            if subContent[-1].lower() =='p':
+                reply_text = wf.getBuildlikeName(subContent[0:-1])
+            else:
+                reply_text = wf.getBuildlikeName(subContent)
         elif content.startswith('wf'):
             wf = warframe()
             subContent = content[2:].strip()
             if subContent =='警报' or subContent.lower()=='alarm':
                 reply_text = wf.getAlarm()
             else:
-	    	    reply_text = wf.getInfoByName(subContent)
+                #兼容最后的p，比如犀牛p
+                if subContent[-1].lower() =='p':
+                    reply_text = wf.getInfoByName(subContent[0:-1])
+                else:
+	    	        reply_text = wf.getInfoByName(subContent)
     	else:
         	reply_text = '功能还在开发中哦,亲可以提出您宝贵的意见'
-
+        print "Response:"+reply_text
+        print "ResponseLen:"+str(len(reply_text))
         response = wechat_instance.response_text(content=reply_text)
 
     return HttpResponse(response, content_type="application/xml")

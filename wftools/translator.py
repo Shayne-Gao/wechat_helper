@@ -13,7 +13,7 @@ class WmTranslator:
     transDict = {}
     def __init__(self):
         BASE_DIR = os.path.dirname(__file__) #获取当前文件夹的绝对路径
-        file_path = os.path.join(BASE_DIR, 'zh_name2.txt') #获取当前文件夹内的Test_Data文件
+        file_path = os.path.join(BASE_DIR, 'en2zh.dict') #获取当前文件夹内的Test_Data文件
         file = open(file_path,'r')
         line = file.readline()
         while line:
@@ -32,6 +32,11 @@ class WmTranslator:
         lens = len(words)
         resZh = ""
         startIndex = 0
+        #单词是否可以直接翻译，如果可以就返回
+        zhWordDir = self.transDict.get(nameEn.lower())
+        if zhWordDir is not None:            
+            #取出回车
+            return zhWordDir.replace('\r','') 
         while(startIndex < lens):
             #单词有直接翻译，就翻译
             nowWord = ""
@@ -62,8 +67,8 @@ class WmTranslator:
             startIndex += 1
         return resZh
 
-#tsl = WmTranslator()
-#print tsl.en2zh('Jupi')
+tsl = WmTranslator()
+print tsl.en2zh(sys.argv[1])
 #print trans(sys.argv[1])
 
 

@@ -348,7 +348,30 @@ class BuildStatic:
 '221':'Tainted Clip',
 '222':'Target Cracker',
 '633':'Targeting Subsystem',
-'223':'Trick Mag'
+'223':'Trick Mag',
+'482':'Primed Point Blank',
+'365':'Scattered Justice',
+'546':'Seeking Fury',
+'178':'Hell\'s Chamber',
+'165':'Accelerated Blast',
+'176':'Disruptor',
+'167':'Blaze',
+'170':'Charged Shell',
+'180':'Point Blank',
+'175':'Contagious Spread',
+'264':'Shell Shock',
+'472':'Iron Shrapnel',
+'384':'Ironclad Charge',
+'493':'Piercing Roar',
+'311':'Shimmering Blight',
+'496':'Chilling Globe',
+'390':'Freeze Force',
+'763':'Bullet Dance',
+'450':'High Noon',
+'':'',
+'':'',
+
+
 
 }
 
