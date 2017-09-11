@@ -368,11 +368,19 @@ class BuildStatic:
 '390':'Freeze Force',
 '763':'Bullet Dance',
 '450':'High Noon',
+'731':'Resonating Quake',
+'313':'Burning Wasp',
+'190':'Vicious Spread',
+'359':'Sweeping Serration',
+'792':'Chilling Reload',
+'406':'Frail Momentum',
+'186':'Shotgun Spazz',
+'191':'Toxic Barrage',
+'416':'Lingering Torment',
+'403':'Sinister Reach',
 '':'',
 '':'',
-
-
-
+'':'',
 }
 
 

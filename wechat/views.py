@@ -6,6 +6,7 @@ from wechat_sdk.basic import WechatBasic
 from wechat_sdk.exceptions import ParseError
 from wechat_sdk.messages import TextMessage
 from warframe import warframe
+import time
 
 WECHAT_TOKEN = "J29djw0OwplP"
 # APP_ID = 你的app id
@@ -49,21 +50,22 @@ def index(request):
 
     if isinstance(message, TextMessage):
         # 当前会话内容
+        startTime = time.time()
         content = message.content.strip()
-        print "Request:%s"%(content)
         reply_text = '没有找到您的命令，再试试哦'
         if content == 'help':
             reply_text = (
-                    '目前支持的功能：\n1. 输入【博客】来查看我的博客\n'
-                    '2. 回复【wf 物品名或部分物品名】来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
-                    '3. 回复【wf 警报】或者【wf alarm】来查询warframe国际版的警报任务\n'
-                    '4. 回复【wfb 战甲或者武器名】来查询其推荐的Mod配置，支持模糊查询和英文。例如【wf 关刀】\n'
-                    '5. 直接回复来上报bug和提出建议\n'
+                    '目前支持的功能(不用输出括号！)：\n1. 输入【博客】来查看我的博客\n'
+                    '2. 回复【wf 物品名或部分物品名】\n    来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
+                    '3. 回复【wf 警报】或者【wf alarm】\n    来查询warframe国际版的警报任务\n'
+                    '4. 回复【wfb 战甲或者武器名】\n    来查询其推荐的Mod配置，支持模糊查询和英文。例如【wf 关刀】\n'
+                    '5. 直接回复来上报bug和提出建议\n\n'
                     '还有更多功能正在开发中哦 ^_^\n'
-                    '【<a href="http://hi-ink.lofter.com/">我的Loft</a>】'
+                    '--------臭不要脸的分割线---------\n'
+                    '本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href="http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg">微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！'
                 )
         elif content == '博客':
-            reply_text = '我的博客地址是http://hi-ink.lofter.com/'
+            reply_text = '【<a href="http://weibo.com/u/1628831502?refer_flag=1001030001_&nick=%E5%A2%A8%E5%8C%BF%E7%BB%87%E4%BA%A4">我的围脖</a>】'+'【<a href="http://hi-ink.lofter.com/">我的摄影空间</a>】'
         elif content == '随机111':
             reply_text = '随机功能还在开发中噢,亲可以先查看【<a href="http://www.ddhbblog.sinaapp.com">我的博客</a>】'
         elif content == '小绿':
@@ -81,15 +83,26 @@ def index(request):
             if subContent =='警报' or subContent.lower()=='alarm':
                 reply_text = wf.getAlarm()
             else:
+                #subContent = subContent.replace('prime','')
                 #兼容最后的p，比如犀牛p
                 if subContent[-1].lower() =='p':
                     reply_text = wf.getInfoByName(subContent[0:-1])
                 else:
 	    	        reply_text = wf.getInfoByName(subContent)
+        elif content == '喂食':
+            reply_text ="本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href='http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg'>微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！"
     	else:
         	reply_text = '功能还在开发中哦,亲可以提出您宝贵的意见'
+        processTime = time.time() - startTime
+        if len(reply_text)<40 :
+            status='ERRE'
+        elif processTime >4.5:
+            status='EXPI'
+        else:
+            status='SUCC'
+        logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        print "[AccessLog][%s][%s][Time:%s][RespLen:%s][Req:%s]"%(logTime,status,processTime,str(len(reply_text)),content)
         print "Response:"+reply_text
-        print "ResponseLen:"+str(len(reply_text))
         response = wechat_instance.response_text(content=reply_text)
 
     return HttpResponse(response, content_type="application/xml")

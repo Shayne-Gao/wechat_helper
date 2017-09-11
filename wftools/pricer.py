@@ -13,7 +13,7 @@ import time
 import httplib 
 from db import WarframeDB
 class WmPricer:   
-
+    DB_PRICE_EXPIRE_TIME = 3 * 60 #100秒之前的DB数据不再生效
     TOP_SELLER_NUM = 3
     def getPrice(self,nameEn,itemType,source=''):
         if source =='url':
@@ -22,10 +22,19 @@ class WmPricer:
             return self.getPriceFromDb(nameEn,itemType)
         else:#默认获取方式
             dbprice = self.getPriceFromDb(nameEn,itemType)
-            if dbprice is not None:
-                return dbprice
-            else:
+            if dbprice is None:
                 return self.getPriceFromWm(nameEn,itemType)
+            else:
+                timeArray = dbprice['record_time'].timetuple()
+                #timeArray = time.strptime(rtime, "%Y-%m-%d %H:%M:%S")
+                timeStamp = int(time.mktime(timeArray))
+                nowTimeStamp = int(time.time())
+                if nowTimeStamp - timeStamp > self.DB_PRICE_EXPIRE_TIME:
+                    #说明db的记录太老，强制从url获取
+                    return self.getPriceFromWm(nameEn,itemType)
+                else:
+                    return dbprice
+
 
     def sellerRecFormat(self,l):
         resStr = "%s : %s x %s个\n"%(l['ingame_name'],l['price'],l['count'])
@@ -100,6 +109,13 @@ class WmPricer:
         res['top_avg'] = topSum / topCount
         res['record_time'] = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
         res['source']='url'
+        #查询结果计入数据库
+        wfdb = WarframeDB()
+        itemIdName = wfdb.getItemLikeName(nameEn)
+        res['itemId']=itemIdName[0]['id']
+        res['item'] = nameEn
+        res['category'] = itemIdName[0]['type']
+        wfdb.insertPrice(res)
         return res
 #wm = WmPricer()
 #print wm.getPrice('Ash Prime Set','Set')

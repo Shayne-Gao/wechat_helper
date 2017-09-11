@@ -15,10 +15,10 @@ from wftools.translator import WmTranslator
 from wftools.pricer import WmPricer
 from wftools.builder import WmBuilder
 class warframe(object):
-    MAX_RECORD_NUM = 6 
+    MAX_RECORD_NUM = 5 
     #MAX_RECORD_PRICE_NUM = 1 #最大查询价格的物品数目
     MAX_URL_PRICE_NUM = 2 #查询物品结果数目少于此值时，强制查询远端实时价格
-    MAX_PROCESS_TIME = 3 #最大处理时间的秒数
+    MAX_PROCESS_TIME = 2#最大处理时间的秒
     MAX_BUILD_NUM = 2 #获取最多的build数量
     MAX_RESPONSE_LEN = 1500 #微信最大的返回字节数目
     def timestamp_datetime(self,value):
@@ -79,7 +79,7 @@ class warframe(object):
 
         # 使用cursor()方法获取操作游标 
         cursor = db.cursor()
-        sql = """SELECT * from item where name_zh like '%%%s%%' or name_en like '%%%s%%' ORDER BY TYPE DESC  """ %(itemName,itemName)
+        sql = """SELECT * from item where name_zh like '%%%s%%' or lower(name_en) like '%%%s%%' ORDER BY TYPE DESC  """ %(itemName,itemName.lower())
           # 执行SQL语句
         #print sql   
         cursor.execute(sql)
@@ -104,7 +104,7 @@ class warframe(object):
         priceCount = 0;
         priceSource = ''
         if len(results) <= self.MAX_URL_PRICE_NUM:
-            priceSource = 'url'
+            priceSource = ''
         for r in results:
             name_en=r[1]
             name_zh=r[2]
@@ -133,8 +133,8 @@ class warframe(object):
                 resStr += "未查询到售价\n"
         #是否因为时间原因未查询的物品价格？
         if priceCount < len(results): 
-            resStr += "-------------------------------\n"
-            resStr += "【提示】记录太多，只显示了%s个物品的实时价格，请缩小搜索范围，如wf Ash Prime Set\n"%(priceCount)
+            resStr += "\n-------------------------------\n"
+            resStr += "【提示】若要获得物品的实时价格，请搜索单个物品，如wf Ash Prime Set\n"
         return resStr
 
     def getAlarm(self):

@@ -65,7 +65,8 @@ class WarframeDB:
         return resList
 
     def getPriceByNameEnAndType(self,nameEn,Type):
-        sql = """SELECT * from item_price_record where name_en = '%s' and type ='%s' limit 1 """ %(nameEn,Type)
+        #默认获取最新的一条记录
+        sql = """SELECT * from item_price_record where name_en = '%s' and type ='%s' order by record_time desc limit 1 """ %(nameEn,Type)
           # 执行SQL语句
         self.cursor.execute(sql)
         # 获取所有记录列表
