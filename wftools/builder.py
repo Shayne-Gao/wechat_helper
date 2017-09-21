@@ -16,8 +16,10 @@ import httplib
 from db import WarframeDB
 from translator import WmTranslator
 from BuildStatic import BuildStatic
-
 class WmBuilder:
+    BUILD_DB_RECORD_EXPIRE_TIME = 7 * 24 * 3600 #数据库缓存的过期日期
+    BUILD_RECORD_NUM = 7 #默认取多少个build记录，从这些中再经过推荐算法返回limit个
+    #从url中解析build
     def getBuildFromUrl(self,url):
         urlParts = url.split('/')
         if len(urlParts) <6:
@@ -60,8 +62,9 @@ class WmBuilder:
         #print '02.'+str(time.time())
         return res;
  
-    def getBuildList(self,itemName,limit =5):
-        #print time.time()
+    #获取build的主入口
+    def getBuildList(self,itemName,limit =5,source = ''):
+        #获取build基本信息
         db = WarframeDB()
         itemInfo = db.getBuildItemlikeName(itemName)
         if len(itemInfo)==0:
@@ -70,6 +73,35 @@ class WmBuilder:
         itemBuildId = itemInfo[0]['build_id']
         nameEn = itemInfo[0]['name_en']
         nameZh = itemInfo[0]['name_zh']
+        #解析url中的mod装配并格式化
+        #先尝试取DB的记录，如果DB没有或者太老，则取网站上的
+        
+        #多抓取2个，存到数据库里。但是最终只返回limit个
+        
+        records = self.getBuildListFromDb(itemBuildId,itemType,self.BUILD_RECORD_NUM,itemName)
+        if records == [] :   
+            records = self.getBuildListFromUrl(itemBuildId,itemType,nameEn,nameZh,self.BUILD_RECORD_NUM)
+        #这里需要经过推荐算法，从N个中，选取M个，格式化，然后返回
+        finalRecords = records[0:limit]
+        for rec in finalRecords:
+            build =  self.getBuildFromUrl(rec['url'])
+            rec['build'] = self.buildDictToStr(build)
+        return nameEn,nameZh,finalRecords
+
+    #从数据库缓存获取build信息 BUILD_DB_RECORD_EXPIRE_TIME
+    def getBuildListFromDb(self,itemBuildId,itemType,limit,nameEn):
+        startTime = time.time()
+        after = time.time() - self.BUILD_DB_RECORD_EXPIRE_TIME
+        res = WarframeDB().getBuildByTime(itemBuildId,itemType,after,limit)
+        pTime = str(time.time() - startTime)
+        logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        print "[ProcessLog][%s][Build][Item:%s][ItemType:%s][Source:DB][Ptime:%s]"%(logTime,nameEn,itemType,pTime)
+        return res
+
+    #从warframe-builder.com获取build信息
+    def getBuildListFromUrl(self,itemBuildId,itemType,nameEn,nameZh,limit):
+        startTime = time.time()
+        #print time.time()
         bs = BuildStatic()
         typeTxt = bs.typeTxtMap[itemType]
         dataInfoPrefix = 't_30_3400020000'
@@ -109,17 +141,28 @@ class WmBuilder:
             rec['url'] = self.xpathExtractFirst(tr,"td[1]/a/@href") 
             if rec['url'] == '':
                 continue
-            rec['name']= self.xpathExtractFirst(tr,"td[1]/a/text()")
+            rec['build_des']= self.xpathExtractFirst(tr,"td[1]/a/text()")
             rec['formas'] = self.xpathExtractFirst(tr,"td[5]/text()")
             rec['pop'] = self.xpathExtractFirst(tr,"td[7]/text()")
-            rec['data'] = self.xpathExtractFirst(tr,"td[8]/text()")
-            build =  self.getBuildFromUrl(rec['url'])
-            rec['build'] = self.buildDictToStr(build)
+            rec['build_time'] = self.xpathExtractFirst(tr,"td[8]/text()")
+            #build =  self.getBuildFromUrl(rec['url'])
+            #rec['build'] = self.buildDictToStr(build)
             resDict.append(rec)
             #print rec['build']
-        return nameEn,nameZh,resDict
+            #将url获得的结果保存到db做缓存
+            rec['item_type']=itemType
+            rec['build_item_id']=itemBuildId
+            rec['name_en']=nameEn
+            rec['name_zh']=nameZh
+            rec['build_des'] = rec['build_des'].replace('\'','\\\'')
+            WarframeDB().insertBuildRecord(rec)        
+        pTime = str(time.time() - startTime)
+        logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        print "[ProcessLog][%s][Build][Item:%s][ItemType:%s][Source:DB][Ptime:%s]"%(logTime,nameEn,itemType,pTime)
 
+        return resDict
 
+        
     def xpathExtractFirst(self,html,xpathStr,default=''):
         res = html.xpath(xpathStr)
         if len(res)==0:
@@ -134,5 +177,5 @@ url = 'http://warframe-builder.com/Warframes/Builder/Nekros_Prime/t_30_340002000
 #jres = json.dumps(res, indent=1);
 #print jres
 # 
-#print wm.getBuildList('恐惧')
+#print wm.getBuildList('水男')
 

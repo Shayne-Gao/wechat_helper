@@ -88,7 +88,23 @@ class WarframeDB:
         content['top_rec']  = res[9]         
         content['source'] = 'db'
         return content
-
+    def getBuildByTime(self,itemBuildId,itemType,afterUnixTimestamp,limit):
+        sql = """ SELECT * FROM item_build_record WHERE item_type=%s AND build_item_id=%s AND UNIX_TIMESTAMP(record_time)>'%s' GROUP BY build_des order by record_time desc LIMIT %s """%(itemType,itemBuildId,afterUnixTimestamp,limit)
+        # 执行SQL语句
+        self.cursor.execute(sql)
+        # 获取所有记录列表
+        results = self.cursor.fetchall()
+        content =[] 
+        for res in  results:
+            one = {}
+            one['url'] = res[5]
+            one['build_des'] = res[6]
+            one['formas'] = res[8]
+            one['pop'] = res[7]
+            one['build_time']  = res[10]   
+            content.append(one)
+        return content
+ 
     def insertPrice(self,content):
         #get item id
      
@@ -97,13 +113,29 @@ class WarframeDB:
                  """%(content['itemId'],content['item'],content['category'],content['cheapest_price'],content['top_avg'],content['top_count'],content['all_avg'],content['all_count'],content['record_time'],content['top_rec'])
         try:
            # 执行sql语句
-           print sql
            self.cursor.execute(sql)
            # 提交到数据库执行
            self.db.commit()
-        except:
+        except Exception, e:
+           print 'MYSQL ERROR:', str(e)
+           print sql
            # Rollback in case there is any error
-           self.db.rollback()
-  
+           self.db.rollback() 
+    
+    def insertBuildRecord(self,content):
+        
+        sql = """INSERT INTO item_build_record (item_type,build_item_id,name_en,name_zh,url,build_des,pop,formas,build_time)
+                 VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s')
+                 """%(content['item_type'],content['build_item_id'],content['name_en'],content['name_zh'],content['url'],content['build_des'],content['pop'],content['formas'],content['build_time'])
+        try:
+           # 执行sql语句
+           self.cursor.execute(sql)
+           # 提交到数据库执行
+           self.db.commit()
+        except Exception, e:
+           print 'MYSQL ERROR:', str(e)
+           print sql
+           # Rollback in case there is any error
+           self.db.rollback() 
 #wd = WarframeDB()
 #print wd.getPriceByNameEnAndType('Trinity Prime Neuroptics','Blueprint')

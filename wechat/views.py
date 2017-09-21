@@ -6,8 +6,11 @@ from wechat_sdk.basic import WechatBasic
 from wechat_sdk.exceptions import ParseError
 from wechat_sdk.messages import TextMessage
 from warframe import warframe
+from accountbook import AccountBook
 import time
-
+import random
+import re
+from random import choice
 WECHAT_TOKEN = "J29djw0OwplP"
 # APP_ID = 你的app id
 # APP_SECRET = 你的app secret
@@ -52,57 +55,105 @@ def index(request):
         # 当前会话内容
         startTime = time.time()
         content = message.content.strip()
-        reply_text = '没有找到您的命令，再试试哦'
-        if content == 'help':
+        content = content.encode("utf-8")  
+        reply_text = '没有找到您的命令，再试试哦\n'
+        if content.lower() == 'help':
             reply_text = (
                     '目前支持的功能(不用输出括号！)：\n1. 输入【博客】来查看我的博客\n'
                     '2. 回复【wf 物品名或部分物品名】\n    来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
-                    '3. 回复【wf 警报】或者【wf alarm】\n    来查询warframe国际版的警报任务\n'
-                    '4. 回复【wfb 战甲或者武器名】\n    来查询其推荐的Mod配置，支持模糊查询和英文。例如【wf 关刀】\n'
-                    '5. 直接回复来上报bug和提出建议\n\n'
+                    '3. 回复【警报】或者【wfa】\n    来查询warframe国际版的警报任务\n'
+                    '4. 回复【wfb 战甲或者武器名】\n    来查询其推荐的Mod配置，支持模糊查询和英文。例如【wfb 关刀】\n'
+                    '5. 回复【调教+内容】上报bug和提出建议\n'
+                    '6. 点击【<a href="http://bbs.ngacn.cc/read.php?tid=12377993">查看版权和更新等信息</a>】\n\n'
                     '还有更多功能正在开发中哦 ^_^\n'
                     '--------臭不要脸的分割线---------\n'
-                    '本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href="http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg">微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！'
+                    '本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href="http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg">微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！\n'
                 )
         elif content == '博客':
-            reply_text = '【<a href="http://weibo.com/u/1628831502?refer_flag=1001030001_&nick=%E5%A2%A8%E5%8C%BF%E7%BB%87%E4%BA%A4">我的围脖</a>】'+'【<a href="http://hi-ink.lofter.com/">我的摄影空间</a>】'
-        elif content == '随机111':
-            reply_text = '随机功能还在开发中噢,亲可以先查看【<a href="http://www.ddhbblog.sinaapp.com">我的博客</a>】'
+            reply_text = '【<a href="http://weibo.com/u/1628831502?refer_flag=1001030001_&nick=%E5%A2%A8%E5%8C%BF%E7%BB%87%E4%BA%A4">我的围脖</a>】'+'【<a href="http://hi-ink.lofter.com/">我的摄影空间</a>】\n'
+        elif content == '说明':
+            reply_text = (
+                    '版权说明：warframe相关的价格信息来自warframe.market,build信息来自于warframe-build.com。 翻译词库来源于网友\n'
+                    '本公众号非商业化，功能全部免费\n'
+                )
+        elif content.startswith('调教'):
+            reply_text = ('感谢您的反馈！每一条都会被记录下来，会尽量回复的哦！\n\r')
         elif content == '小绿':
-	        reply_text = '么么哒恭喜你进入了隐藏的空间，当你看到这句话的时候我一定在想你哟！'
-        elif content.startswith('wfb'):
+	        reply_text = '么么哒恭喜你进入了隐藏的空间，当你看到这句话的时候我一定在想你哟！\n'
+        elif content.lower().startswith('wfb'):
             wf = warframe()
             subContent = content[3:].strip()
+            if subContent.startswith('亡魂'):
+                subContent = subContent.replace('亡魂','')
+                subContent = subContent + ' 亡魂'
             if subContent[-1].lower() =='p':
                 reply_text = wf.getBuildlikeName(subContent[0:-1])
             else:
                 reply_text = wf.getBuildlikeName(subContent)
-        elif content.startswith('wf'):
+        elif content.lower().startswith('wf '):
             wf = warframe()
             subContent = content[2:].strip()
             if subContent =='警报' or subContent.lower()=='alarm':
                 reply_text = wf.getAlarm()
             else:
                 #subContent = subContent.replace('prime','')
+                #处理亡魂
+                if subContent.startswith('亡魂'):
+                    subContent = subContent.replace('亡魂','')
+                    subContent = subContent + ' 亡魂'
                 #兼容最后的p，比如犀牛p
                 if subContent[-1].lower() =='p':
                     reply_text = wf.getInfoByName(subContent[0:-1])
                 else:
 	    	        reply_text = wf.getInfoByName(subContent)
+        elif content.lower()=='wfa' or content=='警报':
+            reply_text = warframe().getAlarm()
+        elif content.lower()=='list':
+            reply_text = warframe().getPriceList(wechat_instance.message.source)
         elif content == '喂食':
             reply_text ="本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href='http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg'>微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！"
+        elif re.match('^\d', content) and  wechat_instance.message.source=='opD4r0WskoVJmlirA9ubVCVpg-k0':
+            res = AccountBook().insertAccountRequest(content)
+            reply_text = res
     	else:
-        	reply_text = '功能还在开发中哦,亲可以提出您宝贵的意见'
+        	reply_text = '未找到该命令，是不是忘了加wf和空格？输入help查看功能哦\n'
         processTime = time.time() - startTime
-        if len(reply_text)<40 :
-            status='ERRE'
-        elif processTime >4.5:
-            status='EXPI'
+        if len(reply_text)<100 :
+            status='\033[1;33mERRE\033[0m'
+        elif processTime >4.8:
+            status='\033[1;31mEXPI\033[0m'
         else:
             status='SUCC'
         logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        print "[AccessLog][%s][%s][Time:%s][RespLen:%s][Req:%s]"%(logTime,status,processTime,str(len(reply_text)),content)
-        print "Response:"+reply_text
+        print "[AccessLog][%s][%s][Time:%s][RespLen:%s][Req:%s][from:%s][to:%s]\n"%(logTime,status,processTime,str(len(reply_text)),content,wechat_instance.message.source,wechat_instance.message.target)
+        print "\nResponse:"+reply_text
+        #在这里加入通知
+        if content.startswith('wf'):
+            reply_text+=getFooter()
         response = wechat_instance.response_text(content=reply_text)
 
     return HttpResponse(response, content_type="application/xml")
+
+#随机获取页尾进行展示
+def getFooter():
+    showRate = 10 #10为100%展示
+    if random.randint(1, 10) >= showRate:
+        return ''
+    str = '【小尾巴】'
+    foot = [
+        '9.14更新:有足够价格记录的物品会显示近几天的最高最低价啦',
+        '9.13更新：试试用物品的别名来查询？比如wf 刷钱鞭',
+        '你知道吗？回复 调教+内容就可以上报各种问题了！',
+        '点击<a href="http://bbs.ngacn.cc/read.php?tid=12377993">查看版权更新等信息</a>哦',
+        '有命令忘记了？输入help来查看！',
+        '回复 喂食 来为公众号开发出一份力！',
+        '有时候提示错误了请不要急，多给程序娘一点时间稍后再试',
+        '个人公众号无法主动推送任何消息哦',
+        '现在输入wfa或者警报 就可以查询警报啦',
+        '因为无法看到是谁投食的，所以大家可以留下ID哦 让我可以亲口感谢！',
+    ]
+    str += choice(foot)+"\n"
+    return str
+
+#print getFooter()
+

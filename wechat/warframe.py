@@ -14,13 +14,17 @@ import time
 from wftools.translator import WmTranslator
 from wftools.pricer import WmPricer
 from wftools.builder import WmBuilder
+from wftools.ItemNickName import ItemNickName
+from wftools.alarm import WmAlarm
 class warframe(object):
     MAX_RECORD_NUM = 5 
     #MAX_RECORD_PRICE_NUM = 1 #最大查询价格的物品数目
-    MAX_URL_PRICE_NUM = 2 #查询物品结果数目少于此值时，强制查询远端实时价格
+    MAX_URL_PRICE_NUM = 1 #查询物品结果数目少于等于此值时，强制查询远端实时价格
     MAX_PROCESS_TIME = 2#最大处理时间的秒
     MAX_BUILD_NUM = 2 #获取最多的build数量
-    MAX_RESPONSE_LEN = 1500 #微信最大的返回字节数目
+    MAX_RESPONSE_LEN = 1400 #微信最大的返回字节数目
+
+    PRICE_STATISTIC_TIME_PERIOD_DAY = 3# 显示几天内的价格趋势
     def timestamp_datetime(self,value):
         value = int(value)
         format = '%Y-%m-%d %H:%M:%S'
@@ -46,9 +50,11 @@ class warframe(object):
     
     def getBuildlikeName(self,itemName):
         wmb = WmBuilder()
+        #尝试获取别名
+        itemName = ItemNickName().get(itemName)
         nameEn,nameZh,buildDict = wmb.getBuildList(itemName,self.MAX_BUILD_NUM)
         if buildDict == None:
-            return '未找到，请修改关键词'
+            return '未找到这个物品的build，请尝试修改关键词哦'
         str = "%s(%s)\n"%(nameZh,nameEn)
         outputCount = 0
         for b in buildDict:
@@ -69,6 +75,8 @@ class warframe(object):
         #记录开始时间
         startProcessTime = time.time()
         resStr = ""
+        #尝试获取别名
+        itemName = ItemNickName().get(itemName)
         #尝试直接翻译
         trans = WmTranslator()
         directNameZh = trans.en2zh(itemName)
@@ -90,7 +98,7 @@ class warframe(object):
             #尝试用输入找wiki
             wikiZH = self.getZhWikiUrl("",itemName,"")
             wikiZH = "【<a href='"+wikiZH+"'>Wiki</a>】"
-            resStr += "未找到"+itemName+",您可以试试模糊搜索，减少搜索的字试试看\n尝试为您找到了"+wikiZH
+            resStr += "未找到"+itemName+",您可以试试模糊搜索，减少搜索的字试试看.\n也可能这个物品无法出售？用wfb来查看它的Mod配备!\n尝试为您找到了"+wikiZH+"\n"
             return resStr
         #这里限制长度，因为微信太长的记录显示会出错
         if len(results) > self.MAX_RECORD_NUM:
@@ -104,7 +112,7 @@ class warframe(object):
         priceCount = 0;
         priceSource = ''
         if len(results) <= self.MAX_URL_PRICE_NUM:
-            priceSource = ''
+            priceSource = 'url'
         for r in results:
             name_en=r[1]
             name_zh=r[2]
@@ -127,8 +135,14 @@ class warframe(object):
                 if itemPrice['source'] == 'url':    
                     resStr += "(实时)"
                     priceCount += 1  
-                resStr +="】"
-                resStr += "%s 白金\n前20平均售价：%s x %s个\n最便宜卖家：\n%s"%(itemPrice['cheapest_price'],itemPrice['top_avg'],itemPrice['top_count'],itemPrice['top_rec'])
+                resStr +="】%s 白金\n"%(itemPrice['cheapest_price'])
+                #如果采集的数据足够显示物品价格趋势，则显示近期的最高或者最低价格。否则显示前20的平均售价
+                priceStat = pricer.getPriceSimpleStatistic(name_en, self.PRICE_STATISTIC_TIME_PERIOD_DAY * 24 * 3600)
+                if priceStat is not None:
+                    resStr += "%s天内售价：%s-%s | 平均 %s\n"%(self.PRICE_STATISTIC_TIME_PERIOD_DAY ,priceStat['lowest'],priceStat['highest'],priceStat['avg'])
+                else:
+                    resStr += "前20平均售价：%s x %s个\n"%(itemPrice['top_avg'],itemPrice['top_count'])
+                resStr += "最便宜卖家：\n%s"%(itemPrice['top_rec'])
             else:
                 resStr += "未查询到售价\n"
         #是否因为时间原因未查询的物品价格？
@@ -138,40 +152,44 @@ class warframe(object):
         return resStr
 
     def getAlarm(self):
-        
-        req=urllib2.Request('http://deathsnacks.com/wf/data/alerts_raw.txt')
-        resp =urllib2.urlopen(req)
-        html = resp.read()
-        alarms = html.split('\n')
+        str = ""
+        str += '==================\n'
+        str += "当前警报：\n"
+        str += '==================\n'
+        str += WmAlarm().getAlarmList()
+        str += '==================\n'
+        str += "当前入侵：\n"
+        str += '==================\n'
+        str += WmAlarm().getInvasionList()
+        str += '==================\n'
+        str += "今日突击：\n"
+        str += '==================\n'
+        str += WmAlarm().getSorties()
+        return str     
+          
+    def getPriceList(self,wechat_id):
+        #get monitor item price list by user
+        items = [
+        'Banshee Prime Systems',
+        'Secura Lecta',
+        'Ash Prime Set',
+        'Nova Prime Set',
+        'Energy Siphon',
+        ]
         resStr = ""
-        trans = WmTranslator()
-        for ala in alarms:
-            tempL = ala.split('|')
-            if len(tempL)<9:
-                continue
-            starName = trans.en2zh(tempL[2])
-            mapName = tempL[1]
-            lvl = tempL[5] +' - '+tempL[6]
-            taskType = trans.en2zh(tempL[3])
-            monsType = tempL[4]
-            reward = trans.en2zh(tempL[9])
-            endTime = self.timestamp_datetime(tempL[8])
-            resStr += "%s(%s) - %s(%s)\nLv:%s\n结束于:%s\n奖励:%s \n" %(starName,mapName,taskType,monsType,lvl,endTime,reward)
-            resStr +="--------------------------\n"
-        return resStr
-
-      
-   
-
+        for item in items:
+            resStr += self.getInfoByName(item)
+        return resStr;
+            
     
 
 def test():
     wf = warframe()
-    print wf.getBuildlikeName('lenz')
+    print wf.getBuildlikeName('鱼骨')
 #------------------------------------------
 #test()
 #wf = warframe()
+#print WmAlarm().getAlarmList()    
 
-
-
+#print warframe().getPriceList(123)
 

@@ -14,8 +14,11 @@ import httplib
 from db import WarframeDB
 class WmPricer:   
     DB_PRICE_EXPIRE_TIME = 3 * 60 #100秒之前的DB数据不再生效
+    PIRCE_STATISTIC_COUNT_MIN = 20 #只有当价格记录大于这个值，才会计算最高最低价格
     TOP_SELLER_NUM = 3
     def getPrice(self,nameEn,itemType,source=''):
+        #logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        #print "[ProcessLog][%s][Price][Req:%s][Source:DB]"
         if source =='url':
             return self.getPriceFromWm(nameEn,itemType)
         elif source =='db':
@@ -44,14 +47,20 @@ class WmPricer:
     
     def getPriceFromDb(self,nameEn,itemType):
         wfdb = WarframeDB()
+        startTime = time.time()
         dbprice = wfdb.getPriceByNameEnAndType(nameEn,itemType)
         if dbprice is not None:
             dbprice['top_rec'] = dbprice['top_rec'].replace('|','个\n')
             dbprice['top_rec'] = dbprice['top_rec'].replace(':',' : ')
+        pTime = str(time.time() - startTime)
+        logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        print "[ProcessLog][%s][Price][Item:%s][ItemType:%s][Source:DB][Ptime:%s]"%(logTime,nameEn,itemType,pTime)
         return dbprice
 
-    def getPriceFromWm(self,nameEn,itemType):
-        url = 'http://warframe.market/api/get_orders/'+itemType+'/'+nameEn
+    def getPriceFromWm(self,nameEn,itemType):   
+        startTime = time.time()
+        nameEnQuote = urllib.quote(nameEn)
+        url = 'http://warframe.market/api/get_orders/'+itemType+'/'+nameEnQuote
         try:
             req=urllib2.Request(url)
             resp =urllib2.urlopen(req)
@@ -63,6 +72,7 @@ class WmPricer:
 
             data = json.loads(html)
         except :
+            print url
             return None
         if data['code'] != 200:
             return None
@@ -116,6 +126,31 @@ class WmPricer:
         res['item'] = nameEn
         res['category'] = itemIdName[0]['type']
         wfdb.insertPrice(res)
+        pTime = str(time.time() - startTime)
+        logTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+        print "[ProcessLog][%s][Price][Item:%s][ItemType:%s][Source:WM][Ptime:%s]"%(logTime,nameEn,itemType,pTime)
         return res
+    
+    #获取物品前段时间的最高价和最低价，只有在价格记录数目大于阈值的时候才查询
+    def getPriceSimpleStatistic(self,nameEn,gapTime):
+        gapTimeStamp = int(time.time() - gapTime)
+        getRecSql = "SELECT cheapest_price,record_time FROM item_price_record WHERE name_en = '%s' AND UNIX_TIMESTAMP(record_time)>'%s' order by record_time asc "%(nameEn,gapTimeStamp)
+        records = WarframeDB().queryBySql(getRecSql);
+       #PIRCE_STATISTIC_COUNT_MIN = 20 #只有当价格记录大于这个值，才会计算最高最低价格
+        if len(records) < self.PIRCE_STATISTIC_COUNT_MIN:
+            return None
+        highest = 0;
+        lowest = 9999;
+        sumP = 0;
+        for r in records:
+            highest = max(r[0],highest)
+            lowest = min(r[0],lowest)
+            sumP += r[0]
+        res = {}
+        res['highest'] = highest
+        res['lowest'] = lowest
+        res['avg'] = sumP / len(records) 
+        return res
+
 #wm = WmPricer()
-#print wm.getPrice('Ash Prime Set','Set')
+#print WmPricer().getPriceSimpleStatistic('Ash Prime Set', 3*24*3600)

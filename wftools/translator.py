@@ -18,7 +18,7 @@ class WmTranslator:
         line = file.readline()
         while line:
             line = file.readline()
-            l = line.split('\t')
+            l = line.split('=')
             if(len(l)<2):
                     continue
             lt = l[1].split('\n')
@@ -67,8 +67,8 @@ class WmTranslator:
             startIndex += 1
         return resZh
 
-tsl = WmTranslator()
-print tsl.en2zh(sys.argv[1])
+#tsl = WmTranslator()
+#print tsl.en2zh(sys.argv[1])
 #print trans(sys.argv[1])
 
 
