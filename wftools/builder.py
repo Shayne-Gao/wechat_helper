@@ -86,6 +86,7 @@ class WmBuilder:
         for rec in finalRecords:
             build =  self.getBuildFromUrl(rec['url'])
             rec['build'] = self.buildDictToStr(build)
+            rec['build_dict'] = build
         return nameEn,nameZh,finalRecords
 
     #从数据库缓存获取build信息 BUILD_DB_RECORD_EXPIRE_TIME

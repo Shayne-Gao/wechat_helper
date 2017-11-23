@@ -84,7 +84,10 @@ class WarframeDB:
         content['top_count'] = res[6]
         content['all_avg'] = res[7]
         content['all_count'] = res[8]
-        content['record_time'] = res[11]
+        #recordTime = time.strftime('%Y-%m-%d %H:%M:%S',res[11].timetuple())
+        #datetime to str, for same construct with get from wm
+        recordTime = res[11].strftime('%Y-%m-%d %H:%M:%S')
+        content['record_time'] = recordTime
         content['top_rec']  = res[9]         
         content['source'] = 'db'
         return content

@@ -47,6 +47,8 @@ class WmAlarm:
         'SORTIE_MODIFIER_PUNCTURE':'穿刺伤害强化',
         'SORTIE_MODIFIER_EXIMUS':'卓越者据点',
         'SORTIE_MODIFIER_HAZARD_RADIATION':'辐射灾害',
+        'SORTIE_MODIFIER_LOW_ENERGY':'能量衰减',
+        'SORTIE_MODIFIER_FREEZE':'寒冰',
         }
         req=urllib2.Request('http://deathsnacks.com/wf/data/sorties.json')
         resp =urllib2.urlopen(req)
@@ -58,7 +60,7 @@ class WmAlarm:
             tempS = s['node'].split(' (')
             mapName = tempS[0]
             starName = WmTranslator().en2zh(tempS[1].replace(')',''))
-            resStr+="%s(%s)-%s[%s]\n"%(mapName,starName,WmTranslator().en2zh(s['missionType']),modifier.get(s['modifierType'],s['modifierType']))
+            resStr+="%s(%s) - %s [%s]\n"%(starName,mapName,WmTranslator().en2zh(s['missionType']),modifier.get(s['modifierType'],s['modifierType']))
         return resStr
 
     def getInvasionList(self):

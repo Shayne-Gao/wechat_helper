@@ -1,0 +1,57 @@
+<html>
+<title>Warframe List</title> 
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{%static 'index.css'%}">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<body>
+
+<div class="top">
+<form id="form1" name="form1" action=""  target="_blank">
+物品询价及build查询：<br>
+<input type="text" name="item"  value="物品名称">
+<input class="submitButton" type="button" value="询价" onclick="item_click(1)"/>
+<input class="submitButton" type="button" value="查询Mod装配" onclick="item_click(2)"/>
+</form> 
+</div>
+
+
+<div class="left">
+<h1>当前警报</h1>
+<pre>{{ alarm}}</pre>
+</div>
+
+<div class="right">
+<h1>当前入侵</h1>
+<pre>{{invasion}}</pre>
+</div>
+
+<div class="left">
+<h1>当前突击</h1>
+<pre>{{sorties}}</pre>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+    function item_click(value) {
+        var form1 = $("#form1");
+        var item = $("#item").val();
+        if (value == 1) {          
+            form1.action = "/wf/price";
+             $("#form1").attr("action",form1.action);
+            form1.submit();
+        }
+        if (value == 2) {
+            form1.action = "/wf/build";
+            $("#form1").attr("action", form1.action);
+            form1.submit();
+        }
+   }
+</script>

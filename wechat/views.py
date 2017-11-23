@@ -6,11 +6,13 @@ from wechat_sdk.basic import WechatBasic
 from wechat_sdk.exceptions import ParseError
 from wechat_sdk.messages import TextMessage
 from warframe import warframe
+from life import life
 from accountbook import AccountBook
 import time
 import random
 import re
 from random import choice
+import datetime
 WECHAT_TOKEN = "J29djw0OwplP"
 # APP_ID = 你的app id
 # APP_SECRET = 你的app secret
@@ -57,6 +59,8 @@ def index(request):
         content = message.content.strip()
         content = content.encode("utf-8")  
         reply_text = '没有找到您的命令，再试试哦\n'
+        #-------------------------------------------------------------------------------------------------------
+        #以下为基础帮助等功能
         if content.lower() == 'help':
             reply_text = (
                     '目前支持的功能(不用输出括号！)：\n1. 输入【博客】来查看我的博客\n'
@@ -80,6 +84,11 @@ def index(request):
             reply_text = ('感谢您的反馈！每一条都会被记录下来，会尽量回复的哦！\n\r')
         elif content == '小绿':
 	        reply_text = '么么哒恭喜你进入了隐藏的空间，当你看到这句话的时候我一定在想你哟！\n'
+        elif content == '喂食':
+            reply_text ="本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href='http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg'>微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！"
+
+        #-------------------------------------------------------------------------------------------------------
+        #以下为warframe功能的识别
         elif content.lower().startswith('wfb'):
             wf = warframe()
             subContent = content[3:].strip()
@@ -108,15 +117,65 @@ def index(request):
 	    	        reply_text = wf.getInfoByName(subContent)
         elif content.lower()=='wfa' or content=='警报':
             reply_text = warframe().getAlarm()
-        elif content.lower()=='list':
-            reply_text = warframe().getPriceList(wechat_instance.message.source)
-        elif content == '喂食':
-            reply_text ="本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href='http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg'>微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！"
-        elif re.match('^\d', content) and  wechat_instance.message.source=='opD4r0WskoVJmlirA9ubVCVpg-k0':
-            res = AccountBook().insertAccountRequest(content)
-            reply_text = res
+        elif content=='入侵':
+            reply_text = warframe().getInvasion()
+        elif content=='突击':
+            reply_text = warframe().getSorties()
+        # elif content.lower()=='list':
+        #     reply_text = warframe().getPriceList(wechat_instance.message.source)
+
+          #-------------------------------------------------------------------------------------------------------
+        #以下为其他生活功能的识别
+        elif content.lower().startswith('s'):
+            req = content.replace('s','')
+            reply_text = life().scarf(int(req))
+        elif content.startswith( '班车'):
+            reply_text = "19:00\n19:10\n19:30\n19:45\n20:00\n20:10\n20:30\n21:05\n21:30\n22:10\n"
+        #-------------------------------------------------------------------------------------------------------
+        #以下为记账功能的识别
+        elif hasUserPremission(wechat_instance.message.source,'actbook'): 
+            if  re.match('^\d', content) :
+                res = AccountBook().insertAccountRequest(content)
+                reply_text = res
+            elif content.startswith('明细'):
+                yearMonth = content.replace('明细','')
+                if yearMonth == '':
+                    reply_text = AccountBook().getRecordByYearMonth(datetime.date.today().year,datetime.date.today().month)
+                else:
+                    year = yearMonth[0:4]
+                    month = yearMonth[4:6]
+                    reply_text = AccountBook().getRecordByYearMonth(year,month)
+            elif content.startswith('统计'):
+                yearMonth = content.replace('统计','')
+                if yearMonth == '':
+                    year = datetime.date.today().year
+                    month = datetime.date.today().month
+                else:
+                    year = yearMonth[0:4]
+                    month = yearMonth[4:6]
+                #reply_text = AccountBook().getAnalysisByYearMonth(year,month)
+                reply_text = AccountBook().getAnalysisByYearMonthAndRecord(year,month)
+            elif content.startswith('分类'):
+                yearMonth = content.replace('分类','')
+                if yearMonth == '':
+                    year = datetime.date.today().year
+                    month = datetime.date.today().month
+                else:
+                    year = yearMonth[0:4]
+                    month = yearMonth[4:6]
+                reply_text = AccountBook().getAnalysisByYearMonth(year,month)
+            elif content == '撤销':
+                #uid暂时传个1
+                if AccountBook().deleteLatestRecord(1) is not None:
+                    reply_text = '已撤销最新一次记账'
+                else:
+                    reply_text = '撤销失败'
     	else:
         	reply_text = '未找到该命令，是不是忘了加wf和空格？输入help查看功能哦\n'
+
+
+        #-------------------------------------------------------------------------------------------------------
+
         processTime = time.time() - startTime
         if len(reply_text)<100 :
             status='\033[1;33mERRE\033[0m'
@@ -133,6 +192,15 @@ def index(request):
         response = wechat_instance.response_text(content=reply_text)
 
     return HttpResponse(response, content_type="application/xml")
+
+def hasUserPremission(wechatId, permissionType):
+   
+    if permissionType == 'actbook':
+        actbook = ['opD4r0WskoVJmlirA9ubVCVpg-k0']
+        if wechatId in actbook:
+            return True
+        else:
+            return  False
 
 #随机获取页尾进行展示
 def getFooter():
@@ -156,4 +224,4 @@ def getFooter():
     return str
 
 #print getFooter()
-
+#print hasUserPremission('opD4r0WskoVJmlirA9ubVCVpg-k0','actbook')

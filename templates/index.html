@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Home</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    {% load static %}
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+<body > 
+   
+        <div class="navbar navbar-inverse navbar-fixed-top " >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ><strong style=""></strong>Ink<small >公众号：墨绿Life</small></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right set-links">
+                    <li><a href="index.html" class="active-menu-item">HOME</a></li>
+                    <!--
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="pricing.html">PRICING</a></li>
+                     <li><a href="#stats-download">CONTACT</a></li>
+                    <li><a href="blank.html">BLANK</a></li>
+                -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--MENU SECTION END-->
+    <section id="home-sec">
+        <div class="overlay text-center">
+            <h1 >Warframe 游戏信息查询</h1>
+            <hr class="hr-set"/>
+
+            <p>目前支持查询游戏内警报、入侵、突击，物品询价、装备mod装配等 </p>
+        </div>
+    </section>
+    <!--HOME SECTION END-->
+    <section id="search-domain" >
+<form id="form1" name="form1" action=""  target="_blank">
+        <div class="container">
+            <div class="row">
+<div class="col-md-8">
+        <input type="text" class="form-control input-cls"   name="item" />
+
+</div>
+                <div class="col-md-4">
+                    <input type="button" class="btn btn-info btn-lg btn-set"  onclick="item_click(1)" value="询价" />
+                     <input type="button" class="btn btn-info btn-lg btn-set"  onclick="item_click(2)" value="查询Build" />
+                </div>
+            </div>
+        </div>
+</form>
+    </section>
+     <!--SEARCH SECTION END-->
+    <section id="services-sec">
+        <div class="container">
+           
+<div class="row text-left" >
+<div class="col-md-4">
+    <h3>Alarms</h3>
+    <p>
+    <pre>{{alarm}}</pre>
+    </p>
+
+</div>
+                <div class="col-md-4">
+    <h3>Invasion </h3>
+                     <p>
+    <pre>{{invasion}}</pre>
+    </p>
+                </div>
+                <div class="col-md-4">
+    <h3>Sorties</h3>
+                     <p>
+    <pre>{{sorties}}</pre>
+    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICES SECTION END-->
+    <!--CLIENTS SECTION END-->
+    <!--
+    <div id="testimonial-sec">
+
+   
+        <div class="container">
+              <div class="row ">
+            <div class="col-md-12">
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example" data-slide-to="1"></li>
+                        <li data-target="#carousel-example" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="container center">
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                   
+                                    <h4><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. <i class="fa fa-quote-right"></i></h4>
+                                     <div class="user-img pull-right">
+						<img src="/static/img/user.gif" alt="" class="img-u image-responsive"  />
+					</div>
+                                    <h5 class="pull-right"><strong class="c-black">Lorem Dolor</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container center">
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h4> <i class="fa fa-quote-left"></i> Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. <i class="fa fa-quote-right"></i></h4>
+                                         <div class="user-img pull-right">
+						<img src="/static/img/user2.png" alt="" class="img-u image-responsive"  />
+					</div>
+                                    <h5 class="pull-right"><strong class="c-black">Faucibus luctus</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container center">
+                                <div class="col-md-6 col-md-offset-3 slide-custom">
+                                    <h4><i class="fa fa-quote-left"></i>Sed ultricies, libero ut adipiscing a egestas dui metus a arcu condimentum. <i class="fa fa-quote-right"></i></h4>
+                                        <div class="user-img pull-right">
+						<img src="/static/img/user.gif" alt="" class="img-u image-responsive"  />
+					</div>
+                                    <h5 class="pull-right"><strong class="c-black">Sed ultricies</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+         </div>
+     -->
+    <!--TESTIMONIAL SECTION END-->
+    <!--
+    <section id="features-sec"  >
+        <div class="container">
+           
+            <div class="row text-center" >
+<div class="col-md-3">
+    <i class="fa fa-comments-o fa-3x icon-custom-2 color-2"></i>
+    <h4>24x7 SUPPORT</h4>
+    <p>
+        Nunc at viverra risus. 
+        In euismod quam ac dictum varius. 
+    </p>
+
+</div>
+                <div class="col-md-3">
+                     <i class="fa fa-rocket fa-3x icon-custom-2 color-2"></i>
+    <h4>Ultra Fast </h4>
+                     <p>
+        Nunc at viverra risus. 
+        In euismod quam ac dictum varius. 
+    </p>
+                </div>
+                <div class="col-md-3">
+                     <i class="fa fa-bars fa-3x icon-custom-2 color-2"></i>
+    <h4>Fast Response</h4>
+                     <p>
+        Nunc at viverra risus. 
+        In euismod quam ac dictum varius. 
+    </p>
+                </div>
+                <div class="col-md-3">
+                     <i class="fa fa-table fa-3x icon-custom-2 color-2"></i>
+    <h4>Customizable</h4>
+                     <p>
+        Nunc at viverra risus. 
+        In euismod quam ac dictum varius. 
+    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+     <!--FEATURES SECTION END-->
+     <section id="footer-sec" >
+        <div class="container">
+            <div class="row">
+<div class="col-md-4">
+   <h4>ABOUT</h4>
+    <p style="padding-right:50px;">
+        版权说明：warframe相关的价格信息来自warframe.market,build信息来自于warframe-build.com。 
+        翻译词库来源于网友
+        本公众号非商业化，功能全部免费
+        <a href="about.html">more..</a>
+
+    </p>
+</div>
+                <div class="col-md-4">
+       <h4>联系作者 </h4>
+                    <h5><strong>Email:</strong>gwlj@outlook.com</h5>
+                   
+</div>
+                <div class="col-md-4">
+<!--
+      <h4>SOCIAL LINKS</h4>
+                    <div class="social-links">
+
+                    
+                    <a href="#" > <i class="fa fa-facebook fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-twitter fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-linkedin fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-google-plus fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-github fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-digg fa-2x" ></i></a>
+                         <a href="#" > <i class="fa fa-dropbox fa-2x" ></i></a>
+                   </div>
+
+</div>
+    -->           
+            </div>
+               
+        </div>
+    </section>
+     <!--FOOTER SECTION END-->
+    <div class="copy-txt">
+         <div class="container">
+        <div class="row">
+<div class="col-md-12 set-foot" >
+    Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">Css source</a>
+</div>
+            </div>
+                   </div>
+    </div>
+     <!-- COPY TEXT SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+</body>
+</html>

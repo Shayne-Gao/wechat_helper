@@ -10,6 +10,7 @@ import MySQLdb
 import types
 import urllib2
 import time
+import datetime
 import httplib 
 from db import WarframeDB
 class WmPricer:   
@@ -28,7 +29,9 @@ class WmPricer:
             if dbprice is None:
                 return self.getPriceFromWm(nameEn,itemType)
             else:
-                timeArray = dbprice['record_time'].timetuple()
+                #str to datetime, then datetime to timestamp and compare 
+                dataRecordTime = datetime.datetime.strptime(dbprice['record_time'], "%Y-%m-%d %H:%M:%S")
+                timeArray = dataRecordTime.timetuple()
                 #timeArray = time.strptime(rtime, "%Y-%m-%d %H:%M:%S")
                 timeStamp = int(time.mktime(timeArray))
                 nowTimeStamp = int(time.time())

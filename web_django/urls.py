@@ -19,4 +19,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^wx', include('wechat.urls')),    
     url(r'^wf', include('web.urls')),
+
 ]

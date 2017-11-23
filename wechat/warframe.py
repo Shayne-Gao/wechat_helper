@@ -151,6 +151,10 @@ class warframe(object):
             resStr += "【提示】若要获得物品的实时价格，请搜索单个物品，如wf Ash Prime Set\n"
         return resStr
 
+    def getInvasion(self):
+        return WmAlarm().getInvasionList()
+    def getSorties(self):
+        return WmAlarm().getSorties()
     def getAlarm(self):
         str = ""
         str += '==================\n'
@@ -160,7 +164,7 @@ class warframe(object):
         str += '==================\n'
         str += "当前入侵：\n"
         str += '==================\n'
-        str += WmAlarm().getInvasionList()
+        str += "由于入侵内容超过微信最大返回限制，请输入“入侵”查看入侵内容。抱歉哦"
         str += '==================\n'
         str += "今日突击：\n"
         str += '==================\n'

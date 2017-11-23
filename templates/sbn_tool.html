@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title></title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+<body > 
+   
+        <div class="navbar navbar-inverse navbar-fixed-top " >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ><strong style=""></strong>Ink<small >公众号：墨绿Life</small></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right set-links">
+                    <li><a href="/wf" >HOME</a></li>
+<!--
+                     <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="pricing.html">PRICING</a></li>
+                     <li><a href="#stats-download">CONTACT</a></li>
+                    <li><a href="blank.html" class="active-menu-item">BLANK</a></li>
+-->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--MENU SECTION END-->
+    <section class="headline-sec">
+        <div class="overlay ">
+            <h3 >查询结果：</h3>
+        </div>
+    </section>
+    <!--HOME SECTION END-->
+    <section>
+        <div class="container">
+            <table border='3' width='600px'>
+                <form id="form1" action="./sbn_result" method="get">
+                    <tr>
+                        <b>格式:</b> ID,Start Date(e.g. 20171129),First,Second<br>
+                        数据以回车分割
+                        <br>
+                        示例:<br>
+                          12345,20171129,10000,20000</br>
+                          56789,20180101,33333,44444 </br>     
+                        将结果复制到文本文件中，然后将后缀名 从.txt改为.csv即可</br>
+
+                    </tr>
+                    <tr> 
+                           <textarea name="req" cols="50" rows="4">  </textarea>  
+                     </tr>
+                    <tr>
+                    <br>
+                  <input type="submit" value="Submit" />
+                    </tr>
+                {{res|safe}}
+                </form>
+            </table>
+        </div>
+    </section>
+           </div>
+                   </div>
+    </div>
+     <!-- COPY TEXT SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+    
+</body>
+</html>
+

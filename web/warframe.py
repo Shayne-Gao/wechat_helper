@@ -16,12 +16,13 @@ from wftools.pricer import WmPricer
 from wftools.builder import WmBuilder
 from wftools.ItemNickName import ItemNickName
 from wftools.alarm import WmAlarm
+from wftools.itemUtil import ItemUtil
 class warframe(object):
     MAX_RECORD_NUM = 5 
     #MAX_RECORD_PRICE_NUM = 1 #最大查询价格的物品数目
     MAX_URL_PRICE_NUM = 1 #查询物品结果数目少于等于此值时，强制查询远端实时价格
     MAX_PROCESS_TIME = 2#最大处理时间的秒
-    MAX_BUILD_NUM = 2 #获取最多的build数量
+    MAX_BUILD_NUM = 7 #获取最多的build数量
     MAX_RESPONSE_LEN = 1400 #微信最大的返回字节数目
 
     PRICE_STATISTIC_TIME_PERIOD_DAY = 3# 显示几天内的价格趋势
@@ -57,21 +58,35 @@ class warframe(object):
             return '未找到这个物品的build，请尝试修改关键词哦'
         str = "%s(%s)<br>"%(nameZh,nameEn)
         outputCount = 0
+        modCount = {}
         for b in buildDict:
+            #统计各个Mod出现的次数
+            for modName in b['build_dict']:
+                modCount[modName] = modCount.get(modName,0)+1
             if b['formas'] =='-':
                 b['formas'] = 0
             if outputCount > self.MAX_BUILD_NUM:
                 break;
             outputCount +=1
             str += '------------------------<br>'
-            str += "【方案%s】【极化:%s】<br>"%(outputCount,b['formas'])
+            str += "【方案%s】【极化:%s】%s<br>"%(outputCount,b['formas'],b['build_des'])
             str+=b['build']
-            if len(str) < self.MAX_RESPONSE_LEN: 
-                str+= "【<a href='"+b['url']+"'>详情</a>】<br>"
+            
+            str+= "【<a href='"+b['url']+"'>详情</a>】<br>"
             #outputCount+=1
+        str += "Mod出现频率:</br>"
+        sortModCount = sorted(modCount.items(), lambda x, y: cmp(x[1], y[1]), reverse=True)
+        print sortModCount
+        for k in sortModCount:
+            #获取Mod图片
+            modImg = ItemUtil().getItemImgByZh(k[0])
+            str+="<div style='float:left;height:350px;width:200px'>"
+            str+="<img style='height:300px' src='%s'>"%(modImg)
+            str+="</br>%s : %s / %s<br>"%(k[0],k[1],self.MAX_BUILD_NUM)
+            str+="</div>"
         return str
             
-    def getInfoByName(self,itemName):
+    def getInfoByName(self,itemName,isListFormat = False):
         #记录开始时间
         startProcessTime = time.time()
         resStr = ""
@@ -80,7 +95,7 @@ class warframe(object):
         #尝试直接翻译
         trans = WmTranslator()
         directNameZh = trans.en2zh(itemName)
-        if directNameZh != itemName:
+        if directNameZh != itemName and not isListFormat:
             resStr += "您的输入也可以直接被翻译为:"+directNameZh+"<br>"
 
         db = MySQLdb.connect("localhost","root","IWLX8IS12Rl","warframe",charset='utf8' )
@@ -113,14 +128,15 @@ class warframe(object):
         priceSource = ''
         if len(results) <= self.MAX_URL_PRICE_NUM:
             priceSource = 'url'
+        #resStr += "<tr><td>类型</td><td>物品</td><td>英文名</td><td>Wiki</td><td>最低售价</td><td>详情</td><td>卖家</td><tr>"
         for r in results:
+            resStr +="<tr>"
             name_en=r[1]
             name_zh=r[2]
             itemType = r[3]
             wikiZH = self.getZhWikiUrl(name_zh,name_en,itemType)
-            wikiZH = "【<a href='"+wikiZH+"'>Wiki</a>】"
-            resStr += "-------------------------------<br>"
-            resStr += "【%s】%s<br>英文名: %s<br>%s<br>"%(itemType,name_zh,name_en,wikiZH)
+            wikiZH = "<a href='%s'>%s</a>"%(wikiZH,name_zh)
+            resStr += "<td>%s</td><td>%s</td><td>%s</td>"%(itemType,wikiZH,name_en)
             #get price
             listCount += 1
             #如果结果集过小，强制从api获取价格
@@ -131,48 +147,99 @@ class warframe(object):
                 priceSource = 'db'
             itemPrice = pricer.getPrice(name_en,itemType,priceSource)
             if itemPrice is not None:
-                resStr += "【最低售价"
-                if itemPrice['source'] == 'url':    
-                    resStr += "(实时)"
-                    priceCount += 1  
-                resStr +="】%s 白金<br>"%(itemPrice['cheapest_price'])
+                resStr += "<td>"
+                resStr +="%s</td>"%(itemPrice['cheapest_price'])
                 #如果采集的数据足够显示物品价格趋势，则显示近期的最高或者最低价格。否则显示前20的平均售价
                 priceStat = pricer.getPriceSimpleStatistic(name_en, self.PRICE_STATISTIC_TIME_PERIOD_DAY * 24 * 3600)
                 if priceStat is not None:
-                    resStr += "%s天内售价：%s-%s | 平均 %s<br>"%(self.PRICE_STATISTIC_TIME_PERIOD_DAY ,priceStat['lowest'],priceStat['highest'],priceStat['avg'])
+                    resStr += "<td>%s天内:%s-%s <br> 平均: %s"%(self.PRICE_STATISTIC_TIME_PERIOD_DAY ,priceStat['lowest'],priceStat['highest'],priceStat['avg'])
+                    resStr +="<br>%s</td>"%(self.getBuySuggest(itemPrice['cheapest_price'],priceStat['lowest'],priceStat['highest'],priceStat['avg']))
                 else:
-                    resStr += "前20平均售价：%s x %s个<br>"%(itemPrice['top_avg'],itemPrice['top_count'])
-                resStr += "最便宜卖家：<br>%s"%(itemPrice['top_rec'])
+                    resStr += "<td>前20平均售价：%s x %s个</td>"%(itemPrice['top_avg'],itemPrice['top_count'])
+                #记录时间距离现在的时间
+                if isinstance(itemPrice['record_time'],basestring):
+                    timeArray = time.strptime(itemPrice['record_time'], "%Y-%m-%d %H:%M:%S")
+                    timeStamp = int(time.mktime(timeArray))
+                    pastTime = time.time() - timeStamp
+                    pastMin = int(pastTime / 60)
+                    pastSec = int(pastTime - pastMin * 60)
+                    resStr +=  "<td>%s分%s秒前</td>"%(pastMin,pastSec)
+                else:
+                    resStr += "<td>%s分%s秒前</td>"%(itemPrice['record_time'],type(itemPrice['record_time']))
+                #卖家记录
+                resStr += "<td>%s</td>"%(itemPrice['top_rec'])
+                pTime = time.time() - nowProcessTime
+                resStr += "<td>%s-%s</td>"%(pTime,priceSource)
             else:
-                resStr += "未查询到售价<br>"
-        #是否因为时间原因未查询的物品价格？
-        if priceCount < len(results): 
-            resStr += "<br>-------------------------------<br>"
-            resStr += "【提示】若要获得物品的实时价格，请搜索单个物品，如wf Ash Prime Set<br>"
+                resStr += "<td>未查询到售价</td>"
+            resStr +="</tr>"
         return resStr
+    def getBuySuggest(self,nowPrice,lowest,highest,avg):
+        if nowPrice == lowest:
+            return "<div  style='color: red;'><b>历史最低<b></div>"
+        if nowPrice < avg*0.8:
+            return "<div  style='color: orange;'><b>赶快购买<b></div>"
+        elif nowPrice < avg:
+            return "<div style='color:green'><b>建议购买<b></div>"
+        else:
+            return "观望"
 
     def getAlarm(self):
-        str = ""
-        str += "<h1>当前警报：</h1>"
-        str += WmAlarm().getAlarmList()
-        str += "<h1>当前入侵：</h1>"
-        str += WmAlarm().getInvasionList()
-        str += "<h1>今日突击：</h1>"
-        str += WmAlarm().getSorties()
+        str = WmAlarm().getAlarmList()
         return str     
           
-    def getPriceList(self,wechat_id):
+    def getInvasion(self):
+        return WmAlarm().getInvasionList()
+
+    def getSorties(self):
+        return WmAlarm().getSorties()
+    def getPriceList(self,type):
         #get monitor item price list by user
-        items = [
-        'Banshee Prime Systems',
+        startTime = time.time()
+        itemstobuy = [
         'Secura Lecta',
-        'Ash Prime Set',
-        'Nova Prime Set',
         'Energy Siphon',
+        #'持久力Prime',
+        '盲怒',
+        '瞬时坚毅',
+        '过度延展',
+        '卑劣加速',
+        '高压电流',
+        '致命火力',
+        '铝热焊弹',
+        '烈焰',
+        
         ]
-        resStr = ""
+        itemswf = [
+        'Ash Prime',
+        'Mag Prime',
+        'Nova Prime',
+        'Banshee Prime',
+        'Volt Prime',
+        'Oberon Prime',
+        'Saryn Prime',
+        'Valkyr Prime',
+        'Nekros Prime',
+        'Trinity Prime',
+        'Rhino Prime',
+        ]
+        if type == 'wf':
+            items = itemswf
+        elif type == 'tobuy':
+            items = itemstobuy
+        resStr = "<table  border='3'>"
+        resStr += "<tr><td>类型</td><td>物品</td><td>英文名</td><td>最低售价</td><td>详情</td><td>记录时间</td><td>卖家</td><tr>"
+        count = 0
         for item in items:
-            resStr += self.getInfoByName(item)
+            count +=1
+            if count % 2 ==0:
+                resStr +="<tr style='background-color:gray'>"
+            else:
+                resStr +="<tr>"
+            resStr += self.getInfoByName(item,True)
+            resStr += "</tr>"
+        resStr +="</table>"
+        resStr += "耗时:%s"%(time.time() - startTime)
         return resStr;
             
     
@@ -185,5 +252,5 @@ def test():
 #wf = warframe()
 #print WmAlarm().getAlarmList()    
 
-#print warframe().getPriceList(123)
+#print warframe().getBuildlikeName('lenz')
 
