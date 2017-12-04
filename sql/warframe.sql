@@ -1,25 +1,27 @@
-/*
-SQLyog Ultimate v11.11 (64 bit)
-MySQL - 5.5.52-MariaDB : Database - warframe
-*********************************************************************
-*/
+-- MySQL dump 10.14  Distrib 5.5.52-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: warframe
+-- ------------------------------------------------------
+-- Server version	5.5.52-MariaDB
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
-
-/*!40101 SET SQL_MODE=''*/;
-
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`warframe` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `warframe`;
-
-/*Table structure for table `build_item` */
+--
+-- Table structure for table `build_item`
+--
 
 DROP TABLE IF EXISTS `build_item`;
-
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `build_item` (
   `id` int(16) NOT NULL AUTO_INCREMENT,
   `name_en` varchar(32) NOT NULL,
@@ -28,11 +30,15 @@ CREATE TABLE `build_item` (
   `build_id` int(16) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=382 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-/*Table structure for table `item` */
+--
+-- Table structure for table `item`
+--
 
 DROP TABLE IF EXISTS `item`;
-
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `item` (
   `id` int(6) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `name_en` varchar(32) NOT NULL COMMENT '英文物品名',
@@ -52,11 +58,15 @@ CREATE TABLE `item` (
   KEY `namezh` (`name_zh`),
   KEY `type` (`type`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1595 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-/*Table structure for table `item_build_record` */
+--
+-- Table structure for table `item_build_record`
+--
 
 DROP TABLE IF EXISTS `item_build_record`;
-
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `item_build_record` (
   `id` bigint(16) NOT NULL AUTO_INCREMENT,
   `item_type` tinyint(4) DEFAULT NULL,
@@ -70,12 +80,16 @@ CREATE TABLE `item_build_record` (
   `record_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `build_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8799 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9673 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
-/*Table structure for table `item_price_record` */
+--
+-- Table structure for table `item_price_record`
+--
 
 DROP TABLE IF EXISTS `item_price_record`;
-
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `item_price_record` (
   `id` bigint(10) unsigned NOT NULL AUTO_INCREMENT,
   `item_id` bigint(10) DEFAULT NULL,
@@ -91,8 +105,15 @@ CREATE TABLE `item_price_record` (
   `record_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=723303 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-12-04 18:04:10
