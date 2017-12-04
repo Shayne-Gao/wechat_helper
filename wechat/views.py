@@ -223,5 +223,6 @@ def getFooter():
     str += choice(foot)+"\n"
     return str
 
+print  AccountBook().getAnalysisByYearMonthAndRecord(2017,10)
 #print getFooter()
 #print hasUserPremission('opD4r0WskoVJmlirA9ubVCVpg-k0','actbook')

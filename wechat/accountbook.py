@@ -49,7 +49,13 @@ class AccountBook(object):
         return None
     def getRecordByYearMonth(self,year,month,orderby='id'):
         start = "%s-%s-01 00:00:00"%(year,month)    
-        end = "%s-%s-01 00:00:00"%(year,int(month)+1)
+        if int(month)+1 > 12:
+            endYear = int(year)+1
+            endMonth = 1
+        else:
+            endYear = year
+            endMonth = int(month)+1
+        end = "%s-%s-01 00:00:00"%(endYear,endMonth)
         startStamp = time.mktime(time.strptime(start,"%Y-%m-%d %H:%M:%S")) 
         endStamp = time.mktime(time.strptime(end,"%Y-%m-%d %H:%M:%S")) 
         return self.getRecordByTime(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT,orderby)
@@ -61,8 +67,14 @@ class AccountBook(object):
     def getAnalysisByYearMonth(self,year,month):
         responseStr = ""
         start = "%s-%s-01 00:00:00"%(year,month)
-        end = "%s-%s-01 00:00:00"%(year,int(month)+1)
         startStamp = time.mktime(time.strptime(start,"%Y-%m-%d %H:%M:%S"))
+        if int(month)+1 > 12:
+            endYear = int(year)+1
+            endMonth = 1
+        else:
+            endYear = year
+            endMonth = int(month)+1
+        end = "%s-%s-01 00:00:00"%(endYear,endMonth)
         endStamp = time.mktime(time.strptime(end,"%Y-%m-%d %H:%M:%S"))
         res =  Analysis().getPercent(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT)
         totalCost = 0
@@ -85,11 +97,18 @@ class AccountBook(object):
     def getAnalysisByYearMonthAndRecord(self,year,month):
         responseStr = ""
         start = "%s-%s-01 00:00:00"%(year,month)
-        end = "%s-%s-01 00:00:00"%(year,int(month)+1)
+        if int(month)+1 > 12:
+            endYear = int(year)+1
+            endMonth = 1
+        else:
+            endYear = year
+            endMonth = int(month)+1
+        end = "%s-%s-01 00:00:00"%(endYear,endMonth)
         startStamp = time.mktime(time.strptime(start,"%Y-%m-%d %H:%M:%S"))
         endStamp = time.mktime(time.strptime(end,"%Y-%m-%d %H:%M:%S"))
         res =  Analysis().getPercent(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT)
         resRecord = AccountBookDB().getAllRecordByTime(startStamp,endStamp,self.MAX_RECORD_LIMIT,'category_id,cost desc');
+        #对所有分类进行循环
         for r in res:
             markNum = int(float( r['percent'])) / 1+1
             mark = '';
@@ -97,19 +116,30 @@ class AccountBook(object):
                 mark += "|"
             responseStr += '----------------------------\n'
             responseStr += "【%s】%10s%%   ￥%s\n"%(r['name'],r['percent'],r['cost'])
-            #显示这个分类下的明细
+            #显示所有明细中，属于这个分类的信息
+            ignoreText = {}
+            ignoreCost = 0
             for record in resRecord:
                 if len(record)<6:
                     continue
                 if Category().getCategoryNameById(record[4]) != r['name']:
                     continue
-                if record[2] < 1:  #因为微信有最大返回行数，所以小于阈值的详情不在统计内显示
+                if record[2] < 15:  #因为微信有最大返回行数，所以小于阈值的详情不在统计内显示
+                    ignoreText[record[5]] = ignoreText.get(record[5],0) + record[2]
+                    ignoreCost += record[2]
                     continue
                 responseStr += "%s | ￥% 7.2f | %s\n"%(record[6].strftime('%d日'),record[2],record[5])    
+            if ignoreCost >0:
+                ignoreStr = ''
+                for k,v in ignoreText.items():
+                    ignoreStr += "%s | ￥% 7.2f | %s\n"%('折 叠',v,k)
+                
+                responseStr += ignoreStr
+                #responseStr += "另有￥%s未显示,花费在\n%s\n"%(ignoreCost,"\n".join(ignoreStr))
         return responseStr
 
 
-
+    #按照时间段获取记账信息
     def getRecordByTime(self,startTime,endTime,limit,orderby):
         responseStr = "";
         res = AccountBookDB().getAllRecordByTime(startTime,endTime,limit,orderby);
@@ -136,6 +166,6 @@ class AccountBook(object):
 #print WmAlarm().getAlarmList()    
 #print AccountBook().anayRequest("12.3哈哈哈123")
 #print AccountBook().getRecordByTime(0,1509608560,200,'cost')
-#print AccountBook().getAnalysisByYearMonth(datetime.date.today().year,10)
+#print AccountBook().getAnalysisByYearMonth(datetime.date.today().year,datetime.date.today().month)
 #print AccountBook().getAnalysisByYearMonthAndRecord(datetime.date.today().year,11)
 #print AccountBook().deleteLatestRecord(1)

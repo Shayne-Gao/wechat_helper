@@ -18,6 +18,7 @@ import MySQLdb
 from db import AccountBookDB
 from category import Category
 class Analysis:
+
     def getPercent(self,startStamp,endStamp,limit):
         #res = AccountBookDB().getAllRecordByTime(startStamp,endStamp,limit);
         res = AccountBookDB().getSumGroupByCate(startStamp,endStamp);
@@ -115,6 +116,6 @@ class Analysis:
 
 
 #Category().getAllCategoryAndId();
-Category().guessCategory('打车');
+#Category().guessCategory('打车');
 #print Category().getCategoryNameById(10);
 #print Analysis().getPercent(0,1509693496,1)
