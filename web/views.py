@@ -57,6 +57,8 @@ def sbn_result(request):
     resultContent += title.replace('\n','<br>')
     for r in reqLine:
         singleParam = r.split(',')
+        if len(r) == 0 :
+            continue
     #    resultContent = singleParam
         resultContent+=  LifeTool().getSBNContent(str(singleParam[0]),str(singleParam[1]),int(singleParam[2]),int(singleParam[3])).replace('\n','<br>')
     context = {}
