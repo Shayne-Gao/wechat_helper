@@ -166,10 +166,13 @@ def index(request):
                 reply_text = AccountBook().getAnalysisByYearMonth(year,month)
             elif content == '撤销':
                 #uid暂时传个1
-                if AccountBook().deleteLatestRecord(1) is not None:
-                    reply_text = '已撤销最新一次记账'
-                else:
-                    reply_text = '撤销失败'
+                delRes = AccountBook().deleteLatestRecord(1)
+                reply_text = delRes
+            elif content.startswith('归类'):
+                newType = content.replace('归类','');
+                classfyRes = AccountBook().classifyLastRecord(1,newType)
+                reply_text = classfyRes
+                
     	else:
         	reply_text = '未找到该命令，是不是忘了加wf和空格？输入help查看功能哦\n'
 

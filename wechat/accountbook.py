@@ -16,6 +16,8 @@ from wftools.db import WarframeDB
 from actbook.category import Category 
 import datetime
 from actbook.analysis import Analysis
+from actbook.record import AccountRecord
+
 class AccountBook(object):
     MAX_RECORD_LIMIT=200;
     def insertAccountRequest(self,request):
@@ -61,7 +63,24 @@ class AccountBook(object):
         return self.getRecordByTime(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT,orderby)
 
     def deleteLatestRecord(self,uid,valid=AccountBookDB().REC_VALID_FALSE):
-        return    AccountBookDB().deleteLatestRecord(1,valid)
+        if    AccountRecord().deleteLastRecord(uid,valid) != None:
+            lastRecord = AccountRecord().getLastValidRecord(uid)
+            str = ''
+            resStr = "成功删除最后一条记录，当前最新记录为:\n"
+            resStr += "%s | ￥% 7.2f | %s(%s)\n"%(lastRecord['create_time'].strftime('%d日'),lastRecord['cost'], Category().getCategoryNameById(lastRecord['category_id']),lastRecord['content'])
+            return resStr
+        else:
+            return '撤销删除失败'
+
+    def classifyLastRecord(self,uid,cateName):
+        if  AccountRecord().classifyLastRecord(uid,cateName) != None:
+            lastRecord = AccountRecord().getLastValidRecord(uid)
+            str = ''
+            resStr = "成功更改最后一条记录，当前最新记录为:\n"
+            resStr += "%s | ￥% 7.2f | %s(%s)\n"%(lastRecord['create_time'].strftime('%d日'),lastRecord['cost'], Category().getCategoryNameById(lastRecord['category_id']),lastRecord['content'])
+            return resStr
+        else:
+            return '更改记录失败'
 
     #获得带样式的分类统计信息
     def getAnalysisByYearMonth(self,year,month):
