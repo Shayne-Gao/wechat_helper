@@ -20,6 +20,7 @@ from actbook.record import AccountRecord
 
 class AccountBook(object):
     MAX_RECORD_LIMIT=200;
+    MAX_PAGE_COUNT=1200
     def insertAccountRequest(self,request):
         #分析用户输入
         costNum,content = AccountBook().anayRequest(request)
@@ -49,7 +50,9 @@ class AccountBook(object):
                 content=request[k:]
                 return cost,content.encode('utf-8')
         return None
-    def getRecordByYearMonth(self,year,month,orderby='id'):
+
+    #明细入口
+    def getRecordByYearMonth(self,year,month,orderby,page):
         start = "%s-%s-01 00:00:00"%(year,month)    
         if int(month)+1 > 12:
             endYear = int(year)+1
@@ -60,7 +63,7 @@ class AccountBook(object):
         end = "%s-%s-01 00:00:00"%(endYear,endMonth)
         startStamp = time.mktime(time.strptime(start,"%Y-%m-%d %H:%M:%S")) 
         endStamp = time.mktime(time.strptime(end,"%Y-%m-%d %H:%M:%S")) 
-        return self.getRecordByTime(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT,orderby)
+        return self.getRecordByTime(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT,orderby,page)
 
     def deleteLatestRecord(self,uid,valid=AccountBookDB().REC_VALID_FALSE):
         if    AccountRecord().deleteLastRecord(uid,valid) != None:
@@ -82,7 +85,7 @@ class AccountBook(object):
         else:
             return '更改记录失败'
 
-    #获得带样式的分类统计信息
+    #分类:获得带样式的分类统计信息
     def getAnalysisByYearMonth(self,year,month):
         responseStr = ""
         start = "%s-%s-01 00:00:00"%(year,month)
@@ -112,8 +115,9 @@ class AccountBook(object):
             responseStr += "【%s】\n"%r['name']
         return responseStr
 
-    #获得带样式的分类统计信息+各类别的明细
-    def getAnalysisByYearMonthAndRecord(self,year,month):
+    #统计：获得带样式的分类统计信息+各类别的明细
+    def getAnalysisByYearMonthAndRecord(self,year,month,page=1):
+        page = int(page)
         responseStr = ""
         start = "%s-%s-01 00:00:00"%(year,month)
         if int(month)+1 > 12:
@@ -155,11 +159,16 @@ class AccountBook(object):
                 
                 responseStr += ignoreStr
                 #responseStr += "另有￥%s未显示,花费在\n%s\n"%(ignoreCost,"\n".join(ignoreStr))
-        return responseStr
+            #在这里分页返回
+        totalPage = len(responseStr) / self.MAX_PAGE_COUNT +1
+        thisTimeResponse = responseStr[(page-1) * self.MAX_PAGE_COUNT:page * self.MAX_PAGE_COUNT]
+        thisTimeResponse += "\n当前第 %s / %s 页"%(page,totalPage)
 
+        return thisTimeResponse
 
-    #按照时间段获取记账信息
-    def getRecordByTime(self,startTime,endTime,limit,orderby):
+    #明细:按照时间段获取记账信息
+    def getRecordByTime(self,startTime,endTime,limit,orderby,page=1):
+        page = int(page)
         responseStr = "";
         res = AccountBookDB().getAllRecordByTime(startTime,endTime,limit,orderby);
         if res is None:
@@ -177,7 +186,12 @@ class AccountBook(object):
                 createTime = record[6]
                 outputStr = "%s | ￥% 7.2f | %s(%s)\n"%(createTime.strftime('%d日'),cost, Category().getCategoryNameById(cateId),content)
                 responseStr += outputStr
-            return responseStr
+                #在这里分页返回
+            totalPage = len(responseStr) / self.MAX_PAGE_COUNT +1
+            thisTimeResponse = responseStr[(page-1) * self.MAX_PAGE_COUNT:page * self.MAX_PAGE_COUNT]
+            thisTimeResponse += "\n当前第 %s / %s 页"%(page,totalPage)
+
+            return thisTimeResponse
  
 #------------------------------------------
 #test()

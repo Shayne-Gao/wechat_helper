@@ -30,16 +30,37 @@ class Output(object):
         csvStr += '分类'
         csvPerc = ''
         csvPerc += '分类'
+        #输出表头
         for i in range(0,recentNumber):
-            csvPerc += ",%s-%s(%%)"%(year,month-i)
-            csvStr += ",%s-%s(￥)"%(year,month-i)
+            thisMonth = month - i
+            if thisMonth <1:
+                thisMonth = 12 + thisMonth
+                thisYear = year - 1
+            else:
+                thisYear = year
+            csvPerc += ",%s-%s(%%)"%(thisYear,thisMonth)
+            csvStr += ",%s-%s(￥)"%(thisYear,thisMonth)
         csvStr += "\n"
         csvPerc += "\n"
+        #手动添加总计分类
+        csvStr += '总计'
+        for i in range(0,recentNumber):
+            thisMonth = month-i
+            if thisMonth<1:
+                thisMonth = 12 + thisMonth
+            csvStr += ',' + str(sumCost['总计'][thisMonth])
+        csvStr += "\n"
+
         for cate in allCate:            
+        #循环分类
             csvStr += "%s"%cate['name']
             csvPerc  += "%s"%cate['name']
             for i in range(0,recentNumber):
+            #循环月份
                 thisMonth = month-i
+                if thisMonth<1:
+                    thisMonth = 12 + thisMonth
+                        
                 # print precent of cate
                 try:
                     csvPerc += ',' + sumPerc[cate['name']][thisMonth] +'%'
@@ -61,8 +82,13 @@ class Output(object):
         csvStr = ''
         for i in range(0,3):
             thisMonth = month-i
-            csvStr += "%s-%s\n"%(year,month-i)
-            csvStr += Statistic().getAnalysisByYearMonthAndRecord(year,thisMonth)
+            if thisMonth < 1:
+                thisMonth = 12 + thisMonth
+                thisYear = year -1
+            else:
+                thisYear = year
+            csvStr += "%s-%s\n"%(thisYear,thisMonth)
+            csvStr += Statistic().getAnalysisByYearMonthAndRecord(thisYear,thisMonth)
 
         return csvStr
 #------------------------------------------

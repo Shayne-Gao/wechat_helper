@@ -134,7 +134,7 @@ class AccountBookDB:
 
     
     def insertAccountRecord(self, uid, cost, type, cateid, content):
-        sql = "INSERT INTO account_record (user_id,cost,type,category_id,content,create_time)    VALUES ('%s','%s','%s','%s','%s','%s')    " % (uid, cost, type, cateid, content, time.time())
+        sql = "INSERT INTO account_record (user_id,cost,type,category_id,content,create_time)    VALUES ('%s','%s','%s','%s','%s',CURRENT_TIMESTAMP)    " % (uid, cost, type, cateid, content)
         
         try:
             self.cursor.execute(sql)

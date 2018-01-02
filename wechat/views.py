@@ -140,29 +140,37 @@ def index(request):
             elif content.startswith('明细'):
                 yearMonth = content.replace('明细','')
                 if yearMonth == '':
-                    reply_text = AccountBook().getRecordByYearMonth(datetime.date.today().year,datetime.date.today().month)
+                    year = datetime.date.today().year
+                    month = datetime.date.today().month
+                    page=1
                 else:
-                    year = yearMonth[0:4]
-                    month = yearMonth[4:6]
-                    reply_text = AccountBook().getRecordByYearMonth(year,month)
+                    year = yearMonth[0:2]
+                    month = yearMonth[2:4]
+                    page = yearMonth[4:5] if len(yearMonth)==5 else 1
+                year = '20'+year
+                reply_text = AccountBook().getRecordByYearMonth(year,month,'id desc',int(page))
             elif content.startswith('统计'):
                 yearMonth = content.replace('统计','')
                 if yearMonth == '':
                     year = datetime.date.today().year
                     month = datetime.date.today().month
+                    page =1
                 else:
-                    year = yearMonth[0:4]
-                    month = yearMonth[4:6]
+                    year = yearMonth[0:2]
+                    month = yearMonth[2:4]
+                    page = yearMonth[4:5] if len(yearMonth)==5 else 1
                 #reply_text = AccountBook().getAnalysisByYearMonth(year,month)
-                reply_text = AccountBook().getAnalysisByYearMonthAndRecord(year,month)
+                year = '20'+year
+                reply_text = AccountBook().getAnalysisByYearMonthAndRecord(year,month,page)
             elif content.startswith('分类'):
                 yearMonth = content.replace('分类','')
                 if yearMonth == '':
                     year = datetime.date.today().year
                     month = datetime.date.today().month
                 else:
-                    year = yearMonth[0:4]
-                    month = yearMonth[4:6]
+                    year = yearMonth[0:2]
+                    month = yearMonth[2:4]
+                year = '20'+year
                 reply_text = AccountBook().getAnalysisByYearMonth(year,month)
             elif content == '撤销':
                 #uid暂时传个1
@@ -212,16 +220,14 @@ def getFooter():
         return ''
     str = '【小尾巴】'
     foot = [
-        '9.14更新:有足够价格记录的物品会显示近几天的最高最低价啦',
-        '9.13更新：试试用物品的别名来查询？比如wf 刷钱鞭',
         '你知道吗？回复 调教+内容就可以上报各种问题了！',
         '点击<a href="http://bbs.ngacn.cc/read.php?tid=12377993">查看版权更新等信息</a>哦',
         '有命令忘记了？输入help来查看！',
         '回复 喂食 来为公众号开发出一份力！',
+        '复制这句话，打开支付宝领取大大大红包！&C5RhvX810X&  '
         '有时候提示错误了请不要急，多给程序娘一点时间稍后再试',
         '个人公众号无法主动推送任何消息哦',
         '现在输入wfa或者警报 就可以查询警报啦',
-        '因为无法看到是谁投食的，所以大家可以留下ID哦 让我可以亲口感谢！',
     ]
     str += choice(foot)+"\n"
     return str

@@ -34,5 +34,5 @@ class AccountRecord(object):
         res = AccountBookDB().getLastValidRecord(uid);
         return res
 
-print AccountRecord().classifyLastRecord(1,'夫妻');
-print AccountRecord().getLastValidRecord(1);
+#print AccountRecord().classifyLastRecord(1,'夫妻');
+#print AccountRecord().getLastValidRecord(1);

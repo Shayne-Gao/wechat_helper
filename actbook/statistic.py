@@ -26,6 +26,7 @@ class Statistic(object):
         endStamp = time.mktime(time.strptime(end, '%Y-%m-%d %H:%M:%S'))
         return self.getRecordByTime(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT, orderby)
 
+    #获取某一个月按照分类的统计信息（金额，百分比，总量)
     def getAnalysisByYearMonth(self, year, month):
         responseStr = ''
         start = '%s-%s-01 00:00:00' % (year, month)
@@ -97,6 +98,15 @@ class Statistic(object):
             return responseStr
             return
 
+    def getRecentDate(nowYear,nowMonth,recentNumber):
+        
+        for i in range(0,recentNumber):
+            thisMonth = nowMonth - i
+            if thisMonth <1:
+                thisMonth = 12 + thisMonth
+                thisYear = nowYear - 1
+            else:
+                thisYear = nowYear
     def getRecentMonthCateStatistic(self, recentNumber):
         year = datetime.date.today().year
         month = datetime.date.today().month
@@ -104,12 +114,17 @@ class Statistic(object):
         sumCost = defaultdict(dict)
         for i in range(0, recentNumber):
             thisMonth = month - i
-            perc, cost, totalCost = Statistic().getAnalysisByYearMonth(year, thisMonth)
+            if thisMonth < 1:
+                thisMonth = 12 +  thisMonth
+                thisYear = year -1
+            else:
+                thisYear = year
+            perc, cost, totalCost = Statistic().getAnalysisByYearMonth(thisYear, thisMonth)
             for name, v in perc.items():
                 sumPerc[name][thisMonth] = v
 
             for name, v in cost.items():
                 sumCost[name][thisMonth] = v
-
+            sumCost['总计'][thisMonth] = totalCost
         return (sumPerc, sumCost)
 # okay decompiling statistic.pyc
