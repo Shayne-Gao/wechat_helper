@@ -2,12 +2,12 @@
         var form1 = $("#form1");
         var item = $("#item").val();
         if (value == 1) {          
-            form1.action = "./price";
+            form1.action = "./wf/price";
              $("#form1").attr("action",form1.action);
             form1.submit();
         }
         if (value == 2) {
-            form1.action = "./build";
+            form1.action = "./wf/build";
             $("#form1").attr("action", form1.action);
             form1.submit();
         }
@@ -35,6 +35,7 @@
             /*====================================
              WRITE YOUR   SCRIPTS  BELOW
             ======================================*/
+            $("#header").load("/static/html/header.html");
         }
 
     }

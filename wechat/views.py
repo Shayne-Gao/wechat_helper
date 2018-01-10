@@ -147,7 +147,7 @@ def index(request):
                     year = yearMonth[0:2]
                     month = yearMonth[2:4]
                     page = yearMonth[4:5] if len(yearMonth)==5 else 1
-                year = '20'+year
+                    year = '20'+year
                 reply_text = AccountBook().getRecordByYearMonth(year,month,'id desc',int(page))
             elif content.startswith('统计'):
                 yearMonth = content.replace('统计','')
@@ -159,8 +159,7 @@ def index(request):
                     year = yearMonth[0:2]
                     month = yearMonth[2:4]
                     page = yearMonth[4:5] if len(yearMonth)==5 else 1
-                #reply_text = AccountBook().getAnalysisByYearMonth(year,month)
-                year = '20'+year
+                    year = '20'+year
                 reply_text = AccountBook().getAnalysisByYearMonthAndRecord(year,month,page)
             elif content.startswith('分类'):
                 yearMonth = content.replace('分类','')
@@ -170,7 +169,7 @@ def index(request):
                 else:
                     year = yearMonth[0:2]
                     month = yearMonth[2:4]
-                year = '20'+year
+                    year = '20'+year
                 reply_text = AccountBook().getAnalysisByYearMonth(year,month)
             elif content == '撤销':
                 #uid暂时传个1

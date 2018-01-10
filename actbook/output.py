@@ -97,5 +97,9 @@ class Output(object):
 #print WmAlarm().getAlarmList()    
 #print AccountBook().anayRequest("12.3哈哈哈123")
 #print AccountBook().getRecordByTime(0,1509608560,200,'cost')
-print Output().getRecentMonthCateStatistic(3)
-print Output().getRecentMonthRecordDetail(3)
+if len(sys.argv) <2 :
+    print "Usage: python output.py [recent month num]"
+    exit()
+sys.argv[1] = int(sys.argv[1])
+print Output().getRecentMonthCateStatistic(sys.argv[1])
+print Output().getRecentMonthRecordDetail(sys.argv[1])

@@ -1,17 +1,8 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*- 
 
-import scrapy
-import json
-import urlparse
-import HTMLParser
-import ConfigParser
-import os
-import urllib
-import time
-import MySQLdb
+from dateutil.relativedelta import relativedelta
 import datetime
-import dateutil
 
 class  ExcelTool:
     def getSBNTitle(self):
@@ -49,8 +40,8 @@ class  ExcelTool:
         secondYearCount = 0
         for n in range(1,25):
             #设置变量\
-            import pandas as pd
-            edata = startTS + pd.tseries.offsets.DateOffset(months=n-1)
+
+            edata = startTS + relativedelta(months=n-1)
             row['effective_date'] = edata.strftime("%d-%b-%y")
             if n<12:
                 row['payment_amount'] = round(firstYearBonus/12.00,2)
@@ -63,7 +54,7 @@ class  ExcelTool:
             elif n == 24:
                 row['payment_amount'] = secondYearBonus - secondYearCount
             row['start'] = row['effective_date']    
-            row['end'] = (edata+pd.tseries.offsets.DateOffset(months=1,days=-1)).strftime("%d-%b-%y")
+            row['end'] = (edata+relativedelta(months=1,days=-1)).strftime("%d-%b-%y")
             output += "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(row['eid'],row['empl_rcd'],row['ecode'],row['effective_date'],row['addtional_sequence'],row['payment_amount'],row['ok_to_pay'],row['currency'],row['start'],row['end'],row['vcp'])
 
 #        file_object = open('SBN.csv', 'w')
@@ -71,5 +62,10 @@ class  ExcelTool:
   #      file_object.close( )
  
         return output
-            
+
+#fobj = open('sbn.csv','w')
+#fobj.write(ExcelTool().getSBNContent(12345678,20171122,150000,120000))
+#fobj.close()
+
 #print ExcelTool().getSBNContent(12345678,20171122,150000,120000)
+

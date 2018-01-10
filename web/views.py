@@ -46,7 +46,8 @@ def price(request):
     return render(request, 'result.html', context)
 def sbn_tool(request):
     context = {}
-    return render(request,'sbn_tool.html',context)
+    #return render(request,'sbn_tool.html',context)
+    return render(request,'index.html',context)
 
 def sbn_result(request):
     
