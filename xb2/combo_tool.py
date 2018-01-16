@@ -36,14 +36,15 @@ master_file_path = './master.cfg'
 combo_file_path = './combo.cfg'
 class ComboTool:
         #定义属性对应的颜色
-    eleColorMap = {'水':'#809fff',
+    eleColorMap = {
+'水':'#809fff',
 '火':'#ff8080',
 '暗':'#b3b3b3',
+'光':'#ffffe5',
 '地':'#d9b38c',
 '雷':'#ffff4d',
-'光':' #ffffe5',
 '风':'#85e085',
-'冰':' #e5f2ff',
+'冰':'#e5f2ff',
 }
 
     def read_master_cfg(self):
@@ -103,12 +104,11 @@ class ComboTool:
             for i in result[0]:
                 for j in result[1]:
                     for k in result[2]:
-                        #如果发动的3个异刃不相同，则标记为推荐
+                        tempList =[i,j,k]
+                        #如果发动的3个异刃不相同，则标记为推荐 废黜
                         if i != j and j != k:
-                            str = "* %s -> %s -> %s"%(i,j,k)
-                        else:
-                            str = "%s -> %s -> %s"%(i,j,k)
-                        returnRes.append( str)
+                            tempList.append('diff')
+                        returnRes.append( tempList )
             return returnRes
         else:
             return None

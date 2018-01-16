@@ -3,19 +3,16 @@ from __future__ import unicode_literals
 from django.http.response import HttpResponse, HttpResponseBadRequest
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-from warframe import warframe
 import time
 import random
 import re
-from random import choice
 import urllib  
 import HTMLParser  
-from life import LifeTool
 import sys
 sys.path.append('..')
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
+import json
 
 from xb2.combo_tool import ComboTool
  
@@ -49,19 +46,34 @@ def combo_result(request):
     context = {}
     resultMap =  ComboTool().getCombo(master)
     resStr = ''
-    for cb,info in resultMap.items():
-        resStr += '<br> <b>%s</b> <br>'%cb
-        resStr += '<ul>'
-        for i in info:
-            if '*' in i :
-                i = i.replace('*','')
-                resStr +=  '<li><b>'+i+'</b></li>'
-            else:
-                resStr +=  '<li>'+i+'</li>'
-        resStr += '</ul>'
+    eleList = ComboTool().eleColorMap
+    outputCount = 0;
+    resList = []
+    for ele in eleList:
+        for cb,info in resultMap.items():
+            if cb[4] != ele.decode('utf-8'): continue
+            #插入表头
+            headList = [True] #表明是表头
+            tempList = []
+            for e in cb.split('-'):
+                tempList.append(e)    
+            headList.append(tempList)
+            #插入最后一个元素的颜色作为表头颜色
+            headList.append(eleList[cb[4].encode('utf-8')])
+            resList.append(headList)
+            #插入内容
+            cbList = [False] #表明是内容
+            tempList = []
+            for i in info:
+                tempList.append(i)
+            cbList.append(tempList)
+            resList.append(cbList)
+
     resStr += "<img src='%s'>"%('http://img3.dwstatic.com/tv/1712/376334745641/1512557208462.jpg')
     context['res'] = resStr
-    return render(request, 'result.html', context)
+    context['combo'] = resList
+    context['debug'] = json.dumps(resList,encoding='UTF-8',ensure_ascii=False)
+    return render(request, 'xb2_combo_result.html', context)
 
 def build(request):
     context = {}
@@ -72,3 +84,5 @@ def build(request):
     context['res'] = res
     print res
     return render(request, 'result.html', context)
+
+

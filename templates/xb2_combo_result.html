@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title></title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+<body > 
+   
+  <div id="header" ></div>
+         <!--MENU SECTION END-->
+    <section class="headline-sec">
+        <div class="overlay ">
+            <h3 >查询结果：</h3>
+        </div>
+    </section>
+    <!--HOME SECTION END-->
+    <section>
+        <div class="container">
+                <table border='3'>
+                <div class="container">
+                <table border='3' width='400px'>
+                     {% for cb in combo %}
+                         {% if cb.0  %}
+                            <tr  bgcolor="{{ cb.2 }}">
+                            {% for e in cb.1 %}
+                               <td> {{ e }}</td>
+                            {% endfor %}
+                            </tr>
+                         {% endif %}
+                        {% if not  cb.0  %}   
+                            {% for e in cb.1 %}
+                            <tr >
+                                {% for player in e %}
+                                   <td> {{ player }}</td>
+                                {% endfor %}
+                            </tr>    
+                            {% endfor %}
+                        {% endif %}
+                     {% endfor %}
+                </table>
+                </div>
+            {{res|safe}}
+            </table>
+        </div>
+    </section>
+           </div>
+                   </div>
+    </div>
+     <!-- COPY TEXT SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+    
+</body>
+</html>

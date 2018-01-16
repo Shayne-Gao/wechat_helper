@@ -129,6 +129,15 @@ def index(request):
         elif content.lower().startswith('s'):
             req = content.replace('s','')
             reply_text = life().scarf(int(req))
+        elif content[0].lower().startswith('k'):
+            inputStr = content[1:]
+            if '=' in inputStr:
+                inputList = inputStr.split('=')
+                setRes = life().setKV(inputList[0],inputList[1])
+                reply_text = '已经将%s设置为%s'%(inputList[0],inputList[1]) if setRes else 'Set Fail'
+            else:
+                getRes = life().getKV(inputStr)
+                reply_text ='【%s】的查询结果:\r\n%s'%(inputStr,getRes) if getRes is not False else 'Get Fail'
         elif content.startswith( '班车'):
             reply_text = "19:00\n19:10\n19:30\n19:45\n20:00\n20:10\n20:30\n21:05\n21:30\n22:10\n"
         #-------------------------------------------------------------------------------------------------------
@@ -231,6 +240,6 @@ def getFooter():
     str += choice(foot)+"\n"
     return str
 
-print  AccountBook().getAnalysisByYearMonthAndRecord(2017,10)
+#print  AccountBook().getAnalysisByYearMonthAndRecord(2017,10)
 #print getFooter()
 #print hasUserPremission('opD4r0WskoVJmlirA9ubVCVpg-k0','actbook')

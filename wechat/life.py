@@ -11,6 +11,7 @@ import MySQLdb
 import types
 import urllib2
 import time
+from lifetool.db import LifeDB
 class life():
     def scarf(self,line):
         #line =int( sys.argv[1])
@@ -29,4 +30,28 @@ class life():
     #3 -+++
     #4 +++
     #5 ++
+    
+    def setKV(self,key,value):
+        res = LifeDB().setKV(key,value);
+        if res is not False:
+            return True
+        else:
+            return False
+
+
+    def getKV(self,key):
+        res = LifeDB().getKV(key)
+        if len(res)==0 or res is False or 'value' not in res[0]:
+            return False
+        else:
+            resStr = ''
+            for r in res:
+                resStr += '%s : %s\r\n'%(r['key'],r['value'])
+            return resStr
+
+
+
+print life().setKV('t1','hei')
+print life().getKV('红包')
+
 
