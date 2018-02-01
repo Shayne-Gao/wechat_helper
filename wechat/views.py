@@ -129,7 +129,7 @@ def index(request):
         elif content.lower().startswith('s'):
             req = content.replace('s','')
             reply_text = life().scarf(int(req))
-        elif content[0].lower().startswith('k'):
+        elif content.lower().startswith('k'):
             inputStr = content[1:]
             if '=' in inputStr:
                 inputList = inputStr.split('=')

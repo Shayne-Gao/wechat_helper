@@ -26,9 +26,16 @@ def index(request):
     return render(request, 'index.html', context)
 
 def xb2_combo(request):
+    sortK = request.GET['q'] if 'q' in request.GET  else 'type'
     bladeInfo =     ComboTool().read_blade_cfg()
     context = {}
-    context['blade_info'] = bladeInfo
+    bladeList = bladeInfo.items()
+
+    sortBy = sortK
+    if sortBy == 'name':
+        context['blade_info'] = sorted(bladeList,key=lambda s:s[0])
+    else:
+        context['blade_info'] = sorted(bladeList,key=lambda s:s[1][sortBy], reverse=True)
     return render(request,'xb2_combo.html',context)
 
 def combo_result(request):
@@ -70,6 +77,8 @@ def combo_result(request):
             resList.append(cbList)
 
     resStr += "<img src='%s'>"%('http://img3.dwstatic.com/tv/1712/376334745641/1512557208462.jpg')
+    #resList排序
+    
     context['res'] = resStr
     context['combo'] = resList
     context['debug'] = json.dumps(resList,encoding='UTF-8',ensure_ascii=False)

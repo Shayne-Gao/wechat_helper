@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*- 
 import sys
 sys.path.append("/root/python_util")
-import Util as Util
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -47,6 +46,13 @@ class ComboTool:
 '冰':'#e5f2ff',
 }
 
+    masterId = {
+'1':'Rex',
+'2':'尼娅',
+'3':'梅勒芙',
+'4':'虎',
+'5':'支线获取',
+}
     def read_master_cfg(self):
         file = open(os.path.dirname(os.path.realpath(__file__))+'/' + master_file_path)
         master = {}
@@ -75,6 +81,9 @@ class ComboTool:
             blade[info[0]]['core_num'] = info[7]
             blade[info[0]]['type'] = info[8]
             blade[info[0]]['url'] = info[9]
+            #用wiki页面代替url
+            blade[info[0]]['url'] = 'http://xenoblade2.cn/%E5%BC%82%E5%88%83/'+info[0]
+            blade[info[0]]['owner'] =self.masterId[ info[10]] if len(info)==11 else 0
             for k,v in  self.eleColorMap.items():
                 if blade[info[0]]['element'] == k.decode('utf-8'):
                     blade[info[0]]['bgcolor'] = v
@@ -148,3 +157,11 @@ class ComboTool:
                 for r in resCombo:
                     final[cbjoin].append(r)
         return final
+
+
+if __name__ == "__main__":
+    l= ComboTool().read_blade_cfg()
+    li = l.items()
+    for i in  sorted(li,key=lambda s:li[0]):
+        print i
+

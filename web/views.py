@@ -26,28 +26,18 @@ def index(request):
     context['invasion']= warframe().getInvasion()
     context['sorties'] = warframe().getSorties()
     return render(request, 'index.html', context)
-
-def priceList(request):
-    requestType = request.GET['type']
-    reply_text = "<pre>"
-    reply_text += warframe().getPriceList(requestType)
-    reply_text += warframe().getAlarm()
-    reply_text +="</pre>"
-    return HttpResponse(reply_text)
-    context = {}
-    context['res'] =reply_text
-    return render(request, 'result.html', context)
-
-def price(request):
-    context = {}
-    res ="<tr><td>类型</td><td>物品</td><td>英文名</td><td>最低售价</td><td>详情</td><td>记录时间</td><td>卖家</td><tr>"
-    res += warframe().getInfoByName( request.GET['item'],True)
-    context['res'] = res
-    return render(request, 'result.html', context)
 def sbn_tool(request):
     context = {}
     #return render(request,'sbn_tool.html',context)
-    return render(request,'index.html',context)
+    return render(request,'test.html',context)
+
+def price_searcher(request):
+    if len(request.GET) == 0 :
+        return render(request, 'price_searcher.html')
+    key = '' if 'item' not in request.GET else  request.GET['item']
+    context  = {}
+    context['faxian'] = LifeTool().getItemPrice(key)
+    return render(request, 'price_searcher.html', context)
 
 def sbn_result(request):
     
@@ -64,14 +54,4 @@ def sbn_result(request):
         resultContent+=  LifeTool().getSBNContent(str(singleParam[0]),str(singleParam[1]),int(singleParam[2]),int(singleParam[3])).replace('\n','<br>')
     context = {}
     context['res'] = resultContent
-    return render(request, 'result.html', context)
-
-def build(request):
-    context = {}
-    res = warframe().getBuildlikeName( request.GET['item'])
-    html_parser = HTMLParser.HTMLParser()
-    res = html_parser.unescape(res)
-#    res   = HTMLParser().unescape(res)
-    context['res'] = res
-    print res
     return render(request, 'result.html', context)

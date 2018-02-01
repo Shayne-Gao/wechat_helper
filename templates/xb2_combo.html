@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery.mobile.flatui.css" />
+  <script src="/static/js/jquery.mobile-1.4.0-rc.1.js"></script>
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title></title>
+    <title>异度之刃连击计算器</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="/static/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLE CSS -->
      <link href="/static/css/font-awesome.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="/static/css/style.css" rel="stylesheet" />
+    <!-- jquery mobile css -->
 </head>
+
 <body > 
         <div id="header" ></div>
 
@@ -28,57 +40,56 @@
     <!--HOME SECTION END-->
     <section>
         <div class="container">
-            <table border='3' width='600px'>
                 <form id="form1" action="./xb2_combo_result" method="get">
-                    <tr>
                         <b>格式:</b> 角色=异刃1 异刃2 异刃3<br>
                         角色回车分割
                         <br>
                         示例:<br>
                         </br>
 
-                    </tr>
-                    <tr> 
                            <textarea name="req" cols="42" rows="4">Rex=焰 朱雀 月
 尼亚=白虎 宇迦 时叶
 虎=花JS
                              </textarea>  
-                     </tr>
-                    <tr>
                     <br>
                   <input type="submit" value="Submit" />
-                    </tr>
+                    <button type="button" class="btn btn-info btn-lg btn-set"  value = "Submit" > submit</button>
+                </form>
+
                 <div>
                 <table border='3'>
-                    {% for blade,info in blade_info.items %}
-                        <tr bgcolor="{{ info.bgcolor }}">
-                        <td><a href='{{ info.url }}'><strong> {{ blade }}</strong> </a></td>
-                        <td>{{ info.element }}</td>
-                        <td>{{ info.type }}</td>
-                        <td>{{ info.weapon }}</td>
-                        <td>{{ info.gender }}</td>
-                        <td>{{ info.gift }}</td>
-                        <td>{{ info.fav1 }}</td>
-                        <td>{{ info.fav2 }}</td>
+                        <tr bgcolor="">
+                        <td><a href='?q=owner'><strong> 御刃者 </strong> </a></td>
+                        <td><a href='?q=name'><strong> 姓名 </strong> </a></td>
+                        <td><a href='?q=element'><strong> 元素 </strong> </a></td>
+                        <td><a href='?q=type'><strong> 类型 </strong> </a></td>
+                        <td><a href='?q=weapon'><strong> 武器 </strong> </a></td>
+                        <td><a href='?q=gender'><strong> 性别 </strong> </a></td>
+                        <td><a href='?q=gift'><strong> 喜爱 </strong> </a></td>
+                        <td><a href='?q=fav1'><strong> 礼物1 </strong> </a></td>
+                        <td><a href='?q=fav2'><strong> 礼物2 </strong> </a></td>
+                        </tr>
+                    {% for single in blade_info %}
+                        <tr bgcolor="{{ single.1.bgcolor }}">
+                        <td>{{ single.1.owner }}</td>
+                        <td><a href='{{ single.1.url }}'><strong> {{ single.0 }}</strong> </a></td>
+                        <td>{{ single.1.element }}</td>
+                        <td>{{ single.1.type }}</td>
+                        <td>{{ single.1.weapon }}</td>
+                        <td>{{ single.1.gender }}</td>
+                        <td>{{ single.1.gift }}</td>
+                        <td>{{ single.1.fav1 }}</td>
+                        <td>{{ single.1.fav2 }}</td>
                         </tr>
                     {% endfor %}
                 </table>
                 </div>
-                </form>
-            </table>
+
+
         </div>
     </section>
-           </div>
-                   </div>
-    </div>
      <!-- COPY TEXT SECTION END-->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="/static/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="/static/js/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
-    <script src="/static/js/custom.js"></script>
 </body>
 </html>
 

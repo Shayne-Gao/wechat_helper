@@ -12,8 +12,20 @@ import types
 import urllib2
 import time
 from lifetool.excel import ExcelTool
+from lifetool import price
 
 class LifeTool():
+    def getItemPrice(self,key):
+        res =  price.getItemInfo(key,'youhui') +  price.getItemInfo(key,'faxian') +  price.getItemInfo(key,'haitao')
+        for r in res:
+            if r['uprate'] > 90:
+                r['bgcolor'] = '#ff8080'
+            elif r['uprate'] > 75:
+                r['bgcolor'] = '#ffff4d'
+            else:
+                r['bgcolor'] = '#e5f2ff'
+        return res
+
     def getSBNContent(self,eid,startDate,firstYearBonus,secondYearBonus):
         return ExcelTool().getSBNContent(eid,startDate,firstYearBonus,secondYearBonus)
 
@@ -37,4 +49,4 @@ class LifeTool():
     #3 -+++
     #4 +++
     #5 ++
-print LifeTool().getSBNTitle()
+#print LifeTool().getItemPrice('移动硬盘 2t')

@@ -97,9 +97,14 @@ class Output(object):
 #print WmAlarm().getAlarmList()    
 #print AccountBook().anayRequest("12.3哈哈哈123")
 #print AccountBook().getRecordByTime(0,1509608560,200,'cost')
-if len(sys.argv) <2 :
-    print "Usage: python output.py [recent month num]"
-    exit()
-sys.argv[1] = int(sys.argv[1])
-print Output().getRecentMonthCateStatistic(sys.argv[1])
-print Output().getRecentMonthRecordDetail(sys.argv[1])
+if __name__ == "__main__":
+    if len(sys.argv) <3 :
+        print "Usage: python output.py [-c -d] [recent month num]"
+        print "-c for category"
+        print "-d for detail"
+        exit()
+    recentMonth = int(sys.argv[2])
+    if sys.argv[1] == '-c':
+        print Output().getRecentMonthCateStatistic(recentMonth)
+    if sys.argv[1] == '-d':
+        print Output().getRecentMonthRecordDetail(recentMonth)
