@@ -143,7 +143,7 @@ def index(request):
         #-------------------------------------------------------------------------------------------------------
         #以下为记账功能的识别
         elif hasUserPremission(wechat_instance.message.source,'actbook'): 
-            if  re.match('^\d', content) :
+            if  re.match('^\d', content) or content.startswith('+') :
                 res = AccountBook().insertAccountRequest(content)
                 reply_text = res
             elif content.startswith('明细'):
@@ -180,6 +180,18 @@ def index(request):
                     month = yearMonth[2:4]
                     year = '20'+year
                 reply_text = AccountBook().getAnalysisByYearMonth(year,month)
+            elif content.startswith('收入'):
+                yearMonth = content.replace('收入','')
+                if yearMonth == '':
+                    year = datetime.date.today().year
+                    month = datetime.date.today().month
+                    page =1
+                else:
+                    year = yearMonth[0:2]
+                    month = yearMonth[2:4]
+                    page = yearMonth[4:5] if len(yearMonth)==5 else 1
+                    year = '20'+year
+                reply_text = AccountBook().getAnalysisByYearMonthAndRecord(year,month,page,1)
             elif content == '撤销':
                 #uid暂时传个1
                 delRes = AccountBook().deleteLatestRecord(1)

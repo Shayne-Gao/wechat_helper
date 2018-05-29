@@ -17,6 +17,8 @@ import time
 import MySQLdb
 from db import AccountBookDB
 class Category:
+
+    #获取类型,会把不同别名当做不同的记录返回
     def getAllCategoryAndId(self):
         sqlRes =  AccountBookDB().getAllCategory()
         idList = []
@@ -34,6 +36,16 @@ class Category:
             temp['id'] = res[0]
             temp['name'] = res[1]
             temp['ori_name'] = res[1]
+            idList.append(temp)
+        return idList
+    #获取类型 按照ID数目返回
+    def getAllCategoryGroupById(self):
+        sqlRes =  AccountBookDB().getAllCategory()
+        idList = []
+        for res in sqlRes:
+            temp = {}
+            temp['id'] = res[0]
+            temp['name'] = res[1]
             idList.append(temp)
         return idList
 

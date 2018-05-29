@@ -56,6 +56,9 @@ class AccountBookDB:
         sql = 'UPDATE account_record SET category_id=%s, update_time=CURRENT_TIMESTAMP WHERE  user_id=%s and is_valid=1 ORDER BY id DESC LIMIT 1' % (cateId, uid)
         return self.queryBySql(sql)
     
+    def updateRecordCate(self,uid,rid,cateId):
+        sql = 'UPDATE account_record SET category_id=%s, update_time=CURRENT_TIMESTAMP WHERE  user_id=%s and is_valid=1 and id=%s ' % (cateId, uid,rid)
+        return self.queryBySql(sql)
 
     def getCategoryIdByNameAndOtherName(self,cateName):
         sql = ''' SELECT id FROM account_category WHERE NAME = '%s' OR other_name LIKE '%%%s%%' LIMIT 1 ''' % (cateName,cateName)
@@ -84,8 +87,8 @@ class AccountBookDB:
 
 
     
-    def getSumGroupByCate(self, startTimeStamp, endTimeStamp):
-        sql = 'SELECT category_id,SUM(cost) FROM account_record  WHERE UNIX_TIMESTAMP(create_time) > %s AND UNIX_TIMESTAMP(create_time) < %s AND is_valid = 1 GROUP BY category_id ORDER BY SUM(cost) DESC ' % (startTimeStamp, endTimeStamp)
+    def getSumGroupByCate(self, startTimeStamp, endTimeStamp,costType=0):
+        sql = 'SELECT category_id,SUM(cost) FROM account_record  WHERE type = %s and UNIX_TIMESTAMP(create_time) > %s AND UNIX_TIMESTAMP(create_time) < %s AND is_valid = 1 GROUP BY category_id ORDER BY SUM(cost) DESC ' % ( costType,startTimeStamp, endTimeStamp)
         
         try:
             self.cursor.execute(sql)

@@ -16,11 +16,12 @@ from life import LifeTool
 
 @csrf_exempt
 def price_searcher(request):
-    if len(request.GET) == 0 :
+    if len(request.GET) == 0 or 'item' not in request.GET:
         return render(request, 'price_searcher.html')
     key = '' if 'item' not in request.GET else  request.GET['item']
     context  = {}
     context['item'] = request.GET['item']
+    print "[PriceSearcher][item=%s]"%context['item']
     context['rev'] = 0
     resList =  LifeTool().getItemPrice(key)
     if 'q' in request.GET:
@@ -35,4 +36,5 @@ def price_searcher(request):
         context['res'] = sortedList
     else:
         context['res'] = resList
+
     return render(request, 'price_searcher.html', context)

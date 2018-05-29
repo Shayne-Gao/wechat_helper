@@ -30,6 +30,13 @@ class AccountRecord(object):
         updateRes = AccountBookDB().updateLastRecordCate(uid,cateId);
         return updateRes
 
+    def classifyRecordType(self,uid,rid,typeName):
+        cateId =  AccountBookDB().getCategoryIdByNameAndOtherName(typeName)
+        if cateId == None:
+            return 1,'Wrong Type Name'
+        updateRes = AccountBookDB().updateRecordCate(uid,rid,cateId);
+        return updateRes
+
     def getLastValidRecord(self,uid):
         res = AccountBookDB().getLastValidRecord(uid);
         return res

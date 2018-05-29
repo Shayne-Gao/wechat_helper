@@ -27,7 +27,7 @@ class Statistic(object):
         return self.getRecordByTime(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT, orderby)
 
     #获取某一个月按照分类的统计信息（金额，百分比，总量)
-    def getAnalysisByYearMonth(self, year, month):
+    def getAnalysisByYearMonth(self, year, month,costType=0):
         responseStr = ''
         start = '%s-%s-01 00:00:00' % (year, month)
         if int(month) + 1 > 12:
@@ -39,7 +39,7 @@ class Statistic(object):
         end = '%s-%s-01 00:00:00' % (endYear, endMonth)
         startStamp = time.mktime(time.strptime(start, '%Y-%m-%d %H:%M:%S'))
         endStamp = time.mktime(time.strptime(end, '%Y-%m-%d %H:%M:%S'))
-        res = Analysis().getPercent(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT)
+        res = Analysis().getPercent(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT,costType)
         totalCost = 0
         perc = {}
         cost = {}
@@ -51,7 +51,7 @@ class Statistic(object):
         return (perc, cost, totalCost)
 
     #获取每月的详情记录(按照分类排序)
-    def getAnalysisByYearMonthAndRecord(self, year, month):
+    def getAnalysisByYearMonthAndRecord(self, year, month,costType=0):
         responseStr = ''
         start = '%s-%s-01 00:00:00' % (year, month)
         if int(month) + 1 > 12:
@@ -63,7 +63,7 @@ class Statistic(object):
         end = '%s-%s-01 00:00:00' % (endYear, endMonth)
         startStamp = time.mktime(time.strptime(start, '%Y-%m-%d %H:%M:%S'))
         endStamp = time.mktime(time.strptime(end, '%Y-%m-%d %H:%M:%S'))
-        res = Analysis().getPercent(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT)
+        res = Analysis().getPercent(int(startStamp), int(endStamp), self.MAX_RECORD_LIMIT,costType)
         resRecord = AccountBookDB().getAllRecordByTime(startStamp, endStamp, self.MAX_RECORD_LIMIT, 'category_id,cost desc')
         
         for r in res:

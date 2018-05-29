@@ -12,7 +12,7 @@
             form1.submit();
         }
  }
-
+//初始化时间空间
 
 (function ($) {
     "use strict";
@@ -36,6 +36,17 @@
              WRITE YOUR   SCRIPTS  BELOW
             ======================================*/
             $("#header").load("/static/html/header.html");
+            $("select#change_cate_select").change(function(){
+                var cateName = $(this).val();
+                var rid = $(this).attr("rid");
+                var url = '../change_type?type_name='+cateName+'&rid='+rid
+                $.ajax({
+        url:url,
+        dateType: "json",
+        success:function(ret){
+                   console.log(ret.res);
+                }});
+            });
         }
 
     }

@@ -23,7 +23,10 @@ def getItemInfo(keys,channel,pagelimit=3):
     headers = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-GB,en;q=0.9,en-US;q=0.8,zh-CN;q=0.7,zh;q=0.6',
+        'Upgrade-Insecure-Requests': '1',
         'Host': 'search.smzdm.com',
+        'Cache-Control': 'max-age=0',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
     }
     #拼接keys,按页抓取
@@ -31,11 +34,13 @@ def getItemInfo(keys,channel,pagelimit=3):
     resList = []
     for page in range(1,pagelimit+1):
         url = 'https://search.smzdm.com/?c=%s&s=%s&p=%s'%(channel,keysStr,page)
-        r = requests.get(url=url, headers=headers)
+        r = requests.get(url=url, headers=headers,allow_redirects=False)
+        print r.text
         selector=etree.HTML( r.text) #将源码转化为能被XPath匹配的格式
         for itemxpath in selector.xpath('//*[@id="feed-main-list"]/li'):
             itemInfo = {}
             itemInfo['title'] =  itemxpath.xpath('div/div[2]/h5/a[1]/@title')[0]
+            itemInfo['url'] =  itemxpath.xpath('div/div[2]/h5/a[1]/@href')[0]
             itemInfo['price'] =  itemxpath.xpath('div/div[2]/h5/a[2]/div/text()')[0]
             itemInfo['time'] =  itemxpath.xpath('div/div[2]/div[2]/div[2]/span/text()')[0].strip()
             itemInfo['up'] =  int(itemxpath.xpath('div/div[2]/div[2]/div[1]/span[1]/span[1]/span[1]/span/text()')[0])

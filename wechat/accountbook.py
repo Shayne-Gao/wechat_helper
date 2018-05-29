@@ -34,10 +34,19 @@ class AccountBook(object):
         else:
             cateid = 0
             cateTxt = '未分类'
-        retStr = "已记账！\n花费【%s】用于【%s】\n分类【%s】"%(costNum,content,cateTxt);
-        dbres = AccountBookDB().insertAccountRecord(uid,costNum,AccountBookDB().REC_TYPE_COST,cateid,content)      
+        costType = AccountBookDB().REC_TYPE_INCOME if costNum.startswith('+') else AccountBookDB().REC_TYPE_COST
+
+        if costType == AccountBookDB().REC_TYPE_COST:
+            retStrSucc = "已记账！\n花费【%s】用于【%s】\n分类【%s】"%(costNum,content,cateTxt);
+        else :
+            cateid = 14
+            cateTxt = '其他收入'
+            retStrSucc = "已记账！\n收入【%s】来自【%s】\n分类【%s】"%(costNum,content,cateTxt);
+
+        dbres = AccountBookDB().insertAccountRecord(uid,costNum,costType,cateid,content)      
         if dbres != 0 and dbres is not None:
-            retStr = "已记账！\n花费【%s】用于【%s】\n分类【%s】【%s】"%(costNum,content,cateTxt,dbres);
+#            retStr = "已记账！\n花费【%s】用于【%s】\n分类【%s】【%s】"%(costNum,content,cateTxt,dbres);
+            retStr = retStrSucc
         else:
             retStr = "记账失败"
         return retStr
@@ -116,7 +125,7 @@ class AccountBook(object):
         return responseStr
 
     #统计：获得带样式的分类统计信息+各类别的明细
-    def getAnalysisByYearMonthAndRecord(self,year,month,page=1):
+    def getAnalysisByYearMonthAndRecord(self,year,month,page=1,costType=0):
         page = int(page)
         responseStr = ""
         start = "%s-%s-01 00:00:00"%(year,month)
@@ -129,9 +138,10 @@ class AccountBook(object):
         end = "%s-%s-01 00:00:00"%(endYear,endMonth)
         startStamp = time.mktime(time.strptime(start,"%Y-%m-%d %H:%M:%S"))
         endStamp = time.mktime(time.strptime(end,"%Y-%m-%d %H:%M:%S"))
-        res =  Analysis().getPercent(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT)
+        res =  Analysis().getPercent(int(startStamp),int(endStamp),self.MAX_RECORD_LIMIT,costType)
         resRecord = AccountBookDB().getAllRecordByTime(startStamp,endStamp,self.MAX_RECORD_LIMIT,'category_id,cost desc');
         #对所有分类进行循环
+        amount = 0
         for r in res:
             markNum = int(float( r['percent'])) / 1+1
             mark = '';
@@ -147,6 +157,7 @@ class AccountBook(object):
                     continue
                 if Category().getCategoryNameById(record[4]) != r['name']:
                     continue
+                amount += record[2];
                 if record[2] < 15:  #因为微信有最大返回行数，所以小于阈值的详情不在统计内显示
                     ignoreText[record[5]] = ignoreText.get(record[5],0) + record[2]
                     ignoreCost += record[2]
@@ -162,7 +173,7 @@ class AccountBook(object):
             #在这里分页返回
         totalPage = len(responseStr) / self.MAX_PAGE_COUNT +1
         thisTimeResponse = responseStr[(page-1) * self.MAX_PAGE_COUNT:page * self.MAX_PAGE_COUNT]
-        thisTimeResponse += "\n当前第 %s / %s 页"%(page,totalPage)
+        thisTimeResponse += "\n当前第 %s / %s 页|总计 ￥% 7.2f"%(page,totalPage,amount)
 
         return thisTimeResponse
 

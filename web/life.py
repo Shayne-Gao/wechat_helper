@@ -24,6 +24,7 @@ class LifeTool():
                 r['bgcolor'] = '#ffff4d'
             else:
                 r['bgcolor'] = '#e5f2ff'
+            #r['time'] = r['time'].split(' ')[0]
         return res
 
     def getSBNContent(self,eid,startDate,firstYearBonus,secondYearBonus):

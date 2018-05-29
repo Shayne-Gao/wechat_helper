@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery.mobile.flatui.css" />
+  <script src="/static/js/jquery.mobile-1.4.0-rc.1.js"></script>
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+
+
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>价格查询器</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <!-- jquery mobile css -->
+</head>
+
+<body > 
+        <div id="header" ></div>
+
+    <!--MENU SECTION END-->
+    <section class="headline-sec">
+        <div class="overlay ">
+            <h3 align="center"  >记账</h3>
+               <h5 align="center" > 说明：查询到的为物品近一段时间的价格讯息。供参考。请尽量结合价格监控使用</h5>
+        </div>
+    </section>
+    <!--HOME SECTION END-->
+    <section>
+        <div class="container">
+                <form id="form1" action="./act" method="get">
+                          待询价的物品名 关键词空格区分:<br> 
+                     <input type='date' id='nowDate' value='{{ begin }}' name="begin" cols="52"> </input>  - 
+                     <input type='date' id='nowDate' value='{{end}}' name="end" cols="42"> </input>  
+                    <input type='hidden' name='q' value=''> </input>
+                  <input type="submit" value="Submit"  class="btn btn-info btn-lg btn-set" />
+                </form>
+
+                <div>
+                期间总花费为 {{cost_sum}}
+                </div>
+                <div>
+                <table border='3' width="95%">
+                        <tr bgcolor="">
+                        <td><a href='?begin={{begin}}&end={{end}}&q=category_id'><strong> 分类 </strong> </a></td>
+                        <td><a href='?begin={{begin}}&end={{end}}&q=create_time'><strong> 时间 </strong> </a></td>
+                        <td><a href='?begin={{begin}}&end={{end}}&q=cost'><strong> 金额 </strong> </a></td>
+                        <td><a href='?begin={{begin}}&end={{end}}&q=content'><strong> 描述 </strong> </a></td>
+                        <td><a href='?begin={{begin}}&end={{end}}&q=title'><strong> 操作 </strong> </a></td>
+                        </tr>
+                    {% for r in actRec %}
+                        <tr bgcolor = '{{ r.bgcolor }}'>
+                        <td align="right">{{ r.cateText }}</td>
+                        <td align="right" nowrap="line">{{ r.createTime }}</td>
+                        <td align="right">{{ r.cost }}</td>
+                        <td align="left">{{r.content}}</td>
+                        <td align="left" >
+                            <select id='change_cate_select' rid='{{r.recordId}}' value='{{ r.cateText }}'  style="background: transparent;" >
+                            {% for cate in allcate_info %}
+                                <option value='{{ cate.name}}' {% ifequal cate.name r.cateText %}
+                                selected {% endifequal %}
+
+
+                                > {{cate.name}}</option>
+                            {% endfor %}
+                            </select>
+                         </td>
+
+                        <div hidden> {{r.recordId}} </div>
+                        </tr>
+                    {% endfor %}
+                </table>
+                </div>
+
+                <div>
+                    <table border='3' width="95%">
+                    {% for c in cate_info %}
+                        <tr>
+                        <td align="right"> {{c.name}}</td>
+                        <td align="right"> {{c.percent}} %</td>
+                        <td align="right"> {{c.cost}}</td>
+                        <td width="60%"> <div style="background-color: #a4c2f4; width: {{c.percent}}%; height: 100%;"><br>  </div></td>
+                        <tr>
+                    {% endfor %} 
+                    </table>
+                </div>
+
+
+        </div>
+    </section>
+     <!-- COPY TEXT SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+</body>
+</html>
+

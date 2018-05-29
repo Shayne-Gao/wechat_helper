@@ -34,14 +34,17 @@
     <!--MENU SECTION END-->
     <section class="headline-sec">
         <div class="overlay ">
-            <h3 >查询结果：</h3>
+            <h3 align="center"  >物品询价器</h3>
+               <h5 align="center" > 说明：查询到的为物品近一段时间的价格讯息。供参考。请尽量结合价格监控使用</h5>
         </div>
     </section>
     <!--HOME SECTION END-->
     <section>
         <div class="container">
                 <form id="form1" action="./price_searcher" method="get">
-                          待询价的物品名 关键词空格区分:<br>  <input name="item" cols="42" rows="4"> </input>  
+                          待询价的物品名 关键词空格区分:<br> 
+                     <input name="item" cols="42" rows="4"> </input>  
+                    <input type='hidden' name='q' value='rmbprice'> </input>
                     <br>
                   <input type="submit" value="Submit"  class="btn btn-info btn-lg btn-set" />
                 </form>
@@ -57,7 +60,7 @@
                         <td><a href='?item={{item}}&rev={{rev}}&q=time'><strong> 时间 </strong> </a></td>
                         <td><a href='?item={{item}}&rev={{rev}}&q=uprate'><strong> 推荐度 </strong> </a></td>
                         <td><a href='?item={{item}}&rev={{rev}}&q=up'><strong> 推荐数 </strong> </a></td>
-                        <td><a href='?item={{item}}&rev={{rev}}&q=starr'><strong> 收藏数 </strong> </a></td>
+                       <!-- <td><a href='?item={{item}}&rev={{rev}}&q=starr'><strong> 收藏数 </strong> </a></td> -->
                         <td><a href='?item={{item}}&rev={{rev}}&q=rmbprice'><strong> 价格￥ </strong> </a></td>
                         <td><a href='?item={{item}}&rev={{rev}}&q=price'><strong> 价格说明 </strong> </a></td>
                         <td><a href='?item={{item}}&rev={{rev}}&q=title'><strong> 标题 </strong> </a></td>
@@ -65,13 +68,13 @@
                     {% for r in res %}
                         <tr bgcolor = '{{ r.bgcolor }}'>
                         <td>{{ r.source }}</td>
-                        <td nowrap="nowrap">{{ r.time }}</td>
+                        <td nowrap="line">{{ r.time }}</td>
                         <td>{{ r.uprate }}%</td>
                         <td>{{r.up}}</td>
-                        <td>{{ r.star }}</td>
+                       <!-- <td>{{ r.star }}</td> -->
                         <td>{{ r.rmbprice }}</td>
                         <td>{{ r.price }}</td>
-                        <td>{{ r.title }}</td>
+                        <td><a href = {{ r.url }} > {{ r.title }} </a></td>
                         </tr>
                     {% endfor %}
                 </table>

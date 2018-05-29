@@ -19,9 +19,9 @@ from db import AccountBookDB
 from category import Category
 class Analysis:
 
-    def getPercent(self,startStamp,endStamp,limit):
+    def getPercent(self,startStamp,endStamp,limit,costType=0):
         #res = AccountBookDB().getAllRecordByTime(startStamp,endStamp,limit);
-        res = AccountBookDB().getSumGroupByCate(startStamp,endStamp);
+        res = AccountBookDB().getSumGroupByCate(startStamp,endStamp,costType);
         typeMap = {}
         costSum = 0;
         if res is None:
