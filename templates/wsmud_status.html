@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/css/jquery.mobile.flatui.css" />
+  <script src="/static/js/jquery.mobile-1.4.0-rc.1.js"></script>
+    <!-- CORE JQUERY  -->
+    <script src="/static/js/jquery.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="/static/js/bootstrap.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+    <script src="/static/js/custom.js"></script>
+
+
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>异度之刃连击计算器</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet" />
+    <!-- jquery mobile css -->
+</head>
+
+<body > 
+
+    <!--MENU SECTION END
+    <section class="headline-sec">
+        <div class="overlay ">
+            <h3 align='center' >异度之刃 - 异刃连击属性计算器</h3>
+        </div>
+    </section>
+    HOME SECTION END-->
+        <div class="container">
+                <div>
+                <table border='3' style="line-height:16px;width:100%  ">
+                    {% for single in status %}
+                        <th bgcolor="#e5f2d0" style="font-size:22px;">
+                        <td  style="font-size:22px;height:26px"><strong><a>{{ single.menpai }}</a></strong></td>
+                        <td>{{ single.state }}</td>
+                        <td>{{ single.ext_state }}</td>
+                        <td>{{ single.pot }}</td>
+                        <td>{{ single.rtime }}</td>
+                        </th>
+                        <tr bgcolor="{{ single.bgcolor }}">
+ <td style="white-space:pre-line;" colspan="6">{{ single.text }}<td></tr>
+                        </tr>
+                    {% endfor %}
+                </table>
+                </div>
+
+
+        </div>
+    </section>
+     <!-- COPY TEXT SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+</body>
+</html>
+

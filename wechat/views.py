@@ -8,6 +8,7 @@ from wechat_sdk.messages import TextMessage
 from warframe import warframe
 from life import life
 from accountbook import AccountBook
+from wsmud import wsmud
 import time
 import random
 import re
@@ -63,12 +64,14 @@ def index(request):
         #以下为基础帮助等功能
         if content.lower() == 'help':
             reply_text = (
-                    '目前支持的功能(不用输出括号！)：\n1. 输入【博客】来查看我的博客\n'
-                    '2. 回复【wf 物品名或部分物品名】\n    来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
-                    '3. 回复【警报】或者【wfa】\n    来查询warframe国际版的警报任务\n'
-                    '4. 回复【wfb 战甲或者武器名】\n    来查询其推荐的Mod配置，支持模糊查询和英文。例如【wfb 关刀】\n'
-                    '5. 回复【调教+内容】上报bug和提出建议\n'
-                    '6. 点击【<a href="http://bbs.ngacn.cc/read.php?tid=12377993">查看版权和更新等信息</a>】\n\n'
+                    '目前支持的功能(不用输出括号！)：\n输入【博客】来查看我的博客\n'
+                    '[武神传说]qn 白/绿/黄.. 当期等级 目标等级 来计算所需要的潜能\n'
+                    '[武神传说]qn 白/绿/黄.. 当期等级 目标等级 先天悟性 后天悟性 学习效率 练习效率    来计算所需要的潜能和所需时间\n'
+                    '[Warframe]回复【wf 物品名或部分物品名】\n    来查询warframe国际版的物品价格，支持模糊查询和英文。 例如【wf rhino】\n'
+                    '[Warframe]回复【警报】或者【wfa】\n    来查询warframe国际版的警报任务\n'
+                    '[Warframe]回复【wfb 战甲或者武器名】\n    来查询其推荐的Mod配置，支持模糊查询和英文。例如【wfb 关刀】\n'
+                    '[Warframe]点击【<a href="http://bbs.ngacn.cc/read.php?tid=12377993">查看版权和更新等信息</a>】\n\n'
+                    '回复【调教+内容】上报bug和提出建议\n'
                     '还有更多功能正在开发中哦 ^_^\n'
                     '--------臭不要脸的分割线---------\n'
                     '本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href="http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg">微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！\n'
@@ -87,6 +90,14 @@ def index(request):
         elif content == '喂食':
             reply_text ="本服务无广告，永久免费使用，如果想要鼓励程序猿小哥哥开发更多功能，欢迎点击 【<a href='http://ww3.sinaimg.cn/large/0060lm7Tly1fja0i4bndpj308e090gnv.jpg'>微信二维码</a>】喂食！五毛不嫌多，一块不嫌少！"
 
+        #-------------------------------------------------------------------------------------------------------
+        #以下为wsmud相关识别
+        elif content.lower().startswith('qn'):
+            wsmudobj = wsmud()
+            reply_text = wsmudobj.qianneng(content.lower())
+        elif content.lower() == 's':
+            wsmudobj = wsmud()
+            reply_text = wsmudobj.status()
         #-------------------------------------------------------------------------------------------------------
         #以下为warframe功能的识别
         elif content.lower().startswith('wfb'):
@@ -123,7 +134,13 @@ def index(request):
             reply_text = warframe().getSorties()
         # elif content.lower()=='list':
         #     reply_text = warframe().getPriceList(wechat_instance.message.source)
-
+        #--------------------------------------------------------------------------------------------------------
+        #以下为日记相关识别
+        elif content=='日记':
+            reply_text = life().getDairyCate()
+        elif content.lower().startswith('！'):
+            reply_text = life().writeDairy(content)
+    
           #-------------------------------------------------------------------------------------------------------
         #以下为其他生活功能的识别
         elif content.lower().startswith('s'):

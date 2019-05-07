@@ -26,6 +26,7 @@ def getItemInfo(keys,channel,pagelimit=3):
         'Accept-Language': 'en-GB,en;q=0.9,en-US;q=0.8,zh-CN;q=0.7,zh;q=0.6',
         'Upgrade-Insecure-Requests': '1',
         'Host': 'search.smzdm.com',
+        'Cookie': '__jsluid=b04873ee25a8d7c48083d931f51ffb3e; __ckguid=pVc6YjP38YnrSYx2UqAwt64; ss_ab=ss33',
         'Cache-Control': 'max-age=0',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
     }
@@ -42,7 +43,7 @@ def getItemInfo(keys,channel,pagelimit=3):
             itemInfo['title'] =  itemxpath.xpath('div/div[2]/h5/a[1]/@title')[0]
             itemInfo['url'] =  itemxpath.xpath('div/div[2]/h5/a[1]/@href')[0]
             itemInfo['price'] =  itemxpath.xpath('div/div[2]/h5/a[2]/div/text()')[0]
-            itemInfo['time'] =  itemxpath.xpath('div/div[2]/div[2]/div[2]/span/text()')[0].strip()
+            itemInfo['time'] =  itemxpath.xpath('div/div[2]/div[2]/div[2]/span/text()')[0].strip()[0:5]
             itemInfo['up'] =  int(itemxpath.xpath('div/div[2]/div[2]/div[1]/span[1]/span[1]/span[1]/span/text()')[0])
             itemInfo['down'] =  int(itemxpath.xpath('div/div[2]/div[2]/div[1]/span[1]/span[2]/span[1]/span/text()')[0])
             itemInfo['star'] =  itemxpath.xpath('div/div[2]/div[2]/div[1]/span[2]/span/text()')[0]

@@ -44,6 +44,9 @@ class LifeDB:
             print sql
             self.db.rollback()
             return False
+    def setDairy(self,date,cate,content):
+        sql = "insert into dairy (`category`,`content`,`createtime`,`date`) values ('%s','%s',CURRENT_TIMESTAMP,'%s') ON DUPLICATE KEY UPDATE content='%s'"%(cate,content,date,content);
+        return self.queryBySql(sql)
    
     def setKV(self,key,value):
         sql = "INSERT INTO kv_store  (`key`,`value`) VALUES ('%s','%s')  ON DUPLICATE KEY UPDATE VALUE='%s'"%(key,value,value)

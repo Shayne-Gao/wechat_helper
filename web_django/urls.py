@@ -20,5 +20,6 @@ urlpatterns = [
     url(r'^wx', include('wechat.urls')),    
     #url(r'^wf', include('web.urls')),
     url(r'^', include('web.urls')),
+    url(r'api/', include('api.urls')),
 
 ]

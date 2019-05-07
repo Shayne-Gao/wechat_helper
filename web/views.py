@@ -20,12 +20,19 @@ from life import LifeTool
 
 
 @csrf_exempt
+
 def index(request):
+    return render(request, 'price_searcher.html')
+
+
+def wf_tool(request):
     context          = {}
     context['alarm'] = warframe().getAlarm()
     context['invasion']= warframe().getInvasion()
     context['sorties'] = warframe().getSorties()
-    return render(request, 'index.html', context)
+    return render(request, 'warframe.html', context)
+
+
 def sbn_tool(request):
     context = {}
     #return render(request,'sbn_tool.html',context)
