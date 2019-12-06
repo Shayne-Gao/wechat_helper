@@ -66,7 +66,7 @@ def status(request):
                 s['bgcolor'] = '#809fff'
             elif s['state'] in '挖矿,炼药':
                 s['bgcolor'] = '#d9b38c'
-        resCombine.append(s)
+            resCombine.append(s)
     
     content={}
     content['status'] = resCombine

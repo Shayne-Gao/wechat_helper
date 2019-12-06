@@ -24,6 +24,9 @@ from life import LifeTool
 def index(request):
     return render(request, 'price_searcher.html')
 
+def codenames(request):
+    print 'hi'
+    return render(request ,'codenames.html')
 
 def wf_tool(request):
     context          = {}

@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^wf/build', wf.build),
     url(r'^wf', views.wf_tool),
     url(r'^sbn_tool',views.sbn_tool),
+    url(r'^codenames',views.codenames),
     url(r'^sbn_result',views.sbn_result),
     url(r'^price_searcher',price.price_searcher),
     url(r'^act',accountbook.detail),
